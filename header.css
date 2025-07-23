@@ -1,0 +1,11 @@
+header {
+    background-color: #E17506;
+}
+
+header input#busca {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    margin-left: 20%;
+    border-radius: 150px;
+}
