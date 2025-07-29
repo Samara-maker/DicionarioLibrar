@@ -1,3 +1,4 @@
+
 const dados = [ //EXEMPLOS TÁ PESSOAL???  SIM, VAMOS TER QUE INSERIR MANUALMENTE
   { palavra: "maçã", categoria: "frutas", video: "videos/maca.mp4" },
   { palavra: "banana", categoria: "frutas", video: "videos/banana.mp4" },
