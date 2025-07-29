@@ -1,3 +1,4 @@
+mostrarMenu();//pra não ter que ficar entrando toda hora
 
 const dados = [ //EXEMPLOS TÁ PESSOAL???  SIM, VAMOS TER QUE INSERIR MANUALMENTE
   { palavra: "maçã", categoria: "frutas", video: "videos/maca.mp4" },

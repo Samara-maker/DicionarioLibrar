@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIBRAR Dicionário</title>
   <link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
 <body>
   <div id="telaInicial">
@@ -19,23 +22,25 @@
 
   <div id="menu" class="oculto">
     <header>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise Uma palavra"/>
-      <i class="fa fa-search"></i>
-    </div>
-  </header>
+      <div class="search-container">
+        <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise Uma palavra" />
+        <i class="fa fa-search"></i>
+      </div>
+    </header>
+    <section class="container-categorias">
+      <h2>Categorias</h2>
+      <div class="categorias">
+        <button onclick="filtrarCategoria('alimentos')"><img src="icons/alimentos.png" /> Alimentos</button>
+        <button onclick="filtrarCategoria('roupas')"><img src="icons/roupas.png" /> Roupas</button>
+        <button onclick="filtrarCategoria('objetos')"><img src="icons/objetos.png" /> Objetos</button>
+        <button onclick="filtrarCategoria('frutas')"><img src="icons/frutas.png" /> Frutas</button>
+        <button onclick="filtrarCategoria('verduras')"><img src="icons/verduras.png" /> Verduras</button>
+        <button onclick="filtrarCategoria('animais')"><img src="icons/animais.png" /> Animais</button>
+        <button onclick="filtrarCategoria('transporte')"><img src="icons/transporte.png" /> Transporte</button>
+        <button onclick="filtrarCategoria('diversos')"><img src="icons/diversos.png" /> Diversos</button>
+      </div>
 
-    <h2>Categorias</h2>
-    <div class="categorias">
-      <button onclick="filtrarCategoria('alimentos')"><img src="icons/alimentos.png" /> Alimentos</button>
-      <button onclick="filtrarCategoria('roupas')"><img src="icons/roupas.png" /> Roupas</button>
-      <button onclick="filtrarCategoria('objetos')"><img src="icons/objetos.png" /> Objetos</button>
-      <button onclick="filtrarCategoria('frutas')"><img src="icons/frutas.png" /> Frutas</button>
-      <button onclick="filtrarCategoria('verduras')"><img src="icons/verduras.png" /> Verduras</button>
-      <button onclick="filtrarCategoria('animais')"><img src="icons/animais.png" /> Animais</button>
-      <button onclick="filtrarCategoria('transporte')"><img src="icons/transporte.png" /> Transporte</button>
-      <button onclick="filtrarCategoria('diversos')"><img src="icons/diversos.png" /> Diversos</button>
-    </div>
+    </section>
 
     <h2>Mais pesquisados</h2>
     <div id="resultados"></div>
