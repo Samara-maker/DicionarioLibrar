@@ -69,29 +69,72 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+/* Novo CSS para categorias redondas laranja, 4 por linha */
+
 .categorias {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas no celular */
+  gap: 0.75rem;
   margin-bottom: 1rem;
+  justify-items: center;
+  padding: 0 0.5rem;
 }
 
 .categorias button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 0.5rem;
-  font-size: 0.9rem;
+  justify-content: center;
+  background: #ff9800;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  color: white;
+  font-size: 0.75rem;
   cursor: pointer;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.categorias button:hover {
+  background: #fb8c00;
 }
 
 .categorias img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 0.3rem;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.2rem;
+}
+
+/* Media query para telas maiores (computador) */
+@media screen and (min-width: 768px) {
+  .categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* ou center, se preferir */
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .categorias button {
+    width: auto;       /* largura automática para caber o texto */
+    height: 70px;      /* mantém a altura */
+    padding: 0 15px;   /* espaço lateral para o texto */
+    border-radius: 35px; /* deixa com borda arredondada estilo "pílula" */
+    font-size: 1rem;   /* texto maior para computador */
+    flex-direction: row;
+  }
+
+  .categorias img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
 }
 
 #resultados {
