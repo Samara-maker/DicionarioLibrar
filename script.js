@@ -1,5 +1,5 @@
 
-const dados = [ //EXEMPLOS TÁ PESSOAL???  SIM, VAMOS TER QUE INSERIR MANUALMENTE
+const dados = [
   { palavra: "A", categoria: "Alfabeto", video:"videos/ALFABETO - VIDEOS/LETRA A.mp4"},
   { palavra: "B", categoria: "Alfabeto", video:"videos/ALFABETO - VIDEOS/LETRA B.mp4"},
   { palavra: "C", categoria: "Alfabeto", video:"videos/ALFABETO - VIDEOS/LETRA C.mp4"},
