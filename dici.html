@@ -12,35 +12,39 @@
  crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 
 <body>
-  <div id="telaInicial">
-    <h1 class="titulo">LIBRAR DICIONÁRIO</h1>
-    <p class="subtitulo">1000 VERBETES EM LÍNGUAS DE SINAIS</p>
-
-    <div class="botoes">
-      <button onclick="mostrarMenu()">Entrar</button>
-    </div>
-  </div>
   
-  <div id="menu" class="oculto">
+  <div id="menu">
     <header>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise Uma palavra"/>
-      <i class="fa fa-search"></i>
-    </div>
-  </header>
+      <div class="search-container">
+        <input
+          type="text"
+          id="busca"
+          oninput="buscar()"
+          placeholder="Pesquise uma palavra"
+        />
+        <i class="fa fa-search"></i>
+      </div>
+    </header>
 
     <h2>Categorias</h2>
     <div class="categorias">
-      <button onclick="filtrarCategoria('animais')"><img src="icones/iconesAnimais.png" /> Animais</button>
-      <button onclick="filtrarCategoria('Alfabeto')"><img src="icones/iconesAlfabeto.png" /> Alfabeto</button>
-      <button onclick="filtrarCategoria('roupas')"><img src="icons/roupas.png" /> Roupas</button>
-      <button onclick="filtrarCategoria('objetos')"><img src="icons/objetos.png" /> Objetos</button>
-      <button onclick="filtrarCategoria('frutas')"><img src="icons/frutas.png" /> Frutas</button>
-      <button onclick="filtrarCategoria('verduras')"><img src="icons/verduras.png" /> Verduras</button>
-      <button onclick="filtrarCategoria('alimentos')"><img src="icons/alimentos.png" /> Alimentos</button>
-      <button onclick="filtrarCategoria('transporte')"><img src="icons/transporte.png" /> Transporte</button>
-      <button onclick="filtrarCategoria('diversos')"><img src="icons/diversos.png" /> Diversos</button>
-    </div>
+  <button onclick="window.location.href='telaAlfabeto.html?categoria=Alfabeto'"><img src="icones/iconesAlfabeto.png" /> Alfabeto</button>
+  <button onclick="window.location.href='telaCidade.html?categoria=a cidade'"><img src="icons/cidade.png" /> cidade</button>
+  <button onclick="window.location.href='telaEscola.html?categoria=a escola'"><img src="icons/escola.png" /> Escola</button>
+  <button onclick="window.location.href='telaFazenda.html?categoria=a fazenda'"><img src="icons/fazenda.png" /> fazenda</button>
+  <button onclick="window.location.href='telaViagem.html?categoria=a viagem'"><img src="icons/viagem.png" /> Viagem</button>
+  <button onclick="window.location.href='telaCaracteristicas.html?categoria=características'"><img src="icons/caracteristicas.png" /> Características</button>
+  <button onclick="window.location.href='telaFerramenta.html?categoria=ferramentas'"><img src="icons/ferramentas.png" /> Ferramentas</button>
+  <button onclick="window.location.href='telaAniversario.html?categoria=festa de aniversário'"><img src="icons/aniversario.png" /> Aniversário</button>
+  <button onclick="window.location.href='telaCorpo.html?categoria=meu corpo'"><img src="icons/corpo.png" /> Meu corpo</button>
+  <button onclick="window.location.href='telaFamilia.html?categoria=minha família'"><img src="icons/familia.png" /> Minha família</button>
+  <button onclick="window.location.href='telaRestaurante.html?categoria=o restaurante'"><img src="icons/restaurante.png" /> Restaurante</button>
+  <button onclick="window.location.href='telaSupermercado.html?categoria=o supermercado'"><img src="icons/supermercado.png" /> Supermercado</button>
+  <button onclick="window.location.href='telaAcessorios.html?categoria=roupas e acessórios'"><img src="icons/roupas.png" /> Roupas</button>
+  <button onclick="window.location.href='telaSabores.html?categoria=sabores'"><img src="icons/sabores.png" /> Sabores</button>
+  <button onclick="window.location.href='telaSentimentos.html?categoria=sentimentos'"><img src="icons/sentimentos.png" /> Sentimentos</button>
+  <button onclick="window.location.href='telaVerdura.html?categoria=verduras'"><img src="icons/verduras.png" /> Verduras</button>
+</div>
 
     <h2>Mais pesquisados</h2>
     <div id="resultados"></div>

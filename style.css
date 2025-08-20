@@ -73,11 +73,10 @@ input[type="text"] {
 
 .categorias {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas no celular */
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-  justify-items: center;
-  padding: 0 0.5rem;
+  grid-template-columns: repeat(4, 85px); /* 4 colunas de 85px (mesmo tamanho do botão) */
+  justify-content: center;                /* centraliza a grade horizontalmente */
+  gap: 10px;                             /* espaço entre botões */
+  padding: 10px;
 }
 
 .categorias button {
@@ -88,8 +87,8 @@ input[type="text"] {
   background: #ff9800;
   border: none;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 85px;
+  height: 85px;
   color: white;
   font-size: 0.75rem;
   cursor: pointer;
@@ -98,6 +97,7 @@ input[type="text"] {
   transition: background-color 0.3s ease;
   text-align: center;
   user-select: none;
+  gap: 5px;
 }
 
 .categorias button:hover {
@@ -105,27 +105,30 @@ input[type="text"] {
 }
 
 .categorias img {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 0.2rem;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 4px;
 }
+
+
 
 /* Media query para telas maiores (computador) */
 @media screen and (min-width: 768px) {
   .categorias {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* ou center, se preferir */
+    justify-content: flex-start; 
     gap: 1rem;
     padding: 0 1rem;
   }
 
   .categorias button {
-    width: auto;       /* largura automática para caber o texto */
-    height: 70px;      /* mantém a altura */
-    padding: 0 15px;   /* espaço lateral para o texto */
-    border-radius: 35px; /* deixa com borda arredondada estilo "pílula" */
-    font-size: 1rem;   /* texto maior para computador */
+    width: auto;       
+    height: 70px;      
+    padding: 0 15px;  
+    border-radius: 35px; 
+    font-size: 1rem;   
     flex-direction: row;
   }
 
@@ -155,4 +158,15 @@ video {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.voltar {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+.voltar i {
+  margin-right: 8px;
 }
