@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Categoria</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
   <header>
@@ -27,6 +28,80 @@
     <h2 id="titulo-categoria"></h2>
     <div id="resultados"></div>
   </main>
+  <section class="grid-videos">
+    
+  </section>
+
 
   <script src="script.js"></script>
+  <section class="grid-videos" id="videos"></section>
+
+<script>
+  const videos = [
+    { "nome": "AGITADO", "link": "https://youtu.be/86GNKQWlQ6o" },
+  { "nome": "ALTO", "link": "https://youtu.be/O6NC8ssfVzk" },
+  { "nome": "ANIMADO", "link": "https://youtu.be/XZa_GPKWjTk" },
+  { "nome": "BAIXO", "link": "https://youtu.be/XZa_GPKWjTk" },
+  { "nome": "BONITO", "link": "https://youtu.be/_-Gx-YepUAk" },
+  { "nome": "CABELUDO", "link": "https://youtu.be/GYYrC6XzQzQ" },
+  { "nome": "CALMO", "link": "https://youtu.be/2XObcGprbgA" },
+  { "nome": "CANSADO", "link": "https://youtu.be/tSEuxsLUL8M" },
+  { "nome": "CARA", "link": "https://youtu.be/Fx-BdU4nwaY" },
+  { "nome": "CARINHOSO", "link": "https://youtu.be/7yAFxeF-cPo" },
+  { "nome": "CHORANDO", "link": "https://youtu.be/AtxgU0F9hUI" },
+  { "nome": "COM SONO", "link": "https://youtu.be/D4skTo0Yt3I" },
+  { "nome": "CUIDADOSO", "link": "https://youtu.be/JGL2ve-ZHA0" },
+  { "nome": "DESCULPA", "link": "https://youtu.be/_H5DwJSsOPQ" },
+  { "nome": "DIFERENTE", "link": "https://youtu.be/xUp9z2pVXtw" },
+  { "nome": "DOENTE", "link": "https://youtu.be/MoFBtwf82W8" },
+  { "nome": "EDUCADO", "link": "https://youtu.be/yn6l8tg3qlY" },
+  { "nome": "ESPERTA", "link": "https://youtu.be/k5CBBR2hzpI" },
+  { "nome": "ESTUDAR", "link": "https://youtu.be/cKqgsz9s4hQ" },
+  { "nome": "FEIO", "link": "https://youtu.be/g9AMzswh9bs" },
+  { "nome": "FELIZ", "link": "https://youtu.be/M4UglCl_4OE" },
+  { "nome": "FORTE", "link": "https://youtu.be/q6mL8Q0p4rc" },
+  { "nome": "FRACO", "link": "https://youtu.be/Rc9P_qEHB0I" },
+  { "nome": "GORDO", "link": "https://youtu.be/dM8S_MJ9gxg" },
+  { "nome": "GRANDE", "link": "https://youtu.be/ZnO69rCxgT0" },
+  { "nome": "HOMEM", "link": "https://youtu.be/IGV8AQMtk0I" },
+  { "nome": "INTELIGENTE", "link": "https://youtu.be/Uj1iJHjvE-Y" },
+  { "nome": "LEGAL", "link": "https://youtu.be/nlCXt85wTtQ" },
+  { "nome": "LER", "link": "https://youtu.be/oS-Y2SdmIGo" },
+  { "nome": "LINDO", "link": "https://youtu.be/MoFqfAGCPkI" },
+  { "nome": "MAGRO", "link": "https://youtu.be/R-DppZzvr30" },
+  { "nome": "MENINA", "link": "https://youtu.be/q0cpwHuh0kk" },
+  { "nome": "MENINO", "link": "https://youtu.be/xEM6PZo75cw" },
+  { "nome": "MULHER", "link": "https://youtu.be/4XbT07uaExg" },
+  { "nome": "NERVOSO", "link": "https://youtu.be/ej66so9Zr8M" },
+  { "nome": "PEQUENO", "link": "https://youtu.be/dH2Wwh2IVrU" },
+  { "nome": "PESQUISAR", "link": "https://youtu.be/wP3Uq0XK1pA" },
+  { "nome": "RICO", "link": "https://youtu.be/ltGqJ_kTA2Q" },
+  { "nome": "SIMPATICO", "link": "https://youtu.be/XBex0EPP_w0" },
+  { "nome": "TRISTE", "link": "https://youtu.be/_FmFMxL0_gE" },
+  { "nome": "USAR", "link": "https://youtu.be/GLDJjP5l4Qw" }
+  ];
+
+  const container = document.getElementById("videos");
+
+  videos.forEach(video => {
+    const div = document.createElement("grid-videos");
+    div.className = "grid-videos-item";
+
+    div.innerHTML = `
+      <h2>Caracteristicas: ${video.nome}</h2>
+      <img src="Banner Videos/letra-a.png" width="80%" height="50vh" alt="">
+      <!-- <iframe 
+        src="${video.link}" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe> -->
+    `;
+
+    container.appendChild(div);
+  });
+</script>
+
 </body>
