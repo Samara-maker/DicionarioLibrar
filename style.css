@@ -1,5 +1,5 @@
 @import url(header.css);
-
+@import url(categorias.css);
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -69,29 +69,75 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+/* Novo CSS para categorias redondas laranja, 4 por linha */
+
 .categorias {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  grid-template-columns: repeat(4, 85px); /* 4 colunas de 85px (mesmo tamanho do botão) */
+  justify-content: center;                /* centraliza a grade horizontalmente */
+  gap: 10px;                             /* espaço entre botões */
+  padding: 10px;
 }
 
 .categorias button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 0.5rem;
-  font-size: 0.9rem;
+  justify-content: center;
+  background: #ff9800;
+  border: none;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  color: white;
+  font-size: 0.75rem;
   cursor: pointer;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  text-align: center;
+  user-select: none;
+  gap: 5px;
+}
+
+.categorias button:hover {
+  background: #fb8c00;
 }
 
 .categorias img {
   width: 40px;
   height: 40px;
-  margin-bottom: 0.3rem;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+
+
+/* Media query para telas maiores (computador) */
+@media screen and (min-width: 768px) {
+  .categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .categorias button {
+    width: auto;       
+    height: 70px;      
+    padding: 0 15px;  
+    border-radius: 35px; 
+    font-size: 1rem;   
+    flex-direction: row;
+  }
+
+  .categorias img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
 }
 
 #resultados {
@@ -112,4 +158,15 @@ video {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.voltar {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+.voltar i {
+  margin-right: 8px;
 }
