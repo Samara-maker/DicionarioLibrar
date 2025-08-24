@@ -7,44 +7,47 @@
   <title>LIBRAR Dicionário</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="header.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
- integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
- crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
 <body>
-  
+
   <div id="menu">
     <header>
       <div class="search-container">
-        <input
-          type="text"
-          id="busca"
-          oninput="buscar()"
-          placeholder="Pesquise uma palavra"
-        />
+        <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
         <i class="fa fa-search"></i>
       </div>
     </header>
 
     <h2>Categorias</h2>
     <div class="categorias">
-  <button href="telaAlfabeto.html"><img src="icones/iconesAlfabeto.png" /> Alfabeto</button>
-  <button href="telaCidade.html?categoria=a cidade"><img src="icones/cidade.png" /> Cidade</button>
-<button href="telaEscola.html?categoria=a escola"><img src="icones/escola.png" /> Escola</button>
-<button href="telaFazenda.html?categoria=a fazenda"><img src="icones/fazenda.png" /> Fazenda</button>
-<button href="telaViagem.html?categoria=a viagem"><img src="icones/mundo.png" /> Viagem</button>
-<button href="telaCaracteristicas.html?categoria=características"><img src="icons/caracteristicas.png" /> Características</button>
-<button href="telaFerramenta.html?categoria=ferramentas"><img src="icones/definicoes.png" /> Ferramentas</button>
-<button href="telaAniversario.html?categoria=festa de aniversário"><img src="icones/bolo-de-aniversario.png" /> Aniversário</button>
-<button href="telaCorpo.html?categoria=meu corpo"><img src="icones/corpo-humano.png" /> Meu corpo</button>
-<button href="telaFamilia.html?categoria=minha família"><img src="icones/familia.png"/> Minha família</button>
-<button href="telaRestaurante.html?categoria=o restaurante"><img src="icones/restaurante.png" /> Restaurante</button>
-<button href="telaSupermercado.html?categoria=o supermercado"><img src="icones/supermercado.png" /> Supermercado</button>
-<button href="telaAcessorios.html?categoria=roupas e acessórios"><img src="icones/roupas.png" /> Roupas</button>
-<button href="telaSabores.html?categoria=sabores"><img src="icones/sabor.png"/> Sabores</button>
-<button href="telaSentimentos.html?categoria=sentimentos"><img src="icones/sentimentos.png" /> Sentimentos</button>
-<button href="telaVerdura.html?categoria=verduras"><img src="icones/vegetais.png" /> Verduras</button>
-</div>
+      <button onclick="window.location.href='telaAlfabeto.html'"><img src="icones/iconesAlfabeto.png" /> Alfabeto</button>
+      <button onclick="window.location.href='telaCidade.html?categoria=a cidade'"><img src="icones/cidade.png" /> Cidade</button>
+      <button onclick="window.location.href='telaEscola.html?categoria=a escola'"><img src="icones/escola.png" /> Escola</button>
+      <button onclick="window.location.href='telaFazenda.html?categoria=a fazenda'"><img src="icones/fazenda.png" /> Fazenda</button>
+      <button onclick="window.location.href='telaViagem.html?categoria=a viagem'"><img src="icones/mundo.png" /> Viagem</button>
+      <button onclick="window.location.href='telaCaracteristicas.html?categoria=características'"><img src="icons/caracteristicas.png" />
+        Características</button>
+      <button onclick="window.location.href='telaFerramenta.html?categoria=ferramentas'"><img src="icones/definicoes.png" /> Ferramentas</button>
+      <button onclick="window.location.href='telaAniversario.html?categoria=festa de aniversário'"><img src="icones/bolo-de-aniversario.png" />
+        Aniversário</button>
+      <button onclick="window.location.href='telaCorpo.html?categoria=meu corpo'"><img src="icones/corpo-humano.png" /> Meu corpo</button>
+      <button onclick="window.location.href='telaFamilia.html?categoria=minha família'"><img src="icones/familia.png" /> Minha família</button>
+      <button onclick="window.location.href='telaRestaurante.html?categoria=o restaurante'"><img src="icones/restaurante.png" />
+        Restaurante</button>
+      <button onclick="window.location.href='telaSupermercado.html?categoria=o supermercado'"><img src="icones/supermercado.png" />
+        Supermercado</button>
+      <button onclick="window.location.href='telaAcessorios.html?categoria=roupas e acessórios'"><img src="icones/roupas.png" /> Roupas</button>
+      <button onclick="window.location.href='telaSabores.html?categoria=sabores'"><img src="icones/sabor.png" /> Sabores</button>
+      <button onclick="window.location.href='telaSentimentos.html?categoria=sentimentos'"><img src="icones/sentimentos.png" />
+        Sentimentos</button>
+      <button onclick="window.location.href='telaVerdura.html?categoria=verduras'"><img src="icones/vegetais.png" /> Verduras</button>
+      <button onclick="window.location.href='telaSignos.html?categoria=signo'"><img src="icones/LEÃO.png" /> Signos</button>
+
+    </div>
 
     <h2>Mais pesquisados</h2>
     <div id="resultados"></div>
