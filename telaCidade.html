@@ -26,7 +26,232 @@
   <main>
     <h2 id="titulo-categoria"></h2>
     <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
   </main>
 
   <script src="script.js"></script>
+  <script>
+    const videos = [
+      {
+        "numero":1,
+        "nome":"AEROPORTO",
+        "link":"https:www.youtu.be\/ffu9Ajirbkc",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":2,
+        "nome":"AMBULÂNCIA",
+        "link":"https:www.youtu.be\/uj5UpF7M7R8",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":3,
+        "nome":"ARRANHACEU",
+        "link":"https:www.youtu.be\/foZ13-DMR34",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":4,
+        "nome":"AVIÃO",
+        "link":"https:www.youtu.be\/6SFmxZPdVuQ",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":5,
+        "nome":"BANCO",
+        "link":"https:www.youtu.be\/5lHSTzTcixM",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":6,
+        "nome":"BICICLETA",
+        "link":"https:www.youtu.be\/EU_PGOziCHw",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":7,
+        "nome":"CALÇADA",
+        "link":"https:www.youtu.be\/o4huWfjNObg",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":8,
+        "nome":"CAMINHÃO",
+        "link":"https:www.youtu.be\/cFYDIrk0Iqw",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":9,
+        "nome":"CARRO",
+        "link":"https:www.youtu.be\/OHhc1qaA_Fw",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":10,
+        "nome":"CORREIO",
+        "link":"https:www.youtu.be\/oWVxhPQrgAc",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":11,
+        "nome":"DELEGACIA DE POLÍCIA",
+        "link":"https:www.youtu.be\/8qvlgZtYmEo",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":12,
+        "nome":"ESCOLA",
+        "link":"https:www.youtu.be\/7SDkXeB0NWo",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":13,
+        "nome":"ESQUINA",
+        "link":"https:www.youtu.be\/9yAqPFCdXws",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":14,
+        "nome":"HOSPITAL",
+        "link":"https:www.youtu.be\/1k4YRUGnc-c",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":15,
+        "nome":"IGREJA",
+        "link":"https:www.youtu.be\/pGvDkjxzP1E",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":16,
+        "nome":"LOJA",
+        "link":"https:www.youtu.be\/BhyRZCNNJVg",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":17,
+        "nome":"MOTOCICLETA",
+        "link":"https:www.youtu.be\/YPM_zAnZII8",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":18,
+        "nome":"MUSEU",
+        "link":"https:www.youtu.be\/wdS8JhIwRcg",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":19,
+        "nome":"ÔNIBUS",
+        "link":"https:www.youtu.be\/CwAKSH1k-mY",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":20,
+        "nome":"PEDESTRE",
+        "link":"https:www.youtu.be\/kW_6m0obXRw",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":21,
+        "nome":"PLACA DE TRÂNSITO",
+        "link":"https:www.youtu.be\/y6O9lzGL_0M",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":22,
+        "nome":"PONTE",
+        "link":"https:www.youtu.be\/PskJeyQokVs",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":23,
+        "nome":"PONTO DE ÔNIBUS",
+        "link":"https:www.youtu.be\/4jw8l1eIF5c",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":24,
+        "nome":"PRÉDIO DO BANCO",
+        "link":"https:www.youtu.be\/Ga5Tm1w_4CQ",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":25,
+        "nome":"PRÉDIO DO BOMEBEIRO",
+        "link":"https:www.youtu.be\/VCKZjy4ucV0",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":26,
+        "nome":"RUA",
+        "link":"https:www.youtu.be\/7nOjwaHqkn0",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":27,
+        "nome":"SEMÁFARO",
+        "link":"https:www.youtu.be\/t1VMjDHIp10",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":28,
+        "nome":"TAXI",
+        "link":"https:www.youtu.be\/ZPxgn5I3tAg",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    {
+        "numero":29,
+        "nome":"EDIFICIO",
+        "link":"https:www.youtu.be\/3kSzqyqDaKo",
+        "categoria":"VERBETES – A CIDADE"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = `Cidade: ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
 </body>
