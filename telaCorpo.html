@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Categoria</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
   <header>
@@ -26,7 +27,235 @@
   <main>
     <h2 id="titulo-categoria"></h2>
     <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
   </main>
 
+
+
   <script src="script.js"></script>
+  <script>
+    const videos = [
+      {
+        "numero":1,
+        "nome":"BARRIGA",
+        "link":"https:www.youtu.be\/rDOV0Llq6uk",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":2,
+        "nome":"BOCA",
+        "link":"https:www.youtu.be\/TPvx31beqGI",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":3,
+        "nome":"BOCHECHA",
+        "link":"https:www.youtu.be\/kGS4VnnhJyE",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":4,
+        "nome":"BRAÇO",
+        "link":"https:www.youtu.be\/H-9r3dEq6us",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":5,
+        "nome":"CABEÇA",
+        "link":"https:www.youtu.be\/ffI_PiPkTyA",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":6,
+        "nome":"CABELO",
+        "link":"https:www.youtu.be\/D6Jse4AP8lc",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":7,
+        "nome":"COSTAS",
+        "link":"https:www.youtu.be\/a8XUYOnCE5s",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":8,
+        "nome":"COTOVELO",
+        "link":"https:www.youtu.be\/xD6DX4eR9TQ",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":9,
+        "nome":"DEDO",
+        "link":"https:www.youtu.be\/IoKb-q1xEUU",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":10,
+        "nome":"DEDO DO PÉ",
+        "link":"https:www.youtu.be\/6fSqrNl1dRU",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":11,
+        "nome":"DENTES",
+        "link":"https:www.youtu.be\/mAsWaI0ZCBU",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":12,
+        "nome":"JOELHO",
+        "link":"https:www.youtu.be\/rmdHsUCkTHs",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":13,
+        "nome":"LÁBIOS",
+        "link":"https:www.youtu.be\/l86Gpna03Ng",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":14,
+        "nome":"LÍNGUA",
+        "link":"https:www.youtu.be\/2U0zgGbdrxQ",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":15,
+        "nome":"MÃO",
+        "link":"https:www.youtu.be\/dtaE8SRKQOk",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":16,
+        "nome":"MENINA",
+        "link":"https:www.youtu.be\/K1GwL47U3OY",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":17,
+        "nome":"MENINO",
+        "link":"https:www.youtu.be\/I4X-HMkX_7E",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":18,
+        "nome":"NARIZ",
+        "link":"https:www.youtu.be\/R7PvwHvYHyI",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":19,
+        "nome":"OLHO",
+        "link":"https:www.youtu.be\/ZgyVP_0LxN0",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":20,
+        "nome":"OMBRO",
+        "link":"https:www.youtu.be\/zaK9PjBQoJk",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":21,
+        "nome":"ORELHA",
+        "link":"https:www.youtu.be\/1Zx7wvgHlCM",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":22,
+        "nome":"PÉ",
+        "link":"https:www.youtu.be\/2eB75R1ol8Q",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":23,
+        "nome":"PERNAS",
+        "link":"https:www.youtu.be\/MYZrB6ETnlY",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":24,
+        "nome":"PESCOÇO",
+        "link":"https:www.youtu.be\/Pw2LTs_nLpc",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":25,
+        "nome":"PULSO",
+        "link":"https:www.youtu.be\/n17Batc3158",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":26,
+        "nome":"QUEIXO",
+        "link":"https:www.youtu.be\/eJmZbCbD7zM",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":27,
+        "nome":"SOBRACELHA",
+        "link":"https:www.youtu.be\/_i8Q5TTOB70",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":28,
+        "nome":"TESTA",
+        "link":"https:www.youtu.be\/Huvcnm_tRG4",
+        "categoria":"MEU CORPO"
+    },
+    {
+        "numero":29,
+        "nome":"TORAX",
+        "link":"https:www.youtu.be\/xgeQkediC6o",
+        "categoria":"MEU CORPO"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = `${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
 </body>
