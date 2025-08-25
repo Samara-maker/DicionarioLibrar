@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+      {
+        "numero":1,
+        "nome":"AVÓ",
+        "link":"https:www.youtu.be\/C-yB6gK8FMI",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":2,
+        "nome":"AVÔ",
+        "link":"https:www.youtu.be\/6zM2ASW1hDE",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":3,
+        "nome":"BEBÊ",
+        "link":"https:www.youtu.be\/YjMnUTh8SrI",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":4,
+        "nome":"CASAL GAY",
+        "link":"https:www.youtu.be\/yAnt0CB6qzU",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":5,
+        "nome":"CASAL HETERO",
+        "link":"https:www.youtu.be\/GNCCe2mDR94",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":6,
+        "nome":"CASAL LÉSBICO",
+        "link":"https:www.youtu.be\/5dMRRYjVN1U",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":7,
+        "nome":"DIVORCIADOS",
+        "link":"https:www.youtu.be\/T_tQtKSlpVs",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":8,
+        "nome":"ESPOSA",
+        "link":"https:www.youtu.be\/KDAY3ClpjlM",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":9,
+        "nome":"FAMILIA",
+        "link":"https:www.youtu.be\/68KY2RMDesY",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":10,
+        "nome":"FILHA",
+        "link":"https:www.youtu.be\/rxzhwIPK_c8",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":11,
+        "nome":"FILHO",
+        "link":"https:www.youtu.be\/tA6n2cXK4MQ",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":12,
+        "nome":"IRMÃ",
+        "link":"https:www.youtu.be\/Upqwrg_T_DE",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":13,
+        "nome":"IRMÃO",
+        "link":"https:www.youtu.be\/2fuh0xwFvo8",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":14,
+        "nome":"MADRASTA",
+        "link":"https:www.youtu.be\/7J2f28rtaMI",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":15,
+        "nome":"MÃE",
+        "link":"https:www.youtu.be\/pz7Jn7wvlcQ",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":16,
+        "nome":"MARIDO",
+        "link":"https:www.youtu.be\/eeXzfc8rFSw",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":17,
+        "nome":"NETA",
+        "link":"https:www.youtu.be\/wl5FdII4NVk",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":18,
+        "nome":"NETO",
+        "link":"https:www.youtu.be\/sBDsGmw1vyo",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":19,
+        "nome":"PADRASTO",
+        "link":"https:www.youtu.be\/xV9inlgufj0",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":20,
+        "nome":"PAI",
+        "link":"https:www.youtu.be\/8Zlg4CRqBAQ",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":21,
+        "nome":"PRIMA",
+        "link":"https:www.youtu.be\/xRjm9234l0E",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":22,
+        "nome":"PRIMO",
+        "link":"https:www.youtu.be\/cAjHk0EKrew",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":23,
+        "nome":"SOBRINHA",
+        "link":"https:www.youtu.be\/HEBgjnkfa5E",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":24,
+        "nome":"SOBRINHO",
+        "link":"https:www.youtu.be\/eCmE1fm2anw",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":25,
+        "nome":"TIA",
+        "link":"https:www.youtu.be\/9hpsDCD52og",
+        "categoria":"MINHA FAMILIA"
+    },
+    {
+        "numero":26,
+        "nome":"TIO",
+        "link":"https:www.youtu.be\/1k_5OWyMOPk",
+        "categoria":"MINHA FAMILIA"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = `${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>
