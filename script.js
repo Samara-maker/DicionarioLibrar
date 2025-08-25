@@ -51,6 +51,7 @@ function mostrarResultados(lista) {
   });
 }
 
+<<<<<<< Updated upstream
 document.addEventListener("DOMContentLoaded", function () {
   var videos = document.querySelectorAll(".grid-videos-item");
 
@@ -83,4 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+=======
+>>>>>>> Stashed changes
 
