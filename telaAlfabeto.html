@@ -2,248 +2,254 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categoria</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <header>
+        <a href="dici.html" class="voltar">
+            <i class="fa fa-arrow-left"></i> Voltar
+        </a>
+        <div class="search-container">
+            <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+            <i class="fa fa-search"></i>
+        </div>
+    </header>
 
-  <header>
-    <a href="dici.html" class="voltar">
-      <i class="fa fa-arrow-left"></i> Voltar
-    </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
-  </header>
+    <img width="200px" height="200px" src="https://drive.google.com/thumbnail?id=1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL" alt="">
 
-  <main>
-    <h2 id="titulo-categoria"></h2>
-    <div id="resultados"></div>
+    <main>
+        <h2 id="titulo-categoria"></h2>
+        <div id="resultados"></div>
 
-    <section class="grid-videos">
-      
-
-      
-    </section>
-  </main>
+        <section class="grid-videos">
 
 
 
-  <script src="script.js"></script>
-  <script>
-    const videos = [
-      {
-        "numero":1,
-        "nome":"A",
-        "link":"https:www.youtu.be\/gGicUBiHGPI",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":2,
-        "nome":"B",
-        "link":"https:www.youtu.be\/TuqBnI3T26k",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":3,
-        "nome":"C",
-        "link":"https:www.youtu.be\/Go7XvDUkvuw",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":4,
-        "nome":"Ç",
-        "link":"https:www.youtu.be\/tOZPijGHJ4M",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":5,
-        "nome":"D",
-        "link":"https:www.youtu.be\/i3d2aTXH66g",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":6,
-        "nome":"E",
-        "link":"https:www.youtu.be\/MOMRxoIbhOs",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":7,
-        "nome":"F",
-        "link":"https:www.youtu.be\/bFGFvT6pzO8",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":8,
-        "nome":"G",
-        "link":"https:www.youtu.be\/WRc9BmQpD9k",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":9,
-        "nome":"H",
-        "link":"https:www.youtu.be\/VLc2la9KMuM",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":10,
-        "nome":"I",
-        "link":"https:www.youtu.be\/Uka5MWQ1M-k",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":11,
-        "nome":"J",
-        "link":"https:www.youtu.be\/QAYadd_tbS8",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":12,
-        "nome":"K",
-        "link":"https:www.youtu.be\/aIMswwQ5mJE",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":13,
-        "nome":"L",
-        "link":"https:www.youtu.be\/Sv0aqETD9lw",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":14,
-        "nome":"M",
-        "link":"https:www.youtu.be\/0dRaSW3hjrQ",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":15,
-        "nome":"N",
-        "link":"https:www.youtu.be\/mFI2pyjzXQE",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":16,
-        "nome":"O",
-        "link":"https:www.youtu.be\/O5sE3BXFHXc",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":17,
-        "nome":"P",
-        "link":"https:www.youtu.be\/Xo0OoCkjmn0",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":18,
-        "nome":"Q",
-        "link":"https:www.youtu.be\/NdR9XoIPAgo",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":19,
-        "nome":"R",
-        "link":"https:www.youtu.be\/8fGM0uYTLNI",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":20,
-        "nome":"S",
-        "link":"https:www.youtu.be\/k9A5METrRz0",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":21,
-        "nome":"T",
-        "link":"https:www.youtu.be\/oYQYUiOKOPI",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":22,
-        "nome":"U",
-        "link":"https:www.youtu.be\/nivlcbMp5ro",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":23,
-        "nome":"V",
-        "link":"https:www.youtu.be\/HTbN8Wk67us",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":24,
-        "nome":"W",
-        "link":"https:www.youtu.be\/XvFmc9NSF5I",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":25,
-        "nome":"X",
-        "link":"https:www.youtu.be\/UnvehyhRk44",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":26,
-        "nome":"Y",
-        "link":"https:www.youtu.be\/4aULdUbOTRw",
-        "categoria":"ALFABETO"
-    },
-    {
-        "numero":27,
-        "nome":"Z",
-        "link":"https:www.youtu.be\/HqV-ka_O2tg",
-        "categoria":"ALFABETO"
-    },
-    ];
+        </section>
+    </main>
 
-    function criarVideos() {
-      const container = document.querySelector(".grid-videos");
-      console.log(container);
-      
-      videos.forEach(video => {
-        // extrair ID do vídeo (último pedaço do link)
-        const videoId = video.link.split("\/").pop();
-        console.log(videoId);
-        
-        // criar div principal
-        const div = document.createElement("div");
-        div.className = "grid-videos-item";
 
-        // criar título
-        const h2 = document.createElement("h2");
-        h2.textContent = `Letra ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+    <script src="script.js"></script>
+    <script>
+        const videos = [
+            {
+                "numero": 1,
+                "nome": "A",
+                "imagem": "https://drive.google.com/file/d/1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL/view?usp=drive_link",
+                "link": "https:www.youtu.be\/gGicUBiHGPI",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 2,
+                "nome": "B",
+                "link": "https:www.youtu.be\/TuqBnI3T26k",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 3,
+                "nome": "C",
+                "link": "https:www.youtu.be\/Go7XvDUkvuw",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 4,
+                "nome": "Ç",
+                "link": "https:www.youtu.be\/tOZPijGHJ4M",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 5,
+                "nome": "D",
+                "link": "https:www.youtu.be\/i3d2aTXH66g",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 6,
+                "nome": "E",
+                "link": "https:www.youtu.be\/MOMRxoIbhOs",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 7,
+                "nome": "F",
+                "link": "https:www.youtu.be\/bFGFvT6pzO8",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 8,
+                "nome": "G",
+                "link": "https:www.youtu.be\/WRc9BmQpD9k",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 9,
+                "nome": "H",
+                "link": "https:www.youtu.be\/VLc2la9KMuM",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 10,
+                "nome": "I",
+                "link": "https:www.youtu.be\/Uka5MWQ1M-k",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 11,
+                "nome": "J",
+                "link": "https:www.youtu.be\/QAYadd_tbS8",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 12,
+                "nome": "K",
+                "link": "https:www.youtu.be\/aIMswwQ5mJE",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 13,
+                "nome": "L",
+                "link": "https:www.youtu.be\/Sv0aqETD9lw",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 14,
+                "nome": "M",
+                "link": "https:www.youtu.be\/0dRaSW3hjrQ",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 15,
+                "nome": "N",
+                "link": "https:www.youtu.be\/mFI2pyjzXQE",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 16,
+                "nome": "O",
+                "link": "https:www.youtu.be\/O5sE3BXFHXc",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 17,
+                "nome": "P",
+                "link": "https:www.youtu.be\/Xo0OoCkjmn0",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 18,
+                "nome": "Q",
+                "link": "https:www.youtu.be\/NdR9XoIPAgo",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 19,
+                "nome": "R",
+                "link": "https:www.youtu.be\/8fGM0uYTLNI",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 20,
+                "nome": "S",
+                "link": "https:www.youtu.be\/k9A5METrRz0",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 21,
+                "nome": "T",
+                "link": "https:www.youtu.be\/oYQYUiOKOPI",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 22,
+                "nome": "U",
+                "link": "https:www.youtu.be\/nivlcbMp5ro",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 23,
+                "nome": "V",
+                "link": "https:www.youtu.be\/HTbN8Wk67us",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 24,
+                "nome": "W",
+                "link": "https:www.youtu.be\/XvFmc9NSF5I",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 25,
+                "nome": "X",
+                "link": "https:www.youtu.be\/UnvehyhRk44",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 26,
+                "nome": "Y",
+                "link": "https:www.youtu.be\/4aULdUbOTRw",
+                "categoria": "ALFABETO"
+            },
+            {
+                "numero": 27,
+                "nome": "Z",
+                "link": "https:www.youtu.be\/HqV-ka_O2tg",
+                "categoria": "ALFABETO"
+            },
+        ];
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+        function criarVideos() {
+            const container = document.querySelector(".grid-videos");
+            console.log(container);
 
-      });
-    }
+            videos.forEach(video => {
+                // extrair ID do vídeo (último pedaço do link)
+                const videoId = video.link.split("\/").pop();
+                console.log(videoId);
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                // criar div principal
+                const div = document.createElement("div");
+                div.className = "grid-videos-item";
+
+                // criar título
+                const h2 = document.createElement("h2");
+                h2.textContent = `Letra ${video.nome}`;
+
+                const img = document.createElement("img");
+                img.scr = `${video.imagem}`
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>
