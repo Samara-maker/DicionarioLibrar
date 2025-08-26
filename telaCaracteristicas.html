@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+     {
+        "numero":1,
+        "nome":"AGITADO",
+        "link":"https:www.youtu.be\/86GNKQWlQ6o",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":2,
+        "nome":"ALTO",
+        "link":"https:www.youtu.be\/O6NC8ssfVzk",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":3,
+        "nome":"ANIMADO",
+        "link":"https:www.youtu.be\/XZa_GPKWjTk",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":4,
+        "nome":"BAIXO",
+        "link":"https:www.youtu.be\/XZa_GPKWjTk",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":5,
+        "nome":"BONITO",
+        "link":"https:www.youtu.be\/_-Gx-YepUAk",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":6,
+        "nome":"CABELO BRANCO",
+        "link":"https:www.youtu.be\/qnXqtUceybI",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":7,
+        "nome":"CABELO CACHEADO",
+        "link":"https:www.youtu.be\/CGNZBhdYuVA",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":8,
+        "nome":"CABELO CRESPO",
+        "link":"https:www.youtu.be\/Qj6P8Ezl3oQ",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":9,
+        "nome":"CABELO LISO",
+        "link":"https:www.youtu.be\/EkhNVCHq2YQ",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":10,
+        "nome":"CABELO LOIRO",
+        "link":"https:www.youtu.be\/f3LvWk-xZZs",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":11,
+        "nome":"CABELO ONDULADO",
+        "link":"https:www.youtu.be\/abEyXi-ay7o",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":12,
+        "nome":"CABELO PRETO",
+        "link":"https:www.youtu.be\/jmitCxQi5kE",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":13,
+        "nome":"CABELO RUIVO",
+        "link":"https:www.youtu.be\/XfNK4jaq7BI",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":14,
+        "nome":"CALMO",
+        "link":"https:www.youtu.be\/RLDEeZtmFOg",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":15,
+        "nome":"CÍLIOS",
+        "link":"https:www.youtu.be\/25zZH25LIQk",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":16,
+        "nome":"DISTRAÍDO",
+        "link":"https:www.youtu.be\/tb6cUsBNyjY",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":17,
+        "nome":"EDUCADO",
+        "link":"https:www.youtu.be\/aOOsWUkpl4M",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":18,
+        "nome":"FEIO",
+        "link":"https:www.youtu.be\/l51wyAOFfMIB",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":19,
+        "nome":"FINO",
+        "link":"https:www.youtu.be\/iDBZM4Kq3yQ",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":20,
+        "nome":"GORDO",
+        "link":"https:www.youtu.be\/h7pF_LnX-d0",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":21,
+        "nome":"GRANDE",
+        "link":"https:www.youtu.be\/oOhOlYNFTgwin",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":22,
+        "nome":"GROSSO",
+        "link":"https:www.youtu.be\/g7albXHYYVs",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":23,
+        "nome":"INTELIGENTE",
+        "link":"https:www.youtu.be\/gBHTVKMCKfA",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":24,
+        "nome":"MAGRO",
+        "link":"https:www.youtu.be\/pg6COcSX00k",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":25,
+        "nome":"NERVOSO",
+        "link":"https:www.youtu.be\/1pNbis98I-c",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":26,
+        "nome":"OLHOS AZUL",
+        "link":"https:www.youtu.be\/1sGe5wjyiNI",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":27,
+        "nome":"OLHOS CASTANHO",
+        "link":"https:www.youtu.be\/8dpBcVAlANo",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":28,
+        "nome":"OLHOS PRETO",
+        "link":"https:www.youtu.be\/52xQurL5R88",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":29,
+        "nome":"OLHOS VERDE",
+        "link":"https:www.youtu.be\/8OIAXKr-ghI",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":30,
+        "nome":"OUVINTE",
+        "link":"https:www.youtu.be\/AWW8hBfcujQ",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":31,
+        "nome":"PELE AMARELA",
+        "link":"https:www.youtu.be\/PvH2fUmcSDY",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":32,
+        "nome":"PELE BRANCA",
+        "link":"https:www.youtu.be\/za9dVjsAsEM",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":33,
+        "nome":"PELE PARDA",
+        "link":"https:www.youtu.be\/j4CUDeGYQVM",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":34,
+        "nome":"PELE PRETA",
+        "link":"https:www.youtu.be\/Xd7jJOwsqoA",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":35,
+        "nome":"PELE VERMELHA",
+        "link":"https:www.youtu.be\/4IfyV5d5Kxo",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":36,
+        "nome":"PEQUENO",
+        "link":"https:www.youtu.be\/QztEmZMrfqA",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":37,
+        "nome":"PREGUIÇOSO",
+        "link":"https:www.youtu.be\/mh-BCozviOo",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":38,
+        "nome":"SURDO",
+        "link":"https:www.youtu.be\/LxjOyYhvGe0",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    {
+        "numero":39,
+        "nome":"TÍMIDO",
+        "link":"https:www.youtu.be\/K2oyhKIGoJo",
+        "categoria":"VERBETES – CARACTERISTICAS"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = `${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+</body>

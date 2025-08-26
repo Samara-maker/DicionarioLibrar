@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+      {
+        "numero":1,
+        "nome":"BARCO",
+        "link":"https:www.youtu.be\/Zc5ueY4-J2o",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":2,
+        "nome":"BARRACA",
+        "link":"https:www.youtu.be\/ktwlXRRhBmM",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":3,
+        "nome":"COMISSÁRIA",
+        "link":"https:www.youtu.be\/Cgt_RhFK2v8",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":4,
+        "nome":"FOGUEIRA",
+        "link":"https:www.youtu.be\/tfCvPsj86UI",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":5,
+        "nome":"HELICÓPTERO",
+        "link":"https:www.youtu.be\/CZXhx0xyj54",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":6,
+        "nome":"HOTEL",
+        "link":"https:www.youtu.be\/j2CcRgqueiE",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":7,
+        "nome":"MALA",
+        "link":"https:www.youtu.be\/PNuDeqcQFLQ",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":8,
+        "nome":"METRO",
+        "link":"https:www.youtu.be\/TbYrxwsmmPw",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":9,
+        "nome":"MOTOR",
+        "link":"https:www.youtu.be\/bkZjzMC3V1c",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":10,
+        "nome":"MOTORISTA",
+        "link":"https:www.youtu.be\/v_OtyHpdXJo",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":11,
+        "nome":"NAVIO",
+        "link":"https:www.youtu.be\/ZmvLjZ32GJQ",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":12,
+        "nome":"PASSAGEIRO",
+        "link":"https:www.youtu.be\/i8eXyhi1zjw",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":13,
+        "nome":"PASSAGEM",
+        "link":"https:www.youtu.be\/r8YXSLKjMic",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":14,
+        "nome":"PILOTO",
+        "link":"https:www.youtu.be\/32aYG0I_2WM",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":15,
+        "nome":"PISTA",
+        "link":"https:www.youtu.be\/lAXglD-ROQY",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":16,
+        "nome":"SACO DE DORMIR",
+        "link":"https:www.youtu.be\/ypbRn_CSSFU",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":17,
+        "nome":"TORRE DE CONTROLE",
+        "link":"https:www.youtu.be\/6cHAnMLYNsI",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":18,
+        "nome":"TREM",
+        "link":"https:www.youtu.be\/RM_9xgulWQY",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    {
+        "numero":19,
+        "nome":"RODOVIÁRIA",
+        "link":"https:www.youtu.be\/jqUB9EG4oQw",
+        "categoria":"VERBETES – A VIAGEM"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>
