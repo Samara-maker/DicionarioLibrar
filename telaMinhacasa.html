@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+        
+    {
+        "numero":1,
+        "nome":"ABAJUR",
+        "link":"https:www.youtu.be\/z8hkIFS72nA",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":2,
+        "nome":"AÇUCAREIRO",
+        "link":"https:www.youtu.be\/QW1g0LJ6sso",
+        "categoria":"MINHA CASA"
+    },
+
+    {
+        "numero":3,
+        "nome":"ALMOFADA",
+        "link":"https:www.youtu.be\/cfYTBIY4NSU",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":4,
+        "nome":"ÁRVORE",
+        "link":"https:www.youtu.be\/YYVVjiLSFyQ",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":5,
+        "nome":"BALANÇO",
+        "link":"https:www.youtu.be\/YFFzZhzsXDk",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":6,
+        "nome":"BALDE",
+        "link":"https:www.youtu.be\/xeuHjpqzmxI",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":7,
+        "nome":"BANHEIRO",
+        "link":"https:www.youtu.be\/CPIagWV1fjI",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":8,
+        "nome":"BARBEADOR",
+        "link":"https:www.youtu.be\/RZ84WHSVKr0",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":9,
+        "nome":"BOLHAS",
+        "link":"https:www.youtu.be\/nhCLZXJbyXU",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":10,
+        "nome":"CABECEIRA",
+        "link":"https:www.youtu.be\/pKifazrxT4g",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":11,
+        "nome":"CADEIRA",
+        "link":"https:www.youtu.be\/HS9YMVYVZE0",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":12,
+        "nome":"CAFÉ DA MANHÃ",
+        "link":"https:www.youtu.be\/c9ajUcvCBtY",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":13,
+        "nome":"CAIXA DE CORREIO",
+        "link":"https:www.youtu.be\/ASiyhu0wzhs",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":14,
+        "nome":"CALÇADA",
+        "link":"https://youtu.be/o4huWfjNObg",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":15,
+        "nome":"CANECA",
+        "link":"https:www.youtu.be\/lKmX0vXDKF0",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":16,
+        "nome":"CASA",
+        "link":"https:www.youtu.be\/WJz9pqOyx-I",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":17,
+        "nome":"CASA DE CACHORRO",
+        "link":"https:www.youtu.be\/jCXe11moP4g",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":18,
+        "nome":"CERCA",
+        "link":"https:www.youtu.be\/hVn008jQ_60",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":19,
+        "nome":"CHÃO",
+        "link":"https:www.youtu.be\/F-tas-duicw",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":20,
+        "nome":"CHAVE",
+        "link":"https:www.youtu.be\/mB0Lus7Rt_g",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":21,
+        "nome":"CHUVEIRO",
+        "link":"https:www.youtu.be\/rjLNnSkIWEQ",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":22,
+        "nome":"COBERTOR",
+        "link":"https:www.youtu.be\/FtDzvW62ZPI",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":23,
+        "nome":"COLHER",
+        "link":"https:www.youtu.be\/41PddFGfn7g",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":24,
+        "nome":"COMPUTADOR",
+        "link":"https:www.youtu.be\/UsFYfBFve4Q",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":25,
+        "nome":"COPO",
+        "link":"https:www.youtu.be\/GnmczTJZ7cE",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":26,
+        "nome":"CORTINA",
+        "link":"https:www.youtu.be\/fk5RNTwNLjc",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":27,
+        "nome":"COTONETE",
+        "link":"https:www.youtu.be\/20KN9C_8X90",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":28,
+        "nome":"COZINHA",
+        "link":"https:www.youtu.be\/e1eiGfm4ydI",
+        "categoria":"21\tCAULE"
+    },
+    {
+        "numero":29,
+        "nome":"DESODORANTE",
+        "link":"https:www.youtu.be\/3CU-aGrc89s",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":30,
+        "nome":"DVD",
+        "link":"https:www.youtu.be\/a7524KaLSF8",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":31,
+        "nome":"ENTRAR",
+        "link":"https:www.youtu.be\/1iyWwQe0xiU",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":32,
+        "nome":"ESCADA",
+        "link":"https:www.youtu.be\/fpaICWUCg_M",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":38,
+        "nome":"ESCOVA DE DENTE",
+        "link":"https:www.youtu.be\/ev2nAE7DP20",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":40,
+        "nome":"ESPONJA DE BANHO",
+        "link":"https:www.youtu.be\/B9q2h4rVbrY",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":41,
+        "nome":"FACA",
+        "link":"https:www.youtu.be\/uj3VNG8zg9M",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":42,
+        "nome":"FIO DENTAL",
+        "link":"https:www.youtu.be\/gxhg2UcbSBs",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":43,
+        "nome":"FLORES",
+        "link":"https:www.youtu.be\/-HK8TiKS_30",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":44,
+        "nome":"FOGÃO",
+        "link":"https:www.youtu.be\/aPJjsAqDaog",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":45,
+        "nome":"FOLHA",
+        "link":"https:www.youtu.be\/x42bmKDv3ww",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":46,
+        "nome":"FORMIGA",
+        "link":"https:www.youtu.be\/iBzYbkD_mIU",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":47,
+        "nome":"FORNO",
+        "link":"https:www.youtu.be\/HCHIX6vAUrc",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":48,
+        "nome":"FOTOGRAFIA",
+        "link":"https:www.youtu.be\/h_-dKkvGkqg",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":50,
+        "nome":"FRUTAS",
+        "link":"https:www.youtu.be\/gP3c61nXVpA",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":51,
+        "nome":"GARAGEM",
+        "link":"https:www.youtu.be\/dEv9nTR-TnY",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":52,
+        "nome":"GARFO",
+        "link":"https:www.youtu.be\/XaAEsl3lrjk",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":53,
+        "nome":"GELADEIRA",
+        "link":"https:www.youtu.be\/ICWfo3Ke0XE",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":55,
+        "nome":"GRAMA",
+        "link":"https:www.youtu.be\/sgwSFb4lTP0",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":56,
+        "nome":"GUARDANAPO",
+        "link":"https:www.youtu.be\/gyx7RVvkBEE",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":58,
+        "nome":"INTERRUPTOR",
+        "link":"https:www.youtu.be\/kcsEnlv65sY",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":59,
+        "nome":"JANELA",
+        "link":"https:www.youtu.be\/gJMkzUl3HOM",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":61,
+        "nome":"JARDIM",
+        "link":"https:www.youtu.be\/X67SkWoprJo",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":62,
+        "nome":"JARRA",
+        "link":"https:www.youtu.be\/d4DWpmPmgdk",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":63,
+        "nome":"JORNAL",
+        "link":"https:www.youtu.be\/_C51SQJuo9o",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":64,
+        "nome":"LÂMPADA",
+        "link":"https:www.youtu.be\/9Z7Yncoc85w",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":65,
+        "nome":"LANCHE",
+        "link":"https://youtu.be\/VibhIyqHhxw",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":66,
+        "nome":"LAREIRA",
+        "link":"https:www.youtu.be\/z-z7DVO1DNg",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":68,
+        "nome":"LENHA",
+        "link":"https:www.youtu.be\/MAkz2Khcqmc",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":69,
+        "nome":"LIQUIDIFICADOR",
+        "link":"https:www.youtu.be\/qKhe2s2lJRU",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":70,
+        "nome":"LIVROS",
+        "link":"https:www.youtu.be\/UqkMlbbs4y0",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":71,
+        "nome":"LUMINÁRIA",
+        "link":"https:www.youtu.be\/C3593y26MkQ",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":72,
+        "nome":"LUSTRE",
+        "link":"https:www.youtu.be\/0if7Gy6ydQo",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":73,
+        "nome":"MANGUEIRA",
+        "link":"https:www.youtu.be\/5wNJIuGxEwg",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":74,
+        "nome":"MAQUIAGEM",
+        "link":"https:www.youtu.be\/0rj2EsmVKgc",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":75,
+        "nome":"MESA",
+        "link":"https:www.youtu.be\/yPiJ0xDnstk",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":76,
+        "nome":"MESA DE APOIO",
+        "link":"https:www.youtu.be\/_y2EP5HjdPg",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":77,
+        "nome":"MICROONDAS",
+        "link":"https:www.youtu.be\/t1nTrb0YXvM",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":79,
+        "nome":"PANELA",
+        "link":"https:www.youtu.be\/so8Q9sOismo",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":80,
+        "nome":"PANO DE PRATO",
+        "link":"https:www.youtu.be\/Uf9X04wIB08",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":91,
+        "nome":"PISCINA",
+        "link":"https:www.youtu.be\/GtNCgAcy3zc",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":93,
+        "nome":"GALHO",
+        "link":"https:www.youtu.be\/hnNSAaV98z0",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":94,
+        "nome":"POLTRONA",
+        "link":"https:www.youtu.be\/8cUTE6yJubM",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":95,
+        "nome":"PORTA",
+        "link":"https:www.youtu.be\/bLzYpo94my4",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":99,
+        "nome":"QUADRO",
+        "link":"https:www.youtu.be\/OkHJ_e7BSiU",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":101,
+        "nome":"QUINTAL",
+        "link":"https:www.youtu.be\/Qe8wxydlyjc",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":114,
+        "nome":"SABONETE",
+        "link":"https:www.youtu.be\/eTr-205ECFQ",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":115,
+        "nome":"SAIR",
+        "link":"https:www.youtu.be\/ZMpm3jETdlM",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":116,
+        "nome":"SALA",
+        "link":"https:www.youtu.be\/rGbNTeZln9Q",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":117,
+        "nome":"SALEIRO",
+        "link":"https:www.youtu.be\/BXzIRf225zI",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":118,
+        "nome":"SHAMPOO E CONDICIONADOR",
+        "link":"https:www.youtu.be\/L675aEpQQZc",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":119,
+        "nome":"SOFÁ",
+        "link":"https:www.youtu.be\/4ykIL3xRHlg",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":120,
+        "nome":"SOTÃO",
+        "link":"https:www.youtu.be\/O20khItWJ18",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":122,
+        "nome":"TAÇA",
+        "link":"https:www.youtu.be\/bpJ1JNt3lWg",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":123,
+        "nome":"TAPETE",
+        "link":"https:www.youtu.be\/pPXBLyuZanM",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":124,
+        "nome":"TELEFONE",
+        "link":"https:www.youtu.be\/aUE-EUrzXww",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":125,
+        "nome":"TELEVISÃO",
+        "link":"https:www.youtu.be\/mUSDuWoCP3A",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":128,
+        "nome":"TETO",
+        "link":"https://youtu.be\/1nmycDZowGY",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":129,
+        "nome":"TOALHA DE BANHO",
+        "link":"https:www.youtu.be\/F5s480kk72s",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":130,
+        "nome":"TOALHA DE ROSTO",
+        "link":"https:www.youtu.be\/-lEwaYsIQps",
+        "categoria":"MINHA CASA"
+    },
+    {
+        "numero":137,
+        "nome":"XÍCARA",
+        "link":"https:www.youtu.be\/D79t7Yw8CZA",
+        "categoria":"MINHA CASA"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>
