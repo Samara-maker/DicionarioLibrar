@@ -23,9 +23,9 @@
         </div>
     </header>
 
-    <img width="200px" height="200px" src="https://drive.google.com/thumbnail?id=1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL" alt="">
 
-    
+
+
     <main>
         <h2 id="titulo-categoria"></h2>
         <div id="resultados"></div>
@@ -50,7 +50,7 @@
             {
                 "numero": 2,
                 "nome": "B",
-                "imagem":"https://drive.google.com/file/d/1mQIXpNvOOt11dT2B0IXHAH8X28fHFsN8/view?usp=drive_link",
+                "imagem": "https://drive.google.com/file/d/1mQIXpNvOOt11dT2B0IXHAH8X28fHFsN8/view?usp=drive_link",
                 "link": "https:www.youtu.be\/TuqBnI3T26k",
                 "categoria": "ALFABETO"
             },
@@ -208,13 +208,14 @@
 
         function criarVideos() {
             const container = document.querySelector(".grid-videos");
-            console.log(container);
 
             videos.forEach(video => {
                 // extrair ID do vídeo (último pedaço do link)
                 const videoId = video.link.split("\/").pop();
-                console.log(videoId);
 
+                //  https://drive.google.com/thumbnail?id=1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL
+                // "https://drive.google.com/file/d/1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL/view?usp=drive_link",
+                //<img width="200px" height="200px" src="https://drive.google.com/thumbnail?id=1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL" alt="">
                 // criar div principal
                 const div = document.createElement("div");
                 div.className = "grid-videos-item";
@@ -223,10 +224,13 @@
                 const h2 = document.createElement("h2");
                 h2.textContent = `Letra ${video.nome}`;
 
-                const img = document.createElement("img");
-                img.scr = `${video.imagem.split("d/")}`
-                console.log(video.imagem.replace("https://drive.google.com/file/d/","").replace("/view?usp=drive_link",""));
+                videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
+
+                console.log(videoImagemLink);
                 
+
+                const img = document.createElement("img");                
+
                 // criar iframe
                 const iframe = document.createElement("iframe");
                 iframe.width = "560";
@@ -243,6 +247,8 @@
                 div.appendChild(h2);
                 div.appendChild(img);
                 div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
 
                 container.appendChild(div);
 
