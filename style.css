@@ -170,3 +170,11 @@ video {
 .voltar i {
   margin-right: 8px;
 }
+
+img {
+  display: block;          /* Faz a imagem ser tratada como bloco */
+  margin: 0 auto;          /* Centraliza horizontalmente */
+  width: 100%;             /* Faz a imagem ocupar toda a largura disponível */
+  max-width: 300px;        /* Limite opcional, para não ficar gigante em telas grandes */
+  height: 200;            /* Mantém proporção */
+}

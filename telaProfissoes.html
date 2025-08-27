@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+        {
+        "numero":1,
+        "nome":"ADVOGADO",
+        "link":"https:www.youtu.be\/rrVVOi2cLqA",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":2,
+        "nome":"ALFAIATE",
+        "link":"https:www.youtu.be\/rrVVOi2cLqA",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":3,
+        "nome":"ARQUITETO",
+        "link":"https:www.youtu.be\/v_JCAmQu12I",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":4,
+        "nome":"ASTRONAUTA",
+        "link":"https:www.youtu.be\/J07gL_eJVrQ",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":5,
+        "nome":"BAILARINA",
+        "link":"https:www.youtu.be\/MDGLiYuVuGQ",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":6,
+        "nome":"BOMBEIRO",
+        "link":"https:www.youtu.be\/QuOUTx2Pz6g",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":7,
+        "nome":"CABELEREIRA",
+        "link":"https:www.youtu.be\/yRAfGHvNk-s",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":8,
+        "nome":"CARTEIRO",
+        "link":"https:www.youtu.be\/QM3UVP6Cw18",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":9,
+        "nome":"COLETOR DE LIXO",
+        "link":"https:www.youtu.be\/aE-e73Mi4e8",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":10,
+        "nome":"COSTUREIRA",
+        "link":"https:www.youtu.be\/qj5RAjgyO2o",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":11,
+        "nome":"COZINHEIRO",
+        "link":"https:www.youtu.be\/Q0_uprnBuos",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":12,
+        "nome":"DENTISTA",
+        "link":"https:www.youtu.be\/E0BfhEsp1AY",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":13,
+        "nome":"DIRETOR",
+        "link":"https:www.youtu.be\/m_Fug9ADv5g",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":14,
+        "nome":"EMPRESÁRIO",
+        "link":"https:www.youtu.be\/Hf-0pS0Llls",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":15,
+        "nome":"ENCANADOR",
+        "link":"https:www.youtu.be\/LBJ3Gn7WtGk",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":16,
+        "nome":"ENFERMEIRA",
+        "link":"https:www.youtu.be\/9WwZWNbXyzw",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":17,
+        "nome":"ENGENHEIRO",
+        "link":"https:www.youtu.be\/heDG4JhKjNs",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":18,
+        "nome":"ENTREGADOR",
+        "link":"https:www.youtu.be\/vJAOMgdoQak",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":19,
+        "nome":"ESCRITOR",
+        "link":"https:www.youtu.be\/kHO-8fwYLAs",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":20,
+        "nome":"FAXINEIRA",
+        "link":"https:www.youtu.be\/2TaZ0pVYZ9c",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":21,
+        "nome":"FONOAUDIOLOGO",
+        "link":"https:www.youtu.be\/TNH_Q-55hgU",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":22,
+        "nome":"FOTÓGRAFO",
+        "link":"https:www.youtu.be\/ygYDzjbM24U",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":23,
+        "nome":"INFLUENCER",
+        "link":"https:www.youtu.be\/5g3MgmO-_gc",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":24,
+        "nome":"JORNALISTA",
+        "link":"https://youtu.be\/n5PAlq5nZcE",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":25,
+        "nome":"MARCENEIRO",
+        "link":"https:www.youtu.be\/yZJIpE3r9jA",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":26,
+        "nome":"MARINHEIRO",
+        "link":"https:www.youtu.be\/-ZeynLaJxVs",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":27,
+        "nome":"MECÂNICO",
+        "link":"https:www.youtu.be\/1Y-EoqKlXn0",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":29,
+        "nome":"MODELO",
+        "link":"https:www.youtu.be\/ikL77tnJOy4",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":30,
+        "nome":"MOTORISTA",
+        "link":"https:www.youtu.be\/v_OtyHpdXJo",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":31,
+        "nome":"MÚSICO",
+        "link":"https:www.youtu.be\/NLyoazwsXfM",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":33,
+        "nome":"PEDREIRO",
+        "link":"https:www.youtu.be\/qGzRtcl-cEY",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":34,
+        "nome":"PESCADOR",
+        "link":"https:www.youtu.be\/07EDcgV63J4",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":35,
+        "nome":"PINTOR",
+        "link":"https:www.youtu.be\/vyMALXp94Ts",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":36,
+        "nome":"POLICIAL",
+        "link":"https:www.youtu.be\/wOyle5obUtI",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":37,
+        "nome":"PORTEIRO",
+        "link":"https:www.youtu.be\/AfcrbaLBPxM",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":38,
+        "nome":"PROFESSOR",
+        "link":"https:www.youtu.be\/wXzybB_iye8",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":39,
+        "nome":"PSICÓLOGO",
+        "link":"https:www.youtu.be\/jokRD0SGMoE",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":40,
+        "nome":"SECRETÁRIO",
+        "link":"https:www.youtu.be\/57i0uo6-Jr8",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":41,
+        "nome":"SEGURANÇA",
+        "link":"https:www.youtu.be\/BvY8tf3uOPM",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":42,
+        "nome":"VENDEDOR",
+        "link":"https:www.youtu.be\/aEgAO1ymeUQ",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":43,
+        "nome":"VETERINÁRIO",
+        "link":"https:www.youtu.be\/Ocy4Vm9QgaA",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":44,
+        "nome":"ORTOPEDISTA",
+        "link":"https:www.youtu.be\/07EDcgV63J4",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    {
+        "numero":45,
+        "nome":"FONOAUDIÓLOGO",
+        "link":"https:www.youtu.be\/07EDcgV63J4",
+        "categoria":"VERBETES – PROFISSÕES"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>
