@@ -3800,47 +3800,47 @@ section,
 /*--------------------------------------------------------------
 # Academics Section
 --------------------------------------------------------------*/
-.academics .section-heading {
+ .section-heading {
   color: var(--heading-color);
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
-.academics .lead {
+ .lead {
   font-size: 1.2rem;
   margin-bottom: 1.25rem;
 }
 
-.academics .btn {
+ .btn {
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
-.academics .btn.btn-primary {
+ .btn.btn-primary {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.academics .btn.btn-primary:hover {
+ .btn.btn-primary:hover {
   background-color: color-mix(in srgb, var(--accent-color), #000 10%);
   border-color: color-mix(in srgb, var(--accent-color), #000 10%);
 }
 
-.academics .btn.btn-outline {
+ .btn.btn-outline {
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   color: var(--default-color);
 }
 
-.academics .btn.btn-outline:hover {
+ .btn.btn-outline:hover {
   background-color: transparent;
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.academics .key-metrics .metric-card {
+ .key-metrics .metric-card {
   background-color: var(--surface-color);
   padding: 1.5rem;
   border-radius: 8px;
@@ -3850,52 +3850,49 @@ section,
   transition: all 0.3s ease;
 }
 
-.academics .key-metrics .metric-card:hover {
+ .key-metrics .metric-card:hover {
   transform: translateY(-5px);
 }
 
-.academics .key-metrics .metric-card h2 {
+ .key-metrics .metric-card h2 {
   color: var(--accent-color);
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.academics .key-metrics .metric-card p {
+ .key-metrics .metric-card p {
   margin-bottom: 0;
   font-size: 0.9rem;
   color: var(--heading-color);
 }
 
-.academics .programs-section,
-.academics .faculty-section {
+ .programs-section,
+.faculty-section {
   padding-top: 2rem;
 }
 
-.academics .programs-section .section-header,
-.academics .faculty-section .section-header {
+.faculty-section .section-header {
   margin-bottom: 2rem;
 }
 
-.academics .programs-section .section-header h3,
-.academics .faculty-section .section-header h3 {
+.faculty-section .section-header h3 {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.academics .programs-section .section-header p,
-.academics .faculty-section .section-header p {
+.faculty-section .section-header p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.academics .programs-filters {
+ .programs-filters {
   padding: 0;
   margin: 0 0 2rem 0;
   list-style: none;
   text-align: center;
 }
 
-.academics .programs-filters li {
+ .programs-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px;
@@ -3909,13 +3906,13 @@ section,
   transition: all 0.3s ease;
 }
 
-.academics .programs-filters li:hover,
-.academics .programs-filters li.filter-active {
+ .programs-filters li:hover,
+ .programs-filters li.filter-active {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.academics .program-card {
+ .program-card {
   background-color: var(--surface-color);
   border-radius: 8px;
   overflow: hidden;
@@ -3924,28 +3921,28 @@ section,
   height: 100%;
 }
 
-.academics .program-card:hover {
+ .program-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px color-mix(in srgb, var(--heading-color), transparent 92%);
 }
 
-.academics .program-card:hover .program-img img {
+ .program-card:hover .program-img img {
   transform: scale(1.1);
 }
 
-.academics .program-card .program-img {
+ .program-card .program-img {
   position: relative;
   overflow: hidden;
 }
 
-.academics .program-card .program-img img {
+ .program-card .program-img img {
   transition: all 0.5s ease;
   height: 200px;
   width: 100%;
   object-fit: cover;
 }
 
-.academics .program-card .program-img .program-tag {
+ .program-card .program-img .program-tag {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -3956,61 +3953,61 @@ section,
   border-radius: 4px;
 }
 
-.academics .program-card .program-content {
+ .program-card .program-content {
   padding: 1.5rem;
 }
 
-.academics .program-card .program-content h4 {
+ .program-card .program-content h4 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
   font-weight: 700;
 }
 
-.academics .program-card .program-content p {
+ .program-card .program-content p {
   font-size: 0.9rem;
   margin-bottom: 1rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.academics .program-card .program-content .program-meta {
+ .program-card .program-content .program-meta {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.academics .program-card .program-content .program-meta .meta-item {
+ .program-card .program-content .program-meta .meta-item {
   display: flex;
   align-items: center;
   font-size: 0.85rem;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.academics .program-card .program-content .program-meta .meta-item i {
+ .program-card .program-content .program-meta .meta-item i {
   margin-right: 5px;
   color: var(--accent-color);
 }
 
-.academics .program-card .program-content .program-link {
+ .program-card .program-content .program-link {
   display: inline-block;
   color: var(--accent-color);
   font-weight: 500;
   font-size: 0.9rem;
 }
 
-.academics .program-card .program-content .program-link i {
+ .program-card .program-content .program-link i {
   transition: all 0.3s ease;
   margin-left: 5px;
 }
 
-.academics .program-card .program-content .program-link:hover {
+ .program-card .program-content .program-link:hover {
   color: color-mix(in srgb, var(--accent-color), #000 15%);
 }
 
-.academics .program-card .program-content .program-link:hover i {
+ .program-card .program-content .program-link:hover i {
   transform: translateX(5px);
 }
 
-.academics .faculty-card {
+.faculty-card {
   background-color: var(--surface-color);
   border-radius: 8px;
   overflow: hidden;
@@ -4019,49 +4016,50 @@ section,
   height: 100%;
 }
 
-.academics .faculty-card:hover {
+ 
+.faculty-card:hover {
   transform: translateY(-5px);
 }
 
-.academics .faculty-card:hover .faculty-img img {
+.faculty-card:hover .faculty-img img {
   transform: scale(1.1);
 }
 
-.academics .faculty-card .faculty-img {
+ .faculty-card .faculty-img {
   overflow: hidden;
 }
 
-.academics .faculty-card .faculty-img img {
+ .faculty-card .faculty-img img {
   transition: all 0.5s ease;
   height: 300px;
   width: 100%;
   object-fit: cover;
 }
 
-.academics .faculty-card .faculty-content {
+ .faculty-card .faculty-content {
   padding: 1.25rem;
   text-align: center;
 }
 
-.academics .faculty-card .faculty-content h4 {
+ .faculty-card .faculty-content h4 {
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
   font-weight: 600;
 }
 
-.academics .faculty-card .faculty-content .faculty-position {
+ .faculty-card .faculty-content .faculty-position {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
-.academics .faculty-card .faculty-content .faculty-social {
+ .faculty-card .faculty-content .faculty-social {
   display: flex;
   justify-content: center;
   gap: 0.75rem;
 }
 
-.academics .faculty-card .faculty-content .faculty-social a {
+ .faculty-card .faculty-content .faculty-social a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4073,31 +4071,31 @@ section,
   transition: all 0.3s ease;
 }
 
-.academics .faculty-card .faculty-content .faculty-social a:hover {
+ .faculty-card .faculty-content .faculty-social a:hover {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.academics .swiper-wrapper {
+ .swiper-wrapper {
   height: auto !important;
 }
 
 @media (max-width: 992px) {
-  .academics .section-intro {
+   .section-intro {
     margin-bottom: 2rem;
   }
 
-  .academics .faculty-card .faculty-img img {
+   .faculty-card .faculty-img img {
     height: 250px;
   }
 }
 
 @media (max-width: 768px) {
-  .academics .key-metrics .metric-card h2 {
+   .key-metrics .metric-card h2 {
     font-size: 2rem;
   }
 
-  .academics .programs-filters li {
+   .programs-filters li {
     padding: 6px 15px;
     margin: 0 3px 8px 3px;
     font-size: 14px;
