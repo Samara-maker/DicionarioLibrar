@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+      {
+        "numero":1,
+        "nome":"ABELHA",
+        "link":"https:www.youtu.be\/q8zx-yAJtKc",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":2,
+        "nome":"ÁGUIA",
+        "link":"https:www.youtu.be\/_KLFe2syBko",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":3,
+        "nome":"ARANHA",
+        "link":"https:www.youtu.be\/Ndw78gGHSNw",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":4,
+        "nome":"BALEIA",
+        "link":"https:www.youtu.be\/nJ1D7DBNrOo",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":5,
+        "nome":"BORBOLETA",
+        "link":"https:www.youtu.be\/5Z4vNr-HgEk",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":6,
+        "nome":"BURRO",
+        "link":"https:www.youtu.be\/9Z0r-rNzzDg",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":7,
+        "nome":"CACHORRO",
+        "link":"https:www.youtu.be\/Co1wBJexjcM",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":8,
+        "nome":"CALOPSITA",
+        "link":"https:www.youtu.be\/Kb-VXVQOzyg",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":9,
+        "nome":"CAMARÃO",
+        "link":"https:www.youtu.be\/-FB9Xot_NEU",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":10,
+        "nome":"CAVALO",
+        "link":"https:www.youtu.be\/fTe16SDct8k",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":11,
+        "nome":"CAVALO MARINHO",
+        "link":"https:www.youtu.be\/UvRbJwQsc3M",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":12,
+        "nome":"COBRA",
+        "link":"https:www.youtu.be\/LYmaWhzIN_8",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":13,
+        "nome":"CORUJA",
+        "link":"https:www.youtu.be\/iAEueATo5mI",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":14,
+        "nome":"DROMEDÁRIO",
+        "link":"https:www.youtu.be\/2EDSPuSRCQQ",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":15,
+        "nome":"ELEFANTE",
+        "link":"https:www.youtu.be\/C7P-kmGaEek",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":16,
+        "nome":"FOCA",
+        "link":"https:www.youtu.be\/VA2WPcpa6i0",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":17,
+        "nome":"GALINHA",
+        "link":"https:www.youtu.be\/16pccdDXvyM",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":18,
+        "nome":"GALO",
+        "link":"https:www.youtu.be\/l5qhNJXB_JI",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":19,
+        "nome":"GIRAFA",
+        "link":"https:www.youtu.be\/qJFFoRKSZ3I",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":20,
+        "nome":"HIPOPÓTAMO",
+        "link":"https:www.youtu.be\/69o3LyUCSJk",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":21,
+        "nome":"JACARÉ",
+        "link":"https:www.youtu.be\/E-KuFsIZ6WM",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":22,
+        "nome":"MACACO",
+        "link":"https:www.youtu.be\/LRGLDVA1pQY",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":23,
+        "nome":"MOSCA",
+        "link":"https:www.youtu.be\/3JC0sOFyz_w",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":24,
+        "nome":"PÁSSARO",
+        "link":"https:www.youtu.be\/H8YOaupLa4E",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":25,
+        "nome":"PEIXE",
+        "link":"https:www.youtu.be\/DAE6d6eKgQc",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":26,
+        "nome":"PERIQUITO",
+        "link":"https:www.youtu.be\/pdsqct4NKxE",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":27,
+        "nome":"PINGUIM",
+        "link":"https:www.youtu.be\/gP3PwW0aD6o",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":28,
+        "nome":"POLVO",
+        "link":"https:www.youtu.be\/wUybW6EYabM",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":29,
+        "nome":"PORCO",
+        "link":"https:www.youtu.be\/wFo7GF8AOKk",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":30,
+        "nome":"RAPOSA",
+        "link":"https:www.youtu.be\/SDLbSDOAhSE",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":31,
+        "nome":"RINOCERONTE",
+        "link":"https:www.youtu.be\/1eKqi7UpPg4",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":32,
+        "nome":"SAPO",
+        "link":"https:www.youtu.be\/dFnkIYlwY-8",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":32,
+        "nome":"TARTARUGA",
+        "link":"https:www.youtu.be\/IuR3DJPTquA",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":33,
+        "nome":"TIGRE",
+        "link":"https:www.youtu.be\/tchSHujofRU",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":34,
+        "nome":"TUBARÃO",
+        "link":"https:www.youtu.be\/Xyg6D-XkvHI",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":35,
+        "nome":"TUCANO",
+        "link":"https:www.youtu.be\/jC5ED6C0tqY",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":36,
+        "nome":"URUBÚ",
+        "link":"https:www.youtu.be\/oItIkLqwWlA",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero":37,
+        "nome":"ZEBRA",
+        "link":"https:www.youtu.be\/BvNxx29pvOc",
+        "categoria":"VERBETES – OS ANIMAIS"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>
