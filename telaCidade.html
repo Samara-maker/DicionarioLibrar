@@ -1,257 +1,298 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categoria</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-  <header>
-    <a href="dici.html" class="voltar">
-      <i class="fa fa-arrow-left"></i> Voltar
-    </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
-  </header>
+    <header>
+        <a href="dici.html" class="voltar">
+            <i class="fa fa-arrow-left"></i> Voltar
+        </a>
+        <div class="search-container">
+            <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+            <i class="fa fa-search"></i>
+        </div>
+    </header>
 
-  <main>
-    <h2 id="titulo-categoria"></h2>
-    <div id="resultados"></div>
+    <main>
+        <h2 id="titulo-categoria"></h2>
+        <div id="resultados"></div>
 
-    <section class="grid-videos">
-      
+        <section class="grid-videos">
 
-      
-    </section>
-  </main>
 
-  <script src="script.js"></script>
-  <script>
-    const videos = [
-      {
-        "numero":1,
-        "nome":"AEROPORTO",
-        "link":"https:www.youtu.be\/ffu9Ajirbkc",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":2,
-        "nome":"AMBULÂNCIA",
-        "link":"https:www.youtu.be\/uj5UpF7M7R8",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":3,
-        "nome":"ARRANHACEU",
-        "link":"https:www.youtu.be\/foZ13-DMR34",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":4,
-        "nome":"AVIÃO",
-        "link":"https:www.youtu.be\/6SFmxZPdVuQ",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":5,
-        "nome":"BANCO",
-        "link":"https:www.youtu.be\/5lHSTzTcixM",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":6,
-        "nome":"BICICLETA",
-        "link":"https:www.youtu.be\/EU_PGOziCHw",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":7,
-        "nome":"CALÇADA",
-        "link":"https:www.youtu.be\/o4huWfjNObg",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":8,
-        "nome":"CAMINHÃO",
-        "link":"https:www.youtu.be\/cFYDIrk0Iqw",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":9,
-        "nome":"CARRO",
-        "link":"https:www.youtu.be\/OHhc1qaA_Fw",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":10,
-        "nome":"CORREIO",
-        "link":"https:www.youtu.be\/oWVxhPQrgAc",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":11,
-        "nome":"DELEGACIA DE POLÍCIA",
-        "link":"https:www.youtu.be\/8qvlgZtYmEo",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":12,
-        "nome":"ESCOLA",
-        "link":"https:www.youtu.be\/7SDkXeB0NWo",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":13,
-        "nome":"ESQUINA",
-        "link":"https:www.youtu.be\/9yAqPFCdXws",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":14,
-        "nome":"HOSPITAL",
-        "link":"https:www.youtu.be\/1k4YRUGnc-c",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":15,
-        "nome":"IGREJA",
-        "link":"https:www.youtu.be\/pGvDkjxzP1E",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":16,
-        "nome":"LOJA",
-        "link":"https:www.youtu.be\/BhyRZCNNJVg",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":17,
-        "nome":"MOTOCICLETA",
-        "link":"https:www.youtu.be\/YPM_zAnZII8",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":18,
-        "nome":"MUSEU",
-        "link":"https:www.youtu.be\/wdS8JhIwRcg",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":19,
-        "nome":"ÔNIBUS",
-        "link":"https:www.youtu.be\/CwAKSH1k-mY",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":20,
-        "nome":"PEDESTRE",
-        "link":"https:www.youtu.be\/kW_6m0obXRw",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":21,
-        "nome":"PLACA DE TRÂNSITO",
-        "link":"https:www.youtu.be\/y6O9lzGL_0M",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":22,
-        "nome":"PONTE",
-        "link":"https:www.youtu.be\/PskJeyQokVs",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":23,
-        "nome":"PONTO DE ÔNIBUS",
-        "link":"https:www.youtu.be\/4jw8l1eIF5c",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":24,
-        "nome":"PRÉDIO DO BANCO",
-        "link":"https:www.youtu.be\/Ga5Tm1w_4CQ",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":25,
-        "nome":"PRÉDIO DO BOMEBEIRO",
-        "link":"https:www.youtu.be\/VCKZjy4ucV0",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":26,
-        "nome":"RUA",
-        "link":"https:www.youtu.be\/7nOjwaHqkn0",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":27,
-        "nome":"SEMÁFARO",
-        "link":"https:www.youtu.be\/t1VMjDHIp10",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":28,
-        "nome":"TAXI",
-        "link":"https:www.youtu.be\/ZPxgn5I3tAg",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    {
-        "numero":29,
-        "nome":"EDIFICIO",
-        "link":"https:www.youtu.be\/3kSzqyqDaKo",
-        "categoria":"VERBETES – A CIDADE"
-    },
-    ];
 
-    function criarVideos() {
-      const container = document.querySelector(".grid-videos");
-      console.log(container);
-      
-      videos.forEach(video => {
-        // extrair ID do vídeo (último pedaço do link)
-        const videoId = video.link.split("\/").pop();
-        console.log(videoId);
-        
-        // criar div principal
-        const div = document.createElement("div");
-        div.className = "grid-videos-item";
+        </section>
+    </main>
 
-        // criar título
-        const h2 = document.createElement("h2");
-        h2.textContent = `Cidade: ${video.nome}`;
+    <script src="script.js"></script>
+    <script>
+        const videos = [
+            {
+                "numero": 1,
+                "nome": "AEROPORTO",
+                "link": "https://www.youtube.com/watch?v=ffu9Ajirbkc",
+                "imagem": "https://drive.google.com/file/d/1-v8VBBysfsV-4VhTbJTPLSVfCQ6rD5u5/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 2,
+                "nome": "AMBULÂNCIA",
+                "link": "https://www.youtube.com/watch?v=uj5UpF7M7R8",
+                "imagem": "https://drive.google.com/file/d/10LtE5gmZjzxqB1j_7vkIUIWbCP3SLsFY/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 3,
+                "nome": "ARRANHEACEU",
+                "link": "https://www.youtube.com/watch?v=foZ13-DMR34",
+                "imagem": "https://drive.google.com/file/d/13fccn0pp4f0p4i8pXTb9fMhVKV2tLQm5/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 4,
+                "nome": "AVIÃO",
+                "link": "https://www.youtube.com/watch?v=6SFmxZPdVuQ",
+                "imagem": "https://drive.google.com/file/d/14NsO_hiRoJiCw0cjc86j8qH6EOHaUwua/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 5,
+                "nome": "BANCO",
+                "link": "https://www.youtube.com/watch?v=5lHSTzTcixM",
+                "imagem": "https://drive.google.com/file/d/19C1H1Tso4FsUZX6CnSjV8MT64bMhe1oX/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 6,
+                "nome": "BICICLETA",
+                "link": "https://www.youtube.com/watch?v=EU_PGOziCHw",
+                "imagem": "https://drive.google.com/file/d/1B6QMZW1PNcEUsviup8l8maQvVZSuxC6K/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 7,
+                "nome": "CALÇADA",
+                "link": "https://www.youtube.com/watch?v=o4huWfjNObg",
+                "imagem": "https://drive.google.com/file/d/1BAztbze84QHkgCvVAkpYPHWdGhz4ZwWA/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 8,
+                "nome": "CAMINHÃO",
+                "link": "https://www.youtube.com/watch?v=cFYDIrk0Iqw",
+                "imagem": "https://drive.google.com/file/d/1FH-h-5UI_hasaQBHceQbe-S-1IlXQRk-/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 9,
+                "nome": "CARRO",
+                "link": "https://www.youtube.com/watch?v=OHhc1qaA_Fw",
+                "imagem": "https://drive.google.com/file/d/1FqwFMKZPx-0Hfs7e0DTTOABPNZwsNsv4/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 10,
+                "nome": "CORREIO",
+                "link": "https://www.youtube.com/watch?v=oWVxhPQrgAc",
+                "imagem": "https://drive.google.com/file/d/1IsW8qANOX3Jy5lSYWYXl87F--3kBfosg/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 11,
+                "nome": "DELEGACIA DE POLÍCIA",
+                "link": "https://www.youtube.com/watch?v=8qvlgZtYmEo",
+                "imagem": "https://drive.google.com/file/d/1KWBmJ5StJZhItqWCKH_WVRKim3DaxhmI/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 12,
+                "nome": "EDIFICIO",
+                "link": "https://www.youtube.com/watch?v=3kSzqyqDaKo",
+                "imagem": "https://drive.google.com/file/d/1LwmsKsNF2b_GM-cjV4aoLHb3LhwlXaDV/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 13,
+                "nome": "ESCOLA",
+                "link": "https://www.youtube.com/watch?v=7SDkXeB0NWo",
+                "imagem": "https://drive.google.com/file/d/1MYlNS82XxWYbJPSlxmda_a7VEQSpSyR1/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 14,
+                "nome": "ESQUINA",
+                "link": "https://www.youtube.com/watch?v=9yAqPFCdXws",
+                "imagem": "https://drive.google.com/file/d/1SaKsAW98c3ZXJ7HPw6F57Ubn3KqGzIsL/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 15,
+                "nome": "HOSPITAL",
+                "link": "https://www.youtube.com/watch?v=1k4YRUGnc-c",
+                "imagem": "https://drive.google.com/file/d/1TWZraBNW5KixFi_PNS7tx4JqbuO8toAC/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 16,
+                "nome": "IGREJA",
+                "link": "https://www.youtube.com/watch?v=pGvDkjxzP1E",
+                "imagem": "https://drive.google.com/file/d/1XKrU4Ve18csR15RhSyO4tMD7K4sILpB0/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 17,
+                "nome": "LOJA",
+                "link": "https://www.youtube.com/watch?v=BhyRZCNNJVg",
+                "imagem": "https://drive.google.com/file/d/1YRNdgibbWfujzRq_T46kblQNDunPeNvh/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 18,
+                "nome": "MOTOCICLETA",
+                "link": "https://www.youtube.com/watch?v=YPM_zAnZII8",
+                "imagem": "https://drive.google.com/file/d/1ZwNfwD41jZ2HMfpAN6yUfd9joTKlXek6/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 19,
+                "nome": "MUSEU",
+                "link": "https://www.youtube.com/watch?v=wdS8JhIwRcg",
+                "imagem": "https://drive.google.com/file/d/1bVTVzbTqPH3cYHX0pAoANbUJhIdtT7vD/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 20,
+                "nome": "ÔNIBUS",
+                "link": "https://www.youtube.com/watch?v=CwAKSH1k-mY",
+                "imagem": "https://drive.google.com/file/d/1dgQG2qQEpf3pZCddHF9EsT9ue0VdsL_C/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 21,
+                "nome": "PEDESTRE",
+                "link": "https://www.youtube.com/watch?v=kW_6m0obXRw",
+                "imagem": "https://drive.google.com/file/d/1nrTxG0aDb_dQnJFlVdBy1GRjaaWDMca1/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 22,
+                "nome": "PLACA DE TRÂNSITO",
+                "link": "https://www.youtube.com/watch?v=y6O9lzGL_0M",
+                "imagem": "https://drive.google.com/file/d/1pswXVYZG5MQfhiDcZ-Ymol6_mFpXElgG/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 23,
+                "nome": "PONTE",
+                "link": "https://www.youtube.com/watch?v=PskJeyQokVs",
+                "imagem": "https://drive.google.com/file/d/1rlhfH9lP6ujS6sAUYoeN9xL7B3ekzYGZ/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 24,
+                "nome": "PONTO DE ÔNIBUS",
+                "link": "https://www.youtube.com/watch?v=4jw8l1eIF5c",
+                "imagem": "https://drive.google.com/file/d/1rrC4yZnAo_reXwUqkWs-XrZyG8JyTd-C/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 25,
+                "nome": "PRÉDIO DO BANCO",
+                "link": "https://www.youtube.com/watch?v=Ga5Tm1w_4CQ",
+                "imagem": "https://drive.google.com/file/d/1tCCxV-GWdRjh6B-Pg1Kum0LGa9TvPntC/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 26,
+                "nome": "PRÉDIO DO BOMBEIRO",
+                "link": "https://www.youtube.com/watch?v=VCKZjy4ucV0",
+                "imagem": "https://drive.google.com/file/d/1tLJTzS9lZgFzxCgv5HxR64u3iB7zXdkT/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 27,
+                "nome": "RUA",
+                "link": "https://www.youtube.com/watch?v=7nOjwaHqkn0",
+                "imagem": "https://drive.google.com/file/d/1u4DRig0fjbKXqiFPlg2xECy9RalE-Z6x/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 28,
+                "nome": "SEMÁFARO",
+                "link": "https://www.youtube.com/watch?v=t1VMjDHIp10",
+                "imagem": "https://drive.google.com/file/d/1w4UsfRZ9o5qvgdfVu-uoyB1GsH6B7-OD/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            },
+            {
+                "numero": 29,
+                "nome": "TAXI",
+                "link": "https://www.youtube.com/watch?v=ZPxgn5I3tAg",
+                "imagem": "https://drive.google.com/file/d/1z_hXh0-AGLz9Cte5qQA1_1frv4XdJk1a/view?usp=sharing",
+                "categoria": "VERBETES – A CIDADE"
+            }
+        ];
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+        function criarVideos() {
+            const container = document.querySelector(".grid-videos");
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+            videos.forEach(video => {
+                // extrair ID do vídeo (último pedaço do link)
+                const videoId = video.link.split("\/").pop();
 
-      });
-    }
+                //  https://drive.google.com/thumbnail?id=1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL
+                // "https://drive.google.com/file/d/1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL/view?usp=drive_link",
+                //<img width="200px" height="200px" src="https://drive.google.com/thumbnail?id=1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL" alt="">
+                // criar div principal
+                const div = document.createElement("div");
+                div.className = "grid-videos-item";
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                // criar título
+                const h2 = document.createElement("h2");
+                h2.textContent = `Letra ${video.nome}`;
+
+                videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "").replace("/view?usp=sharing","")}`
+
+                console.log(videoImagemLink);
+
+
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 </body>
