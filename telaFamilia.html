@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Categoria</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- Favicons -->
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -32,6 +32,7 @@
   <!-- Main CSS File -->
   <link href="cssArm/openCss.css" rel="stylesheet">
 </head>
+
 <body>
 
   <header>
@@ -50,53 +51,153 @@
   </main>
   <footer id="footer" class="footer position-relative light-background">
 
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">LIBRAR</span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p class="mt-3"><strong>Telefone:</strong> <span>999999999</span></p>
-              <p><strong>Email:</strong> <span>suporte@librar.com.br</span></p>
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Páginas</h4>
-            <ul>
-              <li><a href="dici.html">Inicial</a></li>
-              <li><a href="telaAlfabeto.html">Alfabeto</a></li>
-              <li><a href="telaCidade.html">Cidade</a></li>
-              <li><a href="telaEscola.html">Escola</a></li>
-              <li><a href="telaFamilia.html">familia</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Outros</h4>
-            <ul>
-              <li><a href="sobreNos.html">Sobre Nós</a></li>
-              <li><a href="#">Biblioteca librar</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Social</h4>
-            <ul>
-              <li><a href="#">Instagram librar</a></li>
-              <li><a href="#">Canal librar</a></li>
-            </ul>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">LIBRAR</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p class="mt-3"><strong>Telefone:</strong> <span>999999999</span></p>
+            <p><strong>Email:</strong> <span>suporte@librar.com.br</span></p>
           </div>
 
         </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="dici.html">Inicial</a></li>
+            <li><a href="telaAlfabeto.html">Alfabeto</a></li>
+            <li><a href="telaCidade.html">Cidade</a></li>
+            <li><a href="telaEscola.html">Escola</a></li>
+            <li><a href="telaFamilia.html">familia</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Outros</h4>
+          <ul>
+            <li><a href="sobreNos.html">Sobre Nós</a></li>
+            <li><a href="#">Biblioteca librar</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Instagram librar</a></li>
+            <li><a href="#">Canal librar</a></li>
+          </ul>
+        </div>
+
       </div>
+    </div>
 
-      <div class="container copyright text-center mt-4">
-        <p>© <span>Librar</span> 
-      </p></div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Librar</span>
+      </p>
+    </div>
 
-    </footer>
+  </footer>
   <script src="script.js"></script>
+  <script>
+    const videos = [
+      {
+        "numero": 1,
+        "nome": "AVÓ",
+        "imagem": "https://youtu.be/C-yB6gK8FMI",
+        "link": "https:www.youtu.be\/gGicUBiHGPI",
+        "categoria": "FAMILIA"
+      },
+      {
+        "numero": 2,
+        "nome": "AVÔ",
+        "imagem": "https://youtu.be/6zM2ASW1hDE ",
+        "categoria": "FAMILIA"
+      }
+    ]
+    function criarVideos() {
+      const container = document.querySelector("section.row.g-4"); // Seleciona o container correto dentro da <section>
+      console.log(container);
+
+      if (!container) {
+        console.error("Container com classe 'row g-4' não encontrado!");
+        return;
+      }
+
+      videos.forEach((video, index) => {
+        // Extrair ID do vídeo (removendo parâmetros como ?si=...)
+        const videoId = video.link.split("/").pop().split("?")[0];
+
+        // Criar div principal do card
+        const colDiv = document.createElement("div");
+        colDiv.className = "col-lg-3 col-md-6 aos-init aos-animate";
+        colDiv.setAttribute("data-aos", "fade-up");
+        colDiv.setAttribute("data-aos-delay", (100 + index * 100).toString()); // Incrementa o delay (100, 200, 300...)
+
+        // Criar div do faculty-card
+        const facultyCard = document.createElement("div");
+        facultyCard.className = "faculty-card";
+
+        // Criar div da imagem
+        const facultyImg = document.createElement("div");
+        facultyImg.className = "faculty-img";
+        const img = document.createElement("img");
+        img.src = video.imagem;
+        img.alt = video.nome;
+        img.className = "img-fluid";
+        facultyImg.appendChild(img);
+
+        // Criar div do conteúdo
+        const facultyContent = document.createElement("div");
+        facultyContent.className = "faculty-content";
+
+        // Criar título
+        const h4 = document.createElement("h4");
+        h4.textContent = video.nome.toUpperCase();
+
+        // Criar parágrafo de significado
+        // const pSignificado = document.createElement("p");
+        // pSignificado.className = "faculty-position";
+        // pSignificado.textContent = `Significado: ${video.significado}`;
+
+        // // Criar parágrafo de gesto
+        // const pGesto = document.createElement("p");
+        // pGesto.className = "faculty-position";
+        // pGesto.textContent = `Gesto: ${video.gesto}`;
+
+        // Adicionar título e parágrafos ao faculty-content
+        facultyContent.appendChild(h4);
+        // facultyContent.appendChild(pSignificado);
+        // facultyContent.appendChild(pGesto);
+
+        // Criar div para o iframe do vídeo
+        const facultyVideo = document.createElement("div");
+        facultyVideo.className = "faculty-img";
+        const iframe = document.createElement("iframe");
+        iframe.width = "100%";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = `${video.nome} - YouTube video`;
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+        facultyVideo.appendChild(iframe);
+
+        // Montar estrutura do card
+        facultyCard.appendChild(facultyImg);
+        facultyCard.appendChild(facultyContent);
+        facultyCard.appendChild(facultyVideo);
+        colDiv.appendChild(facultyCard);
+        container.appendChild(colDiv);
+      });
+    }
+
+    // Chamar função ao carregar o DOM
+    document.addEventListener("DOMContentLoaded", criarVideos);
+  </script>
+
 </body>
