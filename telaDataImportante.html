@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+     {
+        "numero":1,
+        "nome":"ANIVERSÁRIO",
+        "link":"https:www.youtu.be\/30-YBI1a3TQ",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":2,
+        "nome":"CARNAVAL",
+        "link":"https:www.youtu.be\/JGWxzIBGIf0",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":3,
+        "nome":"CASAMENTO",
+        "link":"https:www.youtu.be\/UYLvEnTqCug",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":4,
+        "nome":"DI DO TRABALHO",
+        "link":"https:www.youtu.be\/w940eq5wzwc",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":5,
+        "nome":"DIA DA BANDEIRA",
+        "link":"https:www.youtu.be\/F96PSdPt4vY",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":6,
+        "nome":"DIA DA INDEPENDENCIA",
+        "link":"https:www.youtu.be\/wN3-HMpI3OU",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":7,
+        "nome":"DIA DAS CRIANÇAS",
+        "link":"https:www.youtu.be\/FPI_5807lxQ",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":8,
+        "nome":"DIA DAS MÃES",
+        "link":"https:www.youtu.be\/HKWH73DMPm0",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":9,
+        "nome":"DIA DO INDÍGENA",
+        "link":"https:www.youtu.be\/GEiKyHhdPg0",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":10,
+        "nome":"DIA DOS NAMORADOS",
+        "link":"https:www.youtu.be\/ag1JPvNjz-E",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":11,
+        "nome":"FORMATURA",
+        "link":"https:www.youtu.be\/J3pC5K2tynI",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":12,
+        "nome":"FUNERAL",
+        "link":"https:www.youtu.be\/ePIl-krRwXY",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":13,
+        "nome":"NATAL",
+        "link":"https:www.youtu.be\/L6d3en8r4oo",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":14,
+        "nome":"PÁSCOA",
+        "link":"https:www.youtu.be\/bxA-agQhZ90",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":15,
+        "nome":"PRIMEIRO DIA DE AULA",
+        "link":"https:www.youtu.be\/g2l7m2-idTs",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":16,
+        "nome":"PROCLAMAÇÃO DA REPÚBLICA",
+        "link":"https:www.youtu.be\/dve9QUt2EtU",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":17,
+        "nome":"REUNIÃO DE FAMÍLIA",
+        "link":"https:www.youtu.be\/IqFwiIWl22E",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":18,
+        "nome":"RÉVEILLON",
+        "link":"https:www.youtu.be\/J5jc9h5jW2U",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero":19,
+        "nome":"FESTA JUNINA",
+        "link":"https:www.youtu.be\/vsRpLXAs7yA",
+        "categoria":"VERBETES – DATAS IMPOrTANTES"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>

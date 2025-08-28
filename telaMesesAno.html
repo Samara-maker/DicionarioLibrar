@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+          {
+        "numero":1,
+        "nome":"ABRIL",
+        "link":"https://youtu.be\/0L5-gngb-TQ",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":2,
+        "nome":"AGOSTO",
+        "link":"https:www.youtu.be\/ehqLfLcijkM",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":3,
+        "nome":"ANO",
+        "link":"https:www.youtu.be\/nYCK2Qs9yHs",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":4,
+        "nome":"DEZEMBRO",
+        "link":"https:www.youtu.be\/EOZ5tlOiXT0",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":5,
+        "nome":"DOMINGO",
+        "link":"https:www.youtu.be\/fCAFKl_Y0oU",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":6,
+        "nome":"FEVEREIRO",
+        "link":"https:www.youtu.be\/qbLqATc6GnQ",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":7,
+        "nome":"JANEIRO",
+        "link":"https:www.youtu.be\/8BrIHHvzHGM",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":8,
+        "nome":"JULHO",
+        "link":"https:www.youtu.be\/Wc7Zfc6k3G4",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":9,
+        "nome":"JUNHO",
+        "link":"https:www.youtu.be\/lQ-ga20oZ-I",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":10,
+        "nome":"MAIO",
+        "link":"https:www.youtu.be\/4r8Lmf5iZaU",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":11,
+        "nome":"MARÇO",
+        "link":"https:www.youtu.be\/MUV0-6B5hNY",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":12,
+        "nome":"MÊS",
+        "link":"https:www.youtu.be\/CWyUx6-bjVw",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":13,
+        "nome":"NOVEMBRO",
+        "link":"https://youtu.be\/TiZMbzO-Rss",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":14,
+        "nome":"OUTUBRO",
+        "link":"https:www.youtu.be\/HU1Gyzeoea4",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":15,
+        "nome":"QUARTA-FEIRA",
+        "link":"https:www.youtu.be\/fFTDe8IJxtg",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":16,
+        "nome":"QUINTA-FEIRA",
+        "link":"https:www.youtu.be\/gN1PiInVitU",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":17,
+        "nome":"SÁBADO",
+        "link":"https:www.youtu.be\/RwSkmMjx0A0",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":18,
+        "nome":"SEGUNDA-FEIRA",
+        "link":"https:www.youtu.be\/Bg5JTp0M2Vk",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":19,
+        "nome":"SEMANA",
+        "link":"https:www.youtu.be\/C1hsAEbdc-4",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":20,
+        "nome":"SETEMBRO",
+        "link":"https:www.youtu.be\/Us2R6DwDKD0",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":21,
+        "nome":"SEXTA-FEIRA",
+        "link":"https:www.youtu.be\/iYf_EtOa2Sw",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    {
+        "numero":22,
+        "nome":"TERÇA-FEIRA",
+        "link":"https:www.youtu.be\/lBR0Uw73ygM",
+        "categoria":"VERBETES – MESES DO ANO E DIAS DA SEMANA"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>
