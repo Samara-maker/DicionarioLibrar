@@ -3108,55 +3108,60 @@
         "numero":20,
         "nome":"SENTAR",
         "link":"https:www.youtu.be\/9XydafAOlUA",
-        "categoria":"19\tPUXAR"
+        "categoria":"ESPORTES"
     },
     {
+        "numero":1,
+        "nome":"ALPINISMO",
+        "link":"https://youtu.be/MPQ5o_keN2g",
+        "categoria":"ESPORTES"
+    },{
         "numero":2,
         "nome":"ATLETISMO",
         "link":"https:www.youtu.be\/MPQ5o_keN2g",
-        "categoria":"01\tALPINISMO"
+        "categoria":"ESPORTES"
+    },
+    {
+        "numero":3,
+        "nome":"BASQUETE",
+        "link":"https:www.youtu.be\/XaSMwp8zroU",
+        "categoria":"ESPORTES"
     },
     {
         "numero":4,
-        "nome":"BASQUETE",
-        "link":"https:www.youtu.be\/XaSMwp8zroU",
-        "categoria":"03\tBALONISMO"
-    },
-    {
-        "numero":12,
         "nome":"CICLISMO",
         "link":"https:www.youtu.be\/EZbVj_9dIFc",
-        "categoria":"11\tCESTA"
+        "categoria":"ESPORTES"
     },
     {
-        "numero":13,
+        "numero":5,
         "nome":"CORRIDA",
         "link":"https:www.youtu.be\/pKyBpUdtd7A",
-        "categoria":"11\tCESTA"
+        "categoria":"ESPORTES"
     },
     {
-        "numero":14,
+        "numero":6,
         "nome":"CORRIDA DE CARROS",
         "link":"https:www.youtu.be\/RpHrEXZhTk8",
-        "categoria":"11\tCESTA"
+        "categoria":"ESPORTES"
     },
     {
-        "numero":15,
+        "numero":7,
         "nome":"ESQUIAR",
         "link":"https:www.youtu.be\/-2REaMP6i1A",
-        "categoria":"11\tCESTA"
+        "categoria":"ESPORTES"
     },
     {
-        "numero":28,
+        "numero":8,
         "nome":"ESQUI",
         "link":"https:www.youtu.be\/-2REaMP6i1A",
-        "categoria":"27\tRAQUETE"
+        "categoria":"ESPORTES"
     },
     {
-        "numero":29,
+        "numero":9,
         "nome":"ESQUI AQUATICO",
         "link":"https:www.youtu.be\/mewPQ13sBAk",
-        "categoria":"27\tRAQUETE"
+        "categoria":"ESPORTES"
     },
     {
         "numero":1,
@@ -4787,25 +4792,62 @@
         "categoria":"INTRUMENTOS"
     },
     {
-        "numero":5,
+        "numero":1,
+        "nome":"BOLA DE CRISTAL",
+        "imagem":"https://drive.google.com/uc?export=view&id=1x8p9Fn8J8-0N0cgeAhm7ZXwk90xnvwKc",
+        "link":"https://youtu.be/DDAYswSvld8?si=EmWJtQOVT0yuyFy-",
+        "categoria":"HISTORIAS"
+    },{
+        "numero":2,
         "nome":"BRUXA",
         "link":"https:www.youtu.be\/S41NcRJzzb8",
-        "categoria":"04\tBOLA DE CRISTAL"
+        "categoria":"HISTORIAS"
     },
     {
-        "numero":6,
+        "numero":3,
         "nome":"BRUXO",
         "link":"https:www.youtu.be\/Jb9g17DVkyE",
-        "categoria":"04\tBOLA DE CRISTAL"
+        "categoria":"HISTORIAS"
+    },{
+        "numero":4,
+        "nome":"CASTELO",
+        "link":"https://youtu.be/PwcJpjCFvtk?si=Tq99ZuL6ik16LNGa",
+        "categoria":"HISTORIAS"
+    },{
+        "numero":5,
+        "nome":"DRAGÃO",
+        "link":"https://youtu.be/yJ-ZTpXC85A?si=ebuqmR_0fHzKnEoE",
+        "categoria":"HISTORIAS"
+    },{
+        "numero":6,
+        "nome":"ESPADA",
+        "link":"https://youtu.be/z-8gc7Rbqnw?si=5SxhFSGCH-1-fbOv",
+        "categoria":"HISTORIAS"
+    },{
+        "numero":7,
+        "nome":"FANTASMA",
+        "link":"https://youtu.be/i086G3odYM0?si=FEuO5khBDb4UXKV6",
+        "categoria":"HISTORIAS"
+    },{
+        "numero":8,
+        "nome":"LOBO MAU",
+        "link":"https://youtu.be/r3f8xhgaAvg?si=JXKfi2lrBy2zUJdY",
+        "categoria":"HISTORIAS"
+    },{
+        "numero":9,
+        "nome":"MÁGICO",
+        "link":"https://youtu.be/RRQKTx5Ixu4?si=PJw05yE99zXn4WZ1",
+        "categoria":"HISTORIAS"
     },
+    
     {
-        "numero":14,
+        "numero":1,
         "nome":"BOA NOITE",
         "link":"https:www.youtu.be\/JlR0URk4cbUv",
         "categoria":"13\tBOA TARDE"
     },
     {
-        "numero":16,
+        "numero":2,
         "nome":"VOCÊ É BONITO",
         "link":"https:www.youtu.be\/h_x0zhLkm8o",
         "categoria":"15\tDE NADA"
