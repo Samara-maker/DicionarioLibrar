@@ -40,29 +40,33 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-         {
-        "numero":1,
-        "nome":"LUA CHEIA",
-        "link":"https:www.youtu.be\/0PYdZFPhy0Y",
-        "categoria":"VERBETES – FASE DA LUA"
+        {
+        "numero": 1,
+        "nome": "LUA CHEIA",
+        "imagem":"https://drive.google.com/file/d/18SKmx8ggmPAhytK1TQTccEh9PITPvJpO/view?usp=drive_link",
+        "link": "https:www.youtu.be\/0PYdZFPhy0Y",
+        "categoria": "VERBETES – FASE DA LUA"
     },
     {
-        "numero":2,
-        "nome":"LUA CRESCENTE",
-        "link":"https:https://youtu.be/KL3j1RGqcGE",
-        "categoria":"VERBETES – FASE DA LUA"
+        "numero": 2,
+        "nome": "LUA CRESCENTE",
+        "imagem":"https://drive.google.com/file/d/1ogLBLJG3jeBkRmCRzrvYWuiKGdRpP_Dn/view?usp=drive_link",
+        "link": "https:https://youtu.be/KL3j1RGqcGE",
+        "categoria": "VERBETES – FASE DA LUA"
     },
     {
-        "numero":3,
-        "nome":"LUA MINGUANTE",
-        "link":"https:www.youtu.be\/FrWdXUOLIds",
-        "categoria":"VERBETES – FASE DA LUA"
+        "numero": 3,
+        "nome": "LUA MINGUANTE",
+        "imagem":"https://drive.google.com/file/d/1AUVRwrh0wmSlxvA-iQML6DjlHu2xw97e/view?usp=drive_link",
+        "link": "https:www.youtu.be\/FrWdXUOLIds",
+        "categoria": "VERBETES – FASE DA LUA"
     },
     {
-        "numero":4,
-        "nome":"LUA NOVA",
-        "link":"https://youtu.be/lM5VuRTPiMk",
-        "categoria":"VERBETES – FASE DA LUA"
+        "numero": 4,
+        "nome": "LUA NOVA",
+        "imagem":"https://drive.google.com/file/d/1XtKZ99qjMDLFwT6x7cLWMJlsmkGDRQmr/view?usp=drive_link",
+        "link": "https://youtu.be/lM5VuRTPiMk",
+        "categoria": "VERBETES – FASE DA LUA"
     },
     ];
 
@@ -83,29 +87,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+       videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

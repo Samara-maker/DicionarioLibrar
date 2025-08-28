@@ -40,41 +40,47 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-       {
-        "numero":1,
-        "nome":"ÁFRICA",
-        "link":"https:www.youtu.be\/w5kyi3-VNoI",
-        "categoria":"VERBETES – CONTINETES"
+      {
+        "numero": 1,
+        "nome": "ÁFRICA",
+        "imagem":"https://drive.google.com/file/d/18P16gIFfxSMuEjbEzFW3-uZLg8AIJyes/view?usp=drive_link",
+        "link": "https:www.youtu.be\/w5kyi3-VNoI",
+        "categoria": "VERBETES – CONTINETES"
     },
     {
-        "numero":2,
-        "nome":"AMÉRICA DO NORTE",
-        "link":"https:www.youtu.be\/gQC668e_1_A",
-        "categoria":"VERBETES – CONTINETES"
+        "numero": 2,
+        "nome": "AMÉRICA DO NORTE",
+        "imagem":"https://drive.google.com/file/d/1eCdOOw-qKMhNMYb9O5g0gwT2lo0iVrX6/view?usp=drive_link",
+        "link": "https:www.youtu.be\/gQC668e_1_A",
+        "categoria": "VERBETES – CONTINETES"
     },
     {
-        "numero":3,
-        "nome":"AMÉRICA DO SUL",
-        "link":"https:www.youtu.be\/AFV4Z8HL5Gg",
-        "categoria":"VERBETES – CONTINETES"
+        "numero": 3,
+        "nome": "AMÉRICA DO SUL",
+        "imagem":"https://drive.google.com/file/d/1kaaq4xuWX3hiSvcU0M6JUvSMg0uf6oda/view?usp=drive_link",
+        "link": "https:www.youtu.be\/AFV4Z8HL5Gg",
+        "categoria": "VERBETES – CONTINETES"
     },
     {
-        "numero":4,
-        "nome":"ÁSIA",
-        "link":"https:www.youtu.be\/V2_QlhANNTQ",
-        "categoria":"VERBETES – CONTINETES"
+        "numero": 4,
+        "nome": "ÁSIA",
+        "imagem":"https://drive.google.com/file/d/12_qvczwXupJ9Lc28OprUZyfDFUREEa96/view?usp=drive_link",
+        "link": "https:www.youtu.be\/V2_QlhANNTQ",
+        "categoria": "VERBETES – CONTINETES"
     },
     {
-        "numero":5,
-        "nome":"EUROPA",
-        "link":"https:www.youtu.be\/XnC8fxxbVGI",
-        "categoria":"VERBETES – CONTINETES"
+        "numero": 5,
+        "nome": "EUROPA",
+        "imagem":"https://drive.google.com/file/d/1mhPfIBEtpGBK14vnpuaZ2RpcjrlRhMqR/view?usp=drive_link",
+        "link": "https:www.youtu.be\/XnC8fxxbVGI",
+        "categoria": "VERBETES – CONTINETES"
     },
     {
-        "numero":6,
-        "nome":"OCEANIA",
-        "link":"https:www.youtu.be\/AEqRiUMGNhY",
-        "categoria":"VERBETES – CONTINETES"
+        "numero": 6,
+        "nome": "OCEANIA",
+        "imagem":"https://drive.google.com/file/d/1H4sV0DjjrrJ1S6yQ48Pz944AtG7T9hJd/view?usp=drive_link",
+        "link": "https:www.youtu.be\/AEqRiUMGNhY",
+        "categoria": "VERBETES – CONTINETES"
     },
     ];
 
@@ -95,29 +101,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+        videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

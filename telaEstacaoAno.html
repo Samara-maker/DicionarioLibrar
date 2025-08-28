@@ -41,28 +41,32 @@
   <script>
     const videos = [
      {
-        "numero":1,
-        "nome":"INVERNO",
-        "link":"https:www.youtu.be\/c9l8osszPY8",
-        "categoria":"VERBETES – ESTAÇÕES DO ANO"
+        "numero": 1,
+        "nome": "INVERNO",
+        "imagem":"https://drive.google.com/file/d/1FlzPtCdK_s8LIX7_w--H_DaeBwlLvvsK/view?usp=drive_link",
+        "link": "https:www.youtu.be\/c9l8osszPY8",
+        "categoria": "VERBETES – ESTAÇÕES DO ANO"
     },
     {
-        "numero":2,
-        "nome":"OUTONO",
-        "link":"https:www.youtu.be\/G_mNgWIbd5c",
-        "categoria":"VERBETES – ESTAÇÕES DO ANO"
+        "numero": 2,
+        "nome": "OUTONO",
+        "imagem":"https://drive.google.com/file/d/1JlrM6AnmaulBGPcxLJzs42T_Mk2cDObQ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/G_mNgWIbd5c",
+        "categoria": "VERBETES – ESTAÇÕES DO ANO"
     },
     {
-        "numero":3,
-        "nome":"PRIMAVERA",
-        "link":"https:www.youtu.be\/c2LdOkLudUA",
-        "categoria":"VERBETES – ESTAÇÕES DO ANO"
+        "numero": 3,
+        "nome": "PRIMAVERA",
+        "imagem":"https://drive.google.com/file/d/1iDwJegw5svx0-bkXEdJJP8_qnFgKPmmr/view?usp=drive_link",
+        "link": "https:www.youtu.be\/c2LdOkLudUA",
+        "categoria": "VERBETES – ESTAÇÕES DO ANO"
     },
     {
-        "numero":4,
-        "nome":"VERÃO",
-        "link":"https:www.youtu.be\/Z2kuVe6tyMM",
-        "categoria":"VERBETES – ESTAÇÕES DO ANO"
+        "numero": 4,
+        "nome": "VERÃO",
+        "imagem":"https://drive.google.com/file/d/1ekpiHeTWz8ThsXs6gWfaQksZG_NRaH-L/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Z2kuVe6tyMM",
+        "categoria": "VERBETES – ESTAÇÕES DO ANO"
     },
     ];
 
@@ -83,29 +87,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+        videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

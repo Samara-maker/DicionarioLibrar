@@ -3420,84 +3420,7 @@
         "link": "https:www.youtu.be\/mewPQ13sBAk",
         "categoria": "ESPORTES"
     },
-    {
-        "numero": 1,
-        "nome": "ABELHA",
-        "link": "https:www.youtu.be\/q8zx-yAJtKc",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 2,
-        "nome": "ÁGUIA",
-        "link": "https:www.youtu.be\/_KLFe2syBko",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 3,
-        "nome": "ARANHA",
-        "link": "https:www.youtu.be\/Ndw78gGHSNw",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 4,
-        "nome": "BALEIA",
-        "link": "https:www.youtu.be\/nJ1D7DBNrOo",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 5,
-        "nome": "BORBOLETA",
-        "link": "https:www.youtu.be\/5Z4vNr-HgEk",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 6,
-        "nome": "BURRO",
-        "link": "https:www.youtu.be\/9Z0r-rNzzDg",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 7,
-        "nome": "CACHORRO",
-        "link": "https:www.youtu.be\/Co1wBJexjcM",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 8,
-        "nome": "CALOPSITA",
-        "link": "https:www.youtu.be\/Kb-VXVQOzyg",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 9,
-        "nome": "CAMARÃO",
-        "link": "https:www.youtu.be\/-FB9Xot_NEU",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 10,
-        "nome": "CAVALO",
-        "link": "https:www.youtu.be\/fTe16SDct8k",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 11,
-        "nome": "CAVALO MARINHO",
-        "link": "https:www.youtu.be\/UvRbJwQsc3M",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 12,
-        "nome": "COBRA",
-        "link": "https:www.youtu.be\/LYmaWhzIN_8",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
-    {
-        "numero": 13,
-        "nome": "CORUJA",
-        "link": "https:www.youtu.be\/iAEueATo5mI",
-        "categoria": "VERBETES – OS ANIMAIS"
-    },
+   
     {
         "numero":9,
         "nome":"DORMIR",
@@ -3558,63 +3481,164 @@
         "link":"https:www.youtu.be\/9XydafAOlUA",
         "categoria":"VERBETES – AÇÕES"
     },
+     {
+        "numero": 1,
+        "nome": "ABELHA",
+        "imagem":"https://drive.google.com/file/d/1g7i7kqu96NVfXspVZhmsoZuJFjZ8_kfP/view?usp=drive_link",
+        "link": "https:www.youtu.be\/q8zx-yAJtKc",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 2,
+        "nome": "ÁGUIA",
+        "imagem":"https://drive.google.com/file/d/1zgEvqvJhvBceVoBlV8vVtOUIN2KZ60XV/view?usp=drive_link",
+        "link": "https:www.youtu.be\/_KLFe2syBko",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 3,
+        "nome": "ARANHA",
+        "imagem":"https://drive.google.com/file/d/1PGFR_yjKhh-g0T1605DkXIompQmYf37O/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Ndw78gGHSNw",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 4,
+        "nome": "BALEIA",
+        "imagem":"https://drive.google.com/file/d/141PA4TSMxPTZ86Vvqi3dp4mM9g4RaqvT/view?usp=drive_link",
+        "link": "https:www.youtu.be\/nJ1D7DBNrOo",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 5,
+        "nome": "BORBOLETA",
+        "imagem":"https://drive.google.com/file/d/1ASU6E1rswk-lI3B2PqL9RZ96PKiDejsp/view?usp=drive_link",
+        "link": "https:www.youtu.be\/5Z4vNr-HgEk",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 6,
+        "nome": "BURRO",
+        "imagem":"https://drive.google.com/file/d/1VqK7JoTW36B-NxwOtc0nGYUrAPWT9TQy/view?usp=drive_link",
+        "link": "https:www.youtu.be\/9Z0r-rNzzDg",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 7,
+        "nome": "CACHORRO",
+        "imagem":"https://drive.google.com/file/d/1uXhbvgfpzfmDzbFK0N9LFWYx82teRqT7/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Co1wBJexjcM",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 8,
+        "nome": "CALOPSITA",
+        "imagem":"https://drive.google.com/file/d/1GqRqbIJ0pBrMHayIjLBnxQ8tWPEIWtnB/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Kb-VXVQOzyg",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 9,
+        "nome": "CAMARÃO",
+        "imagem":"https://drive.google.com/file/d/1tAo5rOe1b0xY17p2NCkF_eenJIhtvwau/view?usp=drive_link",
+        "link": "https:www.youtu.be\/-FB9Xot_NEU",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 10,
+        "nome": "CAVALO",
+        "imagem":"https://drive.google.com/file/d/1gS8eKdEmLRQkKmNUKuP25L6A_A3PL2Px/view?usp=drive_link",
+        "link": "https:www.youtu.be\/fTe16SDct8k",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 11,
+        "nome": "CAVALO MARINHO",
+        "imagem":"https://drive.google.com/file/d/10v5r2czLNYFdtxAVWmAOO_sjnRvOcATa/view?usp=drive_link",
+        "link": "https:www.youtu.be\/UvRbJwQsc3M",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 12,
+        "nome": "COBRA",
+        "imagem":"https://drive.google.com/file/d/1GPkFffl6_ck3fuBmTKPtpgO63DuzTZjZ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/LYmaWhzIN_8",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
+    {
+        "numero": 13,
+        "nome": "CORUJA",
+        "imagem":"https://drive.google.com/file/d/1etSav3KVQZ2qCYeR5425bbYAJAUSfwAy/view?usp=drive_link",
+        "link": "https:www.youtu.be\/iAEueATo5mI",
+        "categoria": "VERBETES – OS ANIMAIS"
+    },
     {
         "numero": 14,
         "nome": "DROMEDÁRIO",
+        "imagem":"https://drive.google.com/file/d/1MVrtFVS7GXVUdppfTnqIwzYA6VzD8ysT/view?usp=drive_link",
         "link": "https:www.youtu.be\/2EDSPuSRCQQ",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 15,
         "nome": "ELEFANTE",
+        "imagem":"https://drive.google.com/file/d/1Vi0Xh01eMHOoiL0lmsD_3nBsZJnnSSZu/view?usp=drive_link",
         "link": "https:www.youtu.be\/C7P-kmGaEek",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 16,
         "nome": "FOCA",
+        "imagem":"https://drive.google.com/file/d/1BRw7FFkyjD1TpLaDDljNx57JX2q3QCMX/view?usp=drive_link",
         "link": "https:www.youtu.be\/VA2WPcpa6i0",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 17,
         "nome": "GALINHA",
+        "imagem":"https://drive.google.com/file/d/1mFhnPPgT4zPha5-tMgVv7SF-6OEwQKUf/view?usp=drive_link",
         "link": "https:www.youtu.be\/16pccdDXvyM",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 18,
         "nome": "GALO",
+        "imagem":"https://drive.google.com/file/d/1A_k2a93GBZAUYsBxti9pUJ9HlJJsfUGS/view?usp=drive_link",
         "link": "https:www.youtu.be\/l5qhNJXB_JI",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 19,
         "nome": "GIRAFA",
+        "imagem":"https://drive.google.com/file/d/1tSJfojYO4uvTEYPEtY7DU3uBl2Fd2uY8/view?usp=drive_link",
         "link": "https:www.youtu.be\/qJFFoRKSZ3I",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 20,
         "nome": "HIPOPÓTAMO",
+        "imagem":"https://drive.google.com/file/d/1QtSG6nppm91GeOSiAGfjpsixUPJapVIc/view?usp=drive_link",
         "link": "https:www.youtu.be\/69o3LyUCSJk",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 21,
         "nome": "JACARÉ",
+        "imagem":"https://drive.google.com/file/d/1lDeGebgsW2rIhF8BFfiTBlVGkd3ab7zb/view?usp=drive_link",
         "link": "https:www.youtu.be\/E-KuFsIZ6WM",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 22,
         "nome": "MACACO",
+        "imagem":"https://drive.google.com/file/d/13eH2-g2UnCuyCxtWLw8HroD_0PTczYlJ/view?usp=drive_link",
         "link": "https:www.youtu.be\/LRGLDVA1pQY",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 23,
         "nome": "MOSCA",
+        "imagem":"https://drive.google.com/file/d/1RCTCcgNm0Tie0srLd3SJYve_mvOL4eWL/view?usp=drive_link",
         "link": "https:www.youtu.be\/3JC0sOFyz_w",
         "categoria": "VERBETES – OS ANIMAIS"
 
@@ -3622,264 +3646,308 @@
     {
         "numero": 24,
         "nome": "PÁSSARO",
+        "imagem":"https://drive.google.com/file/d/1ATiA129G6tZNrieNwSlrXKJIpi2iuGxF/view?usp=drive_link",
         "link": "https:www.youtu.be\/H8YOaupLa4E",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 25,
         "nome": "PEIXE",
+        "imagem":"https://drive.google.com/file/d/1RpnGLIsbelNK_FDNe6Vm2xCBRz-klr-a/view?usp=drive_link",
         "link": "https:www.youtu.be\/DAE6d6eKgQc",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 26,
         "nome": "PERIQUITO",
+        "imagem":"https://drive.google.com/file/d/1m4cAB2sM-ogHLzEqs5VhtGmdVW_LF5AE/view?usp=drive_link",
         "link": "https:www.youtu.be\/pdsqct4NKxE",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 27,
         "nome": "PINGUIM",
+        "imagem":"https://drive.google.com/file/d/1EdupNCQ7zGt7DUEpO5bjzjJ28ehSdsk9/view?usp=drive_link",
         "link": "https:www.youtu.be\/gP3PwW0aD6o",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 28,
         "nome": "POLVO",
+        "imagem":"https://drive.google.com/file/d/13MK7357TVxPbnxzupZNjdmTHT5XlyJwc/view?usp=drive_link",
         "link": "https:www.youtu.be\/wUybW6EYabM",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 29,
         "nome": "PORCO",
+        "imagem":"https://drive.google.com/file/d/1W3tXzWpiSJIoYG256Fm7DeGC_yJMWxNf/view?usp=drive_link",
         "link": "https:www.youtu.be\/wFo7GF8AOKk",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 30,
         "nome": "RAPOSA",
+        "imagem":"https://drive.google.com/file/d/1So-XYjvPHr5lnutAH4z3qBEQ6EJJvoi_/view?usp=drive_link",
         "link": "https:www.youtu.be\/SDLbSDOAhSE",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 31,
         "nome": "RINOCERONTE",
+        "imagem":"https://drive.google.com/file/d/10zTRZn5XdpjjCcBUFdnirlt2w7IgGyp6/view?usp=drive_link",
         "link": "https:www.youtu.be\/1eKqi7UpPg4",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 32,
         "nome": "SAPO",
+        "imagem":"https://drive.google.com/file/d/1xL9HZP7xf0Gr60CrQj4ZbaasLxpuijkt/view?usp=drive_link",
         "link": "https:www.youtu.be\/dFnkIYlwY-8",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 32,
         "nome": "TARTARUGA",
+        "imagem":"https://drive.google.com/file/d/1nHHbf4FVqX0EXtqgyN9rojNn6ua4f6tZ/view?usp=drive_link",
         "link": "https:www.youtu.be\/IuR3DJPTquA",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 33,
         "nome": "TIGRE",
+        "imagem":"https://drive.google.com/file/d/13h1XqQx8KHWXJZ-4sVidjl91FnTryLVH/view?usp=drive_link",
         "link": "https:www.youtu.be\/tchSHujofRU",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 34,
         "nome": "TUBARÃO",
+        "imagem":"https://drive.google.com/file/d/1gDYGtlIfYQHKj9RsvLXuWMByET7TaWBR/view?usp=drive_link",
         "link": "https:www.youtu.be\/Xyg6D-XkvHI",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 35,
         "nome": "TUCANO",
+        "imagem":"https://drive.google.com/file/d/14y24yYan90PbLuJhiNaavSvFkiQuMhEh/view?usp=drive_link",
         "link": "https:www.youtu.be\/jC5ED6C0tqY",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 36,
         "nome": "URUBÚ",
+        "imagem":"https://drive.google.com/file/d/1vSPYvhxBVfPSlXjf9L5WWacTGA9V07_l/view?usp=drive_link",
         "link": "https:www.youtu.be\/oItIkLqwWlA",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 37,
         "nome": "ZEBRA",
+        "imagem":"https://drive.google.com/file/d/19r3IYXTwpkZLB7gPxGEEKj_0WklKMIEP/view?usp=drive_link",
         "link": "https:www.youtu.be\/BvNxx29pvOc",
         "categoria": "VERBETES – OS ANIMAIS"
     },
     {
         "numero": 1,
         "nome": "INVERNO",
+        "imagem":"https://drive.google.com/file/d/1FlzPtCdK_s8LIX7_w--H_DaeBwlLvvsK/view?usp=drive_link",
         "link": "https:www.youtu.be\/c9l8osszPY8",
         "categoria": "VERBETES – ESTAÇÕES DO ANO"
     },
     {
         "numero": 2,
         "nome": "OUTONO",
+        "imagem":"https://drive.google.com/file/d/1JlrM6AnmaulBGPcxLJzs42T_Mk2cDObQ/view?usp=drive_link",
         "link": "https:www.youtu.be\/G_mNgWIbd5c",
         "categoria": "VERBETES – ESTAÇÕES DO ANO"
     },
     {
         "numero": 3,
         "nome": "PRIMAVERA",
+        "imagem":"https://drive.google.com/file/d/1iDwJegw5svx0-bkXEdJJP8_qnFgKPmmr/view?usp=drive_link",
         "link": "https:www.youtu.be\/c2LdOkLudUA",
         "categoria": "VERBETES – ESTAÇÕES DO ANO"
     },
     {
         "numero": 4,
         "nome": "VERÃO",
+        "imagem":"https://drive.google.com/file/d/1ekpiHeTWz8ThsXs6gWfaQksZG_NRaH-L/view?usp=drive_link",
         "link": "https:www.youtu.be\/Z2kuVe6tyMM",
         "categoria": "VERBETES – ESTAÇÕES DO ANO"
     },
     {
         "numero": 1,
         "nome": "AMANHÃ",
+        "imagem":"https://drive.google.com/file/d/1xxBUW3oFyNkQu_X1vc_KRE03qx_dCvFX/view?usp=drive_link",
         "link": "https:www.youtu.be\/U5c9D575agI",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 2,
         "nome": "AMANHECER",
+        "imagem":"https://drive.google.com/file/d/1EtnJi9pL93DfpKEMITp8dRO8j1wi68tb/view?usp=drive_link",
         "link": "https:www.youtu.be\/JkHFZ-8Kh3I",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 3,
         "nome": "ENTARDECER",
+        "imagem":"https://drive.google.com/file/d/1g9Vs0kR6-NAhICp0SFFwcNxUYeeqAyYs/view?usp=drive_link",
         "link": "https:www.youtu.be\/Jc8Naf9rH_k",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 4,
         "nome": "HOJE",
+        "imagem":"https://drive.google.com/file/d/1DiYCzniL-G3HlW87ND8wqGJssPbJxHMu/view?usp=drive_link",
         "link": "https:www.youtu.be\/hsOqDGqe0Zw",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 5,
         "nome": "MADRUGADA",
+        "imagem":"https://drive.google.com/file/d/1GpcEiVbKR8FWBLAqQRonhoZMY9nqzI9-/view?usp=drive_link",
         "link": "https:www.youtu.be\/LY-Mv-bwDJE",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 6,
         "nome": "MANHÃ",
+        "imagem":"https://drive.google.com/file/d/1DiYCzniL-G3HlW87ND8wqGJssPbJxHMu/view?usp=drive_link",
         "link": "https:www.youtu.be\/Ho9hwf5giQo",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 7,
         "nome": "NOITE",
+        "imagem":"https://drive.google.com/file/d/1g_1KkS9VSvzK0_qFtFznMibZlrIkxZgg/view?usp=drive_link",
         "link": "https:www.youtu.be\/9KqzZ_rLKFI",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 8,
         "nome": "ONTEM",
+        "imagem":"https://drive.google.com/file/d/1P6rO_mn1gzLU7VpgfG8FRpURxsTqe5aK/view?usp=drive_link",
         "link": "https:www.youtu.be\/_kmmDrxpGYA",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 9,
         "nome": "TARDE",
+        "imagem":"https://drive.google.com/file/d/1xxBUW3oFyNkQu_X1vc_KRE03qx_dCvFX/view?usp=drive_link",
         "link": "https:www.youtu.be\/c2LdOkLudUA",
         "categoria": "VERBETES – O TEMPO"
     },
     {
         "numero": 1,
         "nome": "ARCO-ÍRIS",
+        "imagem":"https://drive.google.com/file/d/1mhm1W6zMowRhZO89LCQRDI0i2efhZyY-/view?usp=drive_link",
         "link": "https:www.youtu.be\/VkSh3aPnG8c",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 2,
         "nome": "BOLA DE NEVE",
+        "imagem":"https://drive.google.com/file/d/1tjXQkxUp6GftNeNF2uDcPUU59vUIuZ69/view?usp=drive_link",
         "link": "https:www.youtu.be\/NuZ0KDA9wa8",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 3,
         "nome": "BONECO DE NEVE",
+        "imagem":"https://drive.google.com/file/d/1wksdK9HQRN22c8oP63a29gPaO2G0Uirw/view?usp=drive_link",
         "link": "https:www.youtu.be\/UoijIJnQSBo",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 4,
         "nome": "CAPA DE CHUVA",
+        "imagem":"https://drive.google.com/file/d/17QAIQ12tR-TVCjCFBCch_uqhnupLIzj3/view?usp=drive_link",
         "link": "https:www.youtu.be\/DjLUUzhxblE",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 5,
         "nome": "CHUVOSO",
+        "imagem":"https://drive.google.com/file/d/1gAscpwJNqHiYwzIFxPhmpRWHpInF7B85/view?usp=drive_link",
         "link": "https:www.youtu.be\/Fpv4mUTum8g",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 6,
         "nome": "ENSOLARADO",
+        "imagem":"https://drive.google.com/file/d/1XO670uyxPRmMrg1vi5PTK2LMRlYV_lMh/view?usp=drive_link",
         "link": "https:www.youtu.be\/DsFj3p8Xz08",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 7,
         "nome": "FLOCOS DE NEVE",
+        "imagem":"https://drive.google.com/file/d/12LGg-knAP3Xb1KSK5RaXIc85S9zbUrs_/view?usp=drive_link",
         "link": "https:www.youtu.be\/QjjUaIv3R8k",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 8,
         "nome": "GUARDA CHUVA",
+        "imagem":"https://drive.google.com/file/d/1kWZWaD43fywJPj7VpPFt8YdizC9xTjDi/view?usp=drive_link",
         "link": "https:www.youtu.be\/n03X15zddNg",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 9,
         "nome": "GUARDA SOL",
+        "imagem":"https://drive.google.com/file/d/1IDNNnpAViZMCWW2SsjOfjVoLg0x2JAH_/view?usp=drive_link",
         "link": "https:www.youtu.be\/99fAdUKN8LM",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 10,
         "nome": "NEVE",
+        "imagem":"https://drive.google.com/file/d/1NuR6wvBkl2Uj2-ZsIHP-d88IfE-fyaMI/view?usp=drive_link",
         "link": "https:www.youtu.be\/Jm4UK1BJRR4",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 11,
         "nome": "NUBLADO",
+        "imagem":"https://drive.google.com/file/d/1RfTQmc1ClogZSjPTQRErmmQ5Qd7Kay7C/view?usp=drive_link",
         "link": "https:www.youtu.be\/9VdP3QQLj9k",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 12,
         "nome": "NUVEM",
+        "imagem":"https://drive.google.com/file/d/1O5GsWMJcAeLxi6TrFIf0aJ2YiyhEybHO/view?usp=drive_link",
         "link": "https:www.youtu.be\/0UohVjCbYTQ",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 13,
         "nome": "RELÂMPAGO",
+        "imagem":"https://drive.google.com/file/d/1R6PIivL7whrcb0MqYPuoKrZT0qwEoTvf/view?usp=drive_link",
         "link": "https:www.youtu.be\/hkekP_-NMGw",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 14,
         "nome": "TEMPESTADE",
+        "imagem":"https://drive.google.com/file/d/1f0nxYOngko3wNkgBt5pBhGntbJJBR75Q/view?usp=drive_link",
         "link": "https:www.youtu.be\/Tlotlr1Tung",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 15,
         "nome": "VENTANIA",
+        "imagem":"https://drive.google.com/file/d/1F4j9y0wYMFTEfuraxK8aCQpZ2bFwsdeZ/view?usp=drive_link",
         "link": "https://youtu.be\/5p-4YbeN5J8",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
     {
         "numero": 16,
         "nome": "VENTO",
+        "imagem":"https://drive.google.com/file/d/1s9sYxUBCRGczbUiAwfAEmurVShfUDklm/view?usp=drive_link",
         "link": "https:www.youtu.be\/4_WksI-Qpoc",
         "categoria": "VERBETES – CONDIÇÕES DO TEMPO"
     },
@@ -3910,24 +3978,28 @@
     {
         "numero": 1,
         "nome": "LUA CHEIA",
+        "imagem":"https://drive.google.com/file/d/18SKmx8ggmPAhytK1TQTccEh9PITPvJpO/view?usp=drive_link",
         "link": "https:www.youtu.be\/0PYdZFPhy0Y",
         "categoria": "VERBETES – FASE DA LUA"
     },
     {
         "numero": 2,
         "nome": "LUA CRESCENTE",
+        "imagem":"https://drive.google.com/file/d/1ogLBLJG3jeBkRmCRzrvYWuiKGdRpP_Dn/view?usp=drive_link",
         "link": "https:https://youtu.be/KL3j1RGqcGE",
         "categoria": "VERBETES – FASE DA LUA"
     },
     {
         "numero": 3,
         "nome": "LUA MINGUANTE",
+        "imagem":"https://drive.google.com/file/d/1AUVRwrh0wmSlxvA-iQML6DjlHu2xw97e/view?usp=drive_link",
         "link": "https:www.youtu.be\/FrWdXUOLIds",
         "categoria": "VERBETES – FASE DA LUA"
     },
     {
         "numero": 4,
         "nome": "LUA NOVA",
+        "imagem":"https://drive.google.com/file/d/1XtKZ99qjMDLFwT6x7cLWMJlsmkGDRQmr/view?usp=drive_link",
         "link": "https://youtu.be/lM5VuRTPiMk",
         "categoria": "VERBETES – FASE DA LUA"
     },
@@ -4119,116 +4191,134 @@
     },
     {
         "numero": 1,
-        "nome": "AQUIARIO",
+        "nome": "AQUARIO",
+        "imagem":"https://drive.google.com/file/d/1cdqn21jebd1FKU9m8m2n7p6id_U3gHV5/view?usp=drive_link",
         "link": "https:www.youtu.be\/pG9HKyXg8Dg",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 2,
         "nome": "ARIES",
+        "imagem":"https://drive.google.com/file/d/15MJfZyQ63HY7w0FAl8FG0f6SfPk4VUEo/view?usp=drive_link",
         "link": "https:www.youtu.be\/lwlzFM9dPO0",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 3,
         "nome": "CÂNCER",
+        "imagem":"https://drive.google.com/file/d/1aN5GxTfjdzNkmtsDCAm6etY3qr9sxbm-/view?usp=drive_link",
         "link": "https:www.youtu.be\/L0DuG_E_O_g",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 4,
         "nome": "CAPRRICORNIO",
+        "imagem":"https://drive.google.com/file/d/1rBLsbhmeWFJJS_nkjwaQVNOPSwxsnxRI/view?usp=drive_link",
         "link": "https:www.youtu.be\/jsIvTbo5AdQ",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 5,
         "nome": "ESCORPIÃO",
+        "imagem":"https://drive.google.com/file/d/1XY66Ava0uMpP-AHvBiQ6i8EuGGenZxO8/view?usp=drive_link",
         "link": "https:www.youtu.be\/RbByKQLWmqk",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 6,
         "nome": "GÊMIOS",
+        "imagem":"https://drive.google.com/file/d/1jtFMbl4Oj8gzLdMDWAf86izxVxA731qV/view?usp=drive_link",
         "link": "https:www.youtu.be\/od5B3GH2BoQ",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 7,
         "nome": "LEÃO",
+        "imagem":"https://drive.google.com/file/d/133t0d2NlavhuStfPNDHfC_7vTGgTEeZS/view?usp=drive_link",
         "link": "https:www.youtu.be\/Tc2KnsU5-Ac",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 8,
         "nome": "LIBRA",
+        "imagem":"https://drive.google.com/file/d/1gyc_4LpYbqmRawKJH-bXVbu1O3uzNtEd/view?usp=drive_link",
         "link": "https:www.youtu.be\/fS7Eyd1q_EU",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 9,
         "nome": "PEIXES",
+        "imagem":"https://drive.google.com/file/d/1WW9CLOclvOYeU4AicedxYLtvIs73tjyi/view?usp=drive_link",
         "link": "https:www.youtu.be\/8Yl5ILtUDGM",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 10,
         "nome": "SAGITÁRIO",
+        "imagem":"https://drive.google.com/file/d/1BT57HLHf-9HzdigsbpNqg2f9pIXlRUf7/view?usp=drive_link",
         "link": "https:www.youtu.be\/zyhC5EP_SAQ",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 11,
         "nome": "TOURO",
+        "imagem":"https://drive.google.com/file/d/1cVgwSLch9nIYgNCId47leu74nbUCjrVR/view?usp=drive_link",
         "link": "https:www.youtu.be\/duZqXPcun38",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 12,
         "nome": "VIRGEM",
+        "imagem":"https://drive.google.com/file/d/1rOP0QAb7vQJpli-azdMVuruAk8fyfQos/view?usp=drive_link",
         "link": "https:www.youtu.be\/jhLLpGqer-8",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 13,
         "nome": "SIGNOS",
+        "imagem":"https://drive.google.com/file/d/10AY644bcJgYTnb3zZpMVUmE9U1GfQ1Re/view?usp=drive_link",
         "link": "https:www.youtu.be\/VnXtt910SgE",
         "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
     },
     {
         "numero": 1,
         "nome": "ÁFRICA",
-        "imagem":"https://drive.google.com/file/d/1_f8rhC5BjjiS8rVilH39C9AwULp4Po07/view?usp=drive_link",
+        "imagem":"https://drive.google.com/file/d/18P16gIFfxSMuEjbEzFW3-uZLg8AIJyes/view?usp=drive_link",
         "link": "https:www.youtu.be\/w5kyi3-VNoI",
         "categoria": "VERBETES – CONTINETES"
     },
     {
         "numero": 2,
         "nome": "AMÉRICA DO NORTE",
+        "imagem":"https://drive.google.com/file/d/1eCdOOw-qKMhNMYb9O5g0gwT2lo0iVrX6/view?usp=drive_link",
         "link": "https:www.youtu.be\/gQC668e_1_A",
         "categoria": "VERBETES – CONTINETES"
     },
     {
         "numero": 3,
         "nome": "AMÉRICA DO SUL",
+        "imagem":"https://drive.google.com/file/d/1kaaq4xuWX3hiSvcU0M6JUvSMg0uf6oda/view?usp=drive_link",
         "link": "https:www.youtu.be\/AFV4Z8HL5Gg",
         "categoria": "VERBETES – CONTINETES"
     },
     {
         "numero": 4,
         "nome": "ÁSIA",
+        "imagem":"https://drive.google.com/file/d/12_qvczwXupJ9Lc28OprUZyfDFUREEa96/view?usp=drive_link",
         "link": "https:www.youtu.be\/V2_QlhANNTQ",
         "categoria": "VERBETES – CONTINETES"
     },
     {
         "numero": 5,
         "nome": "EUROPA",
+        "imagem":"https://drive.google.com/file/d/1mhPfIBEtpGBK14vnpuaZ2RpcjrlRhMqR/view?usp=drive_link",
         "link": "https:www.youtu.be\/XnC8fxxbVGI",
         "categoria": "VERBETES – CONTINETES"
     },
     {
         "numero": 6,
         "nome": "OCEANIA",
+        "imagem":"https://drive.google.com/file/d/1H4sV0DjjrrJ1S6yQ48Pz944AtG7T9hJd/view?usp=drive_link",
         "link": "https:www.youtu.be\/AEqRiUMGNhY",
         "categoria": "VERBETES – CONTINETES"
     },
