@@ -575,352 +575,187 @@
     },
     {
         "numero": 1,
+        "imagem": "https://drive.google.com/file/d/1S9AIB6ppLwZlGUU-vnHGLdq_TCrfK3d7/view?usp=drive_link",
         "nome": "AVÓ",
-        "link": "https:www.youtu.be\/C-yB6gK8FMI",
+        "link": "https:www.youtu.be/C-yB6gK8FMI",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 2,
+        "imagem": "https://drive.google.com/file/d/1Mwm69-m_8yszMnl1CRDvM_OCq8bW9rt2/view?usp=drive_link",
         "nome": "AVÔ",
-        "link": "https:www.youtu.be\/6zM2ASW1hDE",
+        "link": "https:www.youtu.be/6zM2ASW1hDE",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 3,
+        "imagem": "https://drive.google.com/file/d/1jRaUW66SwftRTrPE9_awweT9axR-Kc47/view?usp=drive_link",
         "nome": "BEBÊ",
-        "link": "https:www.youtu.be\/YjMnUTh8SrI",
+        "link": "https:www.youtu.be/YjMnUTh8SrI",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 4,
+        "imagem": "https://drive.google.com/file/d/1E5K_x0Yh5Kl6TIQHSR2nmFJHbU0NCcNz/view?usp=drive_link",
         "nome": "CASAL GAY",
-        "link": "https:www.youtu.be\/yAnt0CB6qzU",
+        "link": "https:www.youtu.be/yAnt0CB6qzU",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 5,
+        "imagem": "https://drive.google.com/file/d/1xYp2Goxqq_dPjBsljGnBXVFRswWqJNIJ/view?usp=drive_link",
         "nome": "CASAL HETERO",
-        "link": "https:www.youtu.be\/GNCCe2mDR94",
+        "link": "https:www.youtu.be/GNCCe2mDR94",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 6,
+        "imagem": "https://drive.google.com/file/d/1Y44a317kqTyuqjHyAjgB3wutz1OkRs4q/view?usp=drive_link",
         "nome": "CASAL LÉSBICO",
-        "link": "https:www.youtu.be\/5dMRRYjVN1U",
+        "link": "https:www.youtu.be/5dMRRYjVN1U",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 7,
+        "imagem": "https://drive.google.com/file/d/1IlgyIFZLezMRxcrJdS6LQf2t-M19ROn_/view?usp=drive_link",
         "nome": "DIVORCIADOS",
-        "link": "https:www.youtu.be\/T_tQtKSlpVs",
+        "link": "https:www.youtu.be/T_tQtKSlpVs",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 8,
+        "imagem": "https://drive.google.com/file/d/1nqAsdSID_9bY72m6FpYBahe33Ailvzqm/view?usp=drive_link",
         "nome": "ESPOSA",
-        "link": "https:www.youtu.be\/KDAY3ClpjlM",
+        "link": "https:www.youtu.be/KDAY3ClpjlM",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 9,
+        "imagem": "https://drive.google.com/file/d/10ByAghHd5TIzy0xkzHetcC12bp3W9Ve_/view?usp=drive_link",
         "nome": "FAMILIA",
-        "link": "https:www.youtu.be\/68KY2RMDesY",
+        "link": "https:www.youtu.be/68KY2RMDesY",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 10,
+        "imagem": "https://drive.google.com/file/d/1hLg_w6dB3CxwHjby1-8j50zdD6lpePYa/view?usp=drive_link",
         "nome": "FILHA",
-        "link": "https:www.youtu.be\/rxzhwIPK_c8",
+        "link": "https:www.youtu.be/rxzhwIPK_c8",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 11,
+        "imagem": "https://drive.google.com/file/d/1pBLlVo725C3NvOzyMSJEgPTju63kI7XT/view?usp=drive_link",
         "nome": "FILHO",
-        "link": "https:www.youtu.be\/tA6n2cXK4MQ",
+        "link": "https:www.youtu.be/tA6n2cXK4MQ",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 12,
+        "imagem": "https://drive.google.com/file/d/11I4XlpRhloM6ofDIPkn8mg32EP7kIPSM/view?usp=drive_link",
         "nome": "IRMÃ",
-        "link": "https:www.youtu.be\/Upqwrg_T_DE",
+        "link": "https:www.youtu.be/Upqwrg_T_DE",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 13,
+        "imagem": "https://drive.google.com/file/d/1eVffcVDXn-66Bt7-jxTjbo_O1YhBnJo8/view?usp=drive_link",
         "nome": "IRMÃO",
-        "link": "https:www.youtu.be\/2fuh0xwFvo8",
+        "link": "https:www.youtu.be/2fuh0xwFvo8",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 14,
+        "imagem": "https://drive.google.com/file/d/14WrrBb2QBP7CFEykSM4fMJEwZzx92AHS/view?usp=drive_link",
         "nome": "MADRASTA",
-        "link": "https:www.youtu.be\/7J2f28rtaMI",
+        "link": "https:www.youtu.be/7J2f28rtaMI",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 15,
+        "imagem": "https://drive.google.com/file/d/1hMOcVHeuxSTR0ocq3A3Ok2NeiWwtMY10/view?usp=drive_link",
         "nome": "MÃE",
-        "link": "https:www.youtu.be\/pz7Jn7wvlcQ",
+        "link": "https:www.youtu.be/pz7Jn7wvlcQ",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 16,
+        "imagem": "https://drive.google.com/file/d/1-E2YG-h-4_4uZAzM5i34e2_ytSEM24Bv/view?usp=drive_link",
         "nome": "MARIDO",
-        "link": "https:www.youtu.be\/eeXzfc8rFSw",
+        "link": "https:www.youtu.be/eeXzfc8rFSw",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 17,
+        "imagem": "https://drive.google.com/file/d/1kp6-JuS8ZA07IhAPS7MsI9ojm8fc1PtC/view?usp=drive_link",
         "nome": "NETA",
-        "link": "https:www.youtu.be\/wl5FdII4NVk",
+        "link": "https:www.youtu.be/wl5FdII4NVk",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 18,
+        "imagem": "https://drive.google.com/file/d/12j92PQv3sJAb8-aClpJqDtbclXvDvcgf/view?usp=drive_link",
         "nome": "NETO",
-        "link": "https:www.youtu.be\/sBDsGmw1vyo",
+        "link": "https:www.youtu.be/sBDsGmw1vyo",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 19,
+        "imagem": "https://drive.google.com/file/d/1gRvcvdLCzVAF5R3JD9UhsCYRKsS7krgd/view?usp=drive_link",
         "nome": "PADRASTO",
-        "link": "https:www.youtu.be\/xV9inlgufj0",
+        "link": "https:www.youtu.be/xV9inlgufj0",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 20,
+        "imagem": "https://drive.google.com/file/d/1t4MS2JxIKfOLAxTZhSfz4T79v3j_RlHk/view?usp=drive_link",
         "nome": "PAI",
-        "link": "https:www.youtu.be\/8Zlg4CRqBAQ",
+        "link": "https:www.youtu.be/8Zlg4CRqBAQ",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 21,
+        "imagem": "https://drive.google.com/file/d/1uReiw2_HPOt1sypDKBEfrCrQwdVm88ao/view?usp=drive_link",
         "nome": "PRIMA",
-        "link": "https:www.youtu.be\/xRjm9234l0E",
+        "link": "https:www.youtu.be/xRjm9234l0E",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 22,
+        "imagem": "https://drive.google.com/file/d/1_v2kWtmgiVTUEdnwNqQxGu-4sv-arOPG/view?usp=drive_link",
         "nome": "PRIMO",
-        "link": "https:www.youtu.be\/cAjHk0EKrew",
+        "link": "https:www.youtu.be/cAjHk0EKrew",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 23,
+        "imagem": "https://drive.google.com/file/d/1RtSMvLt2KrsRacfGEQak4x_6Vx3Ca3eI/view?usp=drive_link",
         "nome": "SOBRINHA",
-        "link": "https:www.youtu.be\/HEBgjnkfa5E",
+        "link": "https:www.youtu.be/HEBgjnkfa5E",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 24,
+        "imagem": "https://drive.google.com/file/d/1Hs-FWv5WbNEvDVihwtk1L00BbmNhASNe/view?usp=drive_link",
         "nome": "SOBRINHO",
-        "link": "https:www.youtu.be\/eCmE1fm2anw",
+        "link": "https:www.youtu.be/eCmE1fm2anw",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 25,
+        "imagem": "https://drive.google.com/file/d/1ozRsQNNYw8PrIM3KiKetblsXLqogHP_J/view?usp=drive_link",
         "nome": "TIA",
-        "link": "https:www.youtu.be\/9hpsDCD52og",
+        "link": "https:www.youtu.be/9hpsDCD52og",
         "categoria": "MINHA FAMILIA"
     },
     {
         "numero": 26,
+        "imagem": "https://drive.google.com/file/d/1jJsr4i2jIstUYfzr4jLP6vWAVTMPptoW/view?usp=drive_link",
         "nome": "TIO",
-        "link": "https:www.youtu.be\/1k_5OWyMOPk",
+        "link": "https:www.youtu.be/1k_5OWyMOPk",
         "categoria": "MINHA FAMILIA"
     },
-    {
-        "numero": 1,
-        "nome": "ABAJUR",
-        "link": "https:www.youtu.be\/z8hkIFS72nA",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 2,
-        "nome": "AÇUCAREIRO",
-        "link": "https:www.youtu.be\/QW1g0LJ6sso",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 3,
-        "nome": "ALMOFADA",
-        "link": "https:www.youtu.be\/cfYTBIY4NSU",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 4,
-        "nome": "ÁRVORE",
-        "link": "https:www.youtu.be\/YYVVjiLSFyQ",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 5,
-        "nome": "BALANÇO",
-        "link": "https:www.youtu.be\/YFFzZhzsXDk",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 6,
-        "nome": "BALDE",
-        "link": "https:www.youtu.be\/xeuHjpqzmxI",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 7,
-        "nome": "BANHEIRO",
-        "link": "https:www.youtu.be\/CPIagWV1fjI",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 8,
-        "nome": "BARBEADOR",
-        "link": "https:www.youtu.be\/RZ84WHSVKr0",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 9,
-        "nome": "BOLHAS",
-        "link": "https:www.youtu.be\/nhCLZXJbyXU",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 10,
-        "nome": "CABECEIRA",
-        "link": "https:www.youtu.be\/pKifazrxT4g",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 11,
-        "nome": "CADEIRA",
-        "link": "https:www.youtu.be\/HS9YMVYVZE0",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 12,
-        "nome": "CAFÉ DA MANHÃ",
-        "link": "https:www.youtu.be\/c9ajUcvCBtY",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 13,
-        "nome": "CAIXA DE CORREIO",
-        "link": "https:www.youtu.be\/ASiyhu0wzhs",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 14,
-        "nome": "CALÇADA",
-        "link": "https://youtu.be/o4huWfjNObg",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 15,
-        "nome": "CANECA",
-        "link": "https:www.youtu.be\/lKmX0vXDKF0",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 16,
-        "nome": "CASA",
-        "link": "https:www.youtu.be\/WJz9pqOyx-I",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 17,
-        "nome": "CASA DE CACHORRO",
-        "link": "https:www.youtu.be\/jCXe11moP4g",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 18,
-        "nome": "CERCA",
-        "link": "https:www.youtu.be\/hVn008jQ_60",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 19,
-        "nome": "CHÃO",
-        "link": "https:www.youtu.be\/F-tas-duicw",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 20,
-        "nome": "CHAVE",
-        "link": "https:www.youtu.be\/mB0Lus7Rt_g",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 21,
-        "nome": "CHUVEIRO",
-        "link": "https:www.youtu.be\/rjLNnSkIWEQ",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 22,
-        "nome": "COBERTOR",
-        "link": "https:www.youtu.be\/FtDzvW62ZPI",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 23,
-        "nome": "COLHER",
-        "link": "https:www.youtu.be\/41PddFGfn7g",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 24,
-        "nome": "COMPUTADOR",
-        "link": "https:www.youtu.be\/UsFYfBFve4Q",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 25,
-        "nome": "COPO",
-        "link": "https:www.youtu.be\/GnmczTJZ7cE",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 26,
-        "nome": "CORTINA",
-        "link": "https:www.youtu.be\/fk5RNTwNLjc",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 27,
-        "nome": "COTONETE",
-        "link": "https:www.youtu.be\/20KN9C_8X90",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 28,
-        "nome": "COZINHA",
-        "link": "https:www.youtu.be\/e1eiGfm4ydI",
-        "categoria": "21\tCAULE"
-    },
-    {
-        "numero": 29,
-        "nome": "DESODORANTE",
-        "link": "https:www.youtu.be\/3CU-aGrc89s",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 30,
-        "nome": "DVD",
-        "link": "https:www.youtu.be\/a7524KaLSF8",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 31,
-        "nome": "ENTRAR",
-        "link": "https:www.youtu.be\/1iyWwQe0xiU",
-        "categoria": "MINHA CASA"
-    },
-    {
-        "numero": 32,
-        "nome": "ESCADA",
-        "link": "https:www.youtu.be\/fpaICWUCg_M",
-        "categoria": "MINHA CASA"
-    },
+    
     {
         "numero": 38,
         "nome": "ESCOVA DE DENTE",
@@ -3960,6 +3795,7 @@
     {
         "numero": 1,
         "nome": "ÁFRICA",
+        "imagem":"https://drive.google.com/file/d/1_f8rhC5BjjiS8rVilH39C9AwULp4Po07/view?usp=drive_link",
         "link": "https:www.youtu.be\/w5kyi3-VNoI",
         "categoria": "VERBETES – CONTINETES"
     },
@@ -3996,144 +3832,168 @@
     {
         "numero": 1,
         "nome": "ANGOLA",
+        "imagem":"https://drive.google.com/file/d/1obc2yWAe_UEy1qm_zqvTkTWDi9ZI55Dh/view?usp=drive_link",
         "link": "https:www.youtu.be\/6ZogX1k0t3g",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 2,
         "nome": "ÁFRICA DO SUL",
+        "imagem":"https://drive.google.com/file/d/1_f8rhC5BjjiS8rVilH39C9AwULp4Po07/view?usp=drive_link",
         "link": "https:www.youtu.be\/QOOygE8_rM8",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 3,
         "nome": "ALEMANHA",
+        "imagem":"https://drive.google.com/file/d/1k3r92ryQH6N-gIrtpk-d9DRTFtkN6Y3A/view?usp=drive_link",
         "link": "https:www.youtu.be\/oigFEXUa_-0",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 4,
         "nome": "ARGENTINA",
+        "imagem":"https://drive.google.com/file/d/1X5yTeHPNtX1WCFI0lBRD5o87ytYuOqlD/view?usp=drive_link",
         "link": "https:www.youtu.be\/Ha-eKCEie_g",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 5,
         "nome": "AUSTRALIA",
+        "imagem":"https://drive.google.com/file/d/1bKvOVvPXIzlyLnk0JN69NMdhsma7blpG/view?usp=drive_link",
         "link": "https:www.youtu.be\/r2IR9dh2a4Y",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 6,
         "nome": "BRASIL",
+        "imagem":"https://drive.google.com/file/d/1BW-yxJmriD6vSQQp7sQqjPHKLZvEzYZ8/view?usp=drive_link",
         "link": "https:www.youtu.be\/2XihhP4W4hM",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 7,
         "nome": "CANADÁ",
+        "imagem":"https://drive.google.com/file/d/1bkipAsdCgD1hHfWijCXsw7e-01tPB5ZM/view?usp=drive_link",
         "link": "https:www.youtu.be\/h12vwNoRpyo",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 8,
         "nome": "CHINA",
+        "imagem":"https://drive.google.com/file/d/1mS3MD7kMygn4mglqzcabuzuu8q10rtl2/view?usp=drive_link",
         "link": "https:www.youtu.be\/x6htY-3PQC8",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 9,
         "nome": "EGITO",
+        "imagem":"https://drive.google.com/file/d/10wpbmswxOZDg_EkvAB8aqV9llt7BA-Vn/view?usp=drive_link",
         "link": "https:www.youtu.be\/Q3K4NPBqRW0",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 10,
         "nome": "ESPANHA",
+        "imagem":"https://drive.google.com/file/d/10cMF2OAj_JRg4y9XfscepDO7fdpFtS6j/view?usp=drive_link",
         "link": "https:www.youtu.be\/jNmAcDJ2QO4",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 11,
         "nome": "ESTADOS UNIDOS",
+        "imagem":"https://drive.google.com/file/d/1P5jCEsuokccdJStebmZC0PwnJxiFD2Ni/view?usp=drive_link",
         "link": "https:www.youtu.be\/sJfJBkhmak8",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 12,
         "nome": "FRANÇA",
+        "imagem":"https://drive.google.com/file/d/1obak8TonJePjJFn6LUhRPkoINlrU6U5A/view?usp=drive_link",
         "link": "https:www.youtu.be\/M9ctZPchovM",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 13,
         "nome": "ÍNDIA",
+        "imagem":"https://drive.google.com/file/d/14aQeSgi8x_jUQ256YqkFkZdcBBAm95pr/view?usp=drive_link",
         "link": "https:www.youtu.be\/ny0pPke4-R0",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 14,
         "nome": "INGLATERRA",
+        "imagem":"https://drive.google.com/file/d/1O847j52fo74kpQqk9YMg9Cef6W4dLy_h/view?usp=drive_link",
         "link": "https:www.youtu.be\/_Sx1ie0HqKs",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 15,
         "nome": "ITALIA",
+        "imagem":"https://drive.google.com/file/d/1rzdojc-6RUuIoiYMkYpe3zGJmJlHCfwR/view?usp=drive_link",
         "link": "https:www.youtu.be\/JvJ6OvUXoM4",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 16,
         "nome": "JAPÃO",
+        "imagem":"https://drive.google.com/file/d/1W67ONinsOVTiC8beYtbA-9J4fQQOa2E5/view?usp=drive_link",
         "link": "https:www.youtu.be\/54fEB_ulJMI",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 17,
         "nome": "MÉXICO",
+        "imagem":"https://drive.google.com/file/d/1fyttIVZ9TGLrk5J6S6TCr3nKjekrotFY/view?usp=drive_link",
         "link": "https:www.youtu.be\/9mmcl7Qjy0M",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 18,
         "nome": "NOVA ZELANDIA",
+        "imagem":"https://drive.google.com/file/d/1i25FPQzMpLSyBvOqtaIOv9Dnm881gxSF/view?usp=drive_link",
         "link": "https:www.youtu.be\/78-vtEdaZ0I",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 19,
         "nome": "PERU",
+        "imagem":"https://drive.google.com/file/d/1jdARgoI3F4SpjHv5Y9qcbv4hUMt6ENTY/view?usp=drive_link",
         "link": "https:www.youtu.be\/GHhu6ZxRSP4",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 20,
         "nome": "PORTO RICO",
+        "imagem":"https://drive.google.com/file/d/1Ri9bx89EjThdISF6gEsEAFy6hlU6HQqN/view?usp=drive_link",
         "link": "https:www.youtu.be\/t1FbMzctXtM",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 21,
         "nome": "PORTUGAL",
+        "imagem":"https://drive.google.com/file/d/12K3LTowbAuefJrekkNJHuyUquLI7tPYT/view?usp=drive_link",
         "link": "https:www.youtu.be\/F7pmD6RXsYc",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 22,
         "nome": "RÚSSIA",
+        "imagem":"https://drive.google.com/file/d/1TeuFtKRks_Xmmife6oIjryNr7FbaQXgG/view?usp=drive_link",
         "link": "https:www.youtu.be\/YcpMEWkhPR0",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 23,
         "nome": "SUÉCIA",
+        "imagem":"https://drive.google.com/file/d/1ubRYfxt14MQYvnY8Tcf6hGE6dETLGHSz/view?usp=drive_link",
         "link": "https:www.youtu.be\/U6Lle6bMQV4",
         "categoria": "VERBETES – NACIONALIDADES"
     },
     {
         "numero": 24,
         "nome": "SUÍÇA",
+        "imagem":"https://drive.google.com/file/d/1csurgkwxuYNaWO0yZ4PV2vEUfpP6B2fL/view?usp=drive_link",
         "link": "https:www.youtu.be\/syiYSD3rtpk",
         "categoria": "VERBETES – NACIONALIDADES"
     },
