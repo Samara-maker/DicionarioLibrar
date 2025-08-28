@@ -1,4 +1,5 @@
 
+
 const dados = []
 
 
@@ -84,4 +85,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+let links = [];
 
+fetch("links.json") // arquivo deve estar na mesma pasta do seu .html
+  .then(response => response.json())
+  .then(data => {
+    links = data;
+    console.log("JSON carregado:", links);
+  })
+  .catch(error => console.error("Erro ao carregar JSON:", error));
+const barraPesquisa = document.querySelector(".search-container #busca")
+
+barraPesquisa.addEventListener("input", pesquisaDinamica)
+console.log(links.nome)
+function pesquisaDinamica(event) {
+  const item = links.filter(item => 
+    (event.target.value.toLowerCase().includes(item.nome.toLowerCase())))
+    
+  
+
+}
