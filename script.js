@@ -1,56 +1,5 @@
 
 
-const dados = []
-
-
-function mostrarMenu() {
-  document.getElementById("telaInicial").style.display = "none";
-  document.getElementById("menu").classList.remove("oculto");
-  exibirTodos();
-}
-
-function exibirTodos() {
-  mostrarResultados(dados);
-}
-
-function buscar() {
-  const termo = document.getElementById("busca").value.toLowerCase();
-  const filtrados = dados.filter(item =>
-    item.palavra.toLowerCase().includes(termo)
-  );
-  mostrarResultados(filtrados);
-}
-
-function filtrarCategoria(categoria) {
-  if (categoria === "todos") {
-    exibirTodos();
-  } else {
-    const filtrados = dados.filter(item => item.categoria === categoria);
-    mostrarResultados(filtrados);
-  }
-}
-
-function mostrarResultados(lista) {
-  const container = document.getElementById("resultados");
-  container.innerHTML = "";
-
-  if (lista.length === 0) {
-    container.innerHTML = "<p>Nenhum resultado encontrado.</p>";
-    return;
-  }
-
-  lista.forEach(item => {
-    const div = document.createElement("div");
-    div.classList.add("video-item");
-
-    div.innerHTML = `
-      <h3>${item.palavra}</h3>
-      <video controls src="${item.video}"></video>
-    `;
-
-    container.appendChild(div);
-  });
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   var videos = document.querySelectorAll(".grid-videos-item");
@@ -99,9 +48,9 @@ const barraPesquisa = document.querySelector(".search-container #busca")
 barraPesquisa.addEventListener("input", pesquisaDinamica)
 console.log(links.nome)
 function pesquisaDinamica(event) {
-  const item = links.filter(item => 
+  const item = links.filter(item =>
     (event.target.value.toLowerCase().includes(item.nome.toLowerCase())))
-    
-  
+
+
 
 }
