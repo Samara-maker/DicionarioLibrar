@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -37,161 +33,187 @@
   <script>
     const videos = [
       {
-        "numero":1,
-        "nome":"AVÓ",
-        "link":"https:www.youtu.be\/C-yB6gK8FMI",
-        "categoria":"MINHA FAMILIA"
+        "numero": 1,
+        "imagem": "https://drive.google.com/file/d/1S9AIB6ppLwZlGUU-vnHGLdq_TCrfK3d7/view?usp=drive_link",
+        "nome": "AVÓ",
+        "link": "https:www.youtu.be/C-yB6gK8FMI",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":2,
-        "nome":"AVÔ",
-        "link":"https:www.youtu.be\/6zM2ASW1hDE",
-        "categoria":"MINHA FAMILIA"
+        "numero": 2,
+        "imagem": "https://drive.google.com/file/d/1Mwm69-m_8yszMnl1CRDvM_OCq8bW9rt2/view?usp=drive_link",
+        "nome": "AVÔ",
+        "link": "https:www.youtu.be/6zM2ASW1hDE",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":3,
-        "nome":"BEBÊ",
-        "link":"https:www.youtu.be\/YjMnUTh8SrI",
-        "categoria":"MINHA FAMILIA"
+        "numero": 3,
+        "imagem": "https://drive.google.com/file/d/1jRaUW66SwftRTrPE9_awweT9axR-Kc47/view?usp=drive_link",
+        "nome": "BEBÊ",
+        "link": "https:www.youtu.be/YjMnUTh8SrI",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":4,
-        "nome":"CASAL GAY",
-        "link":"https:www.youtu.be\/yAnt0CB6qzU",
-        "categoria":"MINHA FAMILIA"
+        "numero": 4,
+        "imagem": "https://drive.google.com/file/d/1E5K_x0Yh5Kl6TIQHSR2nmFJHbU0NCcNz/view?usp=drive_link",
+        "nome": "CASAL GAY",
+        "link": "https:www.youtu.be/yAnt0CB6qzU",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":5,
-        "nome":"CASAL HETERO",
-        "link":"https:www.youtu.be\/GNCCe2mDR94",
-        "categoria":"MINHA FAMILIA"
+        "numero": 5,
+        "imagem": "https://drive.google.com/file/d/1xYp2Goxqq_dPjBsljGnBXVFRswWqJNIJ/view?usp=drive_link",
+        "nome": "CASAL HETERO",
+        "link": "https:www.youtu.be/GNCCe2mDR94",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":6,
-        "nome":"CASAL LÉSBICO",
-        "link":"https:www.youtu.be\/5dMRRYjVN1U",
-        "categoria":"MINHA FAMILIA"
+        "numero": 6,
+        "imagem": "https://drive.google.com/file/d/1Y44a317kqTyuqjHyAjgB3wutz1OkRs4q/view?usp=drive_link",
+        "nome": "CASAL LÉSBICO",
+        "link": "https:www.youtu.be/5dMRRYjVN1U",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":7,
-        "nome":"DIVORCIADOS",
-        "link":"https:www.youtu.be\/T_tQtKSlpVs",
-        "categoria":"MINHA FAMILIA"
+        "numero": 7,
+        "imagem": "https://drive.google.com/file/d/1IlgyIFZLezMRxcrJdS6LQf2t-M19ROn_/view?usp=drive_link",
+        "nome": "DIVORCIADOS",
+        "link": "https:www.youtu.be/T_tQtKSlpVs",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":8,
-        "nome":"ESPOSA",
-        "link":"https:www.youtu.be\/KDAY3ClpjlM",
-        "categoria":"MINHA FAMILIA"
+        "numero": 8,
+        "imagem": "https://drive.google.com/file/d/1nqAsdSID_9bY72m6FpYBahe33Ailvzqm/view?usp=drive_link",
+        "nome": "ESPOSA",
+        "link": "https:www.youtu.be/KDAY3ClpjlM",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":9,
-        "nome":"FAMILIA",
-        "link":"https:www.youtu.be\/68KY2RMDesY",
-        "categoria":"MINHA FAMILIA"
+        "numero": 9,
+        "imagem": "https://drive.google.com/file/d/10ByAghHd5TIzy0xkzHetcC12bp3W9Ve_/view?usp=drive_link",
+        "nome": "FAMILIA",
+        "link": "https:www.youtu.be/68KY2RMDesY",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":10,
-        "nome":"FILHA",
-        "link":"https:www.youtu.be\/rxzhwIPK_c8",
-        "categoria":"MINHA FAMILIA"
+        "numero": 10,
+        "imagem": "https://drive.google.com/file/d/1hLg_w6dB3CxwHjby1-8j50zdD6lpePYa/view?usp=drive_link",
+        "nome": "FILHA",
+        "link": "https:www.youtu.be/rxzhwIPK_c8",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":11,
-        "nome":"FILHO",
-        "link":"https:www.youtu.be\/tA6n2cXK4MQ",
-        "categoria":"MINHA FAMILIA"
+        "numero": 11,
+        "imagem": "https://drive.google.com/file/d/1pBLlVo725C3NvOzyMSJEgPTju63kI7XT/view?usp=drive_link",
+        "nome": "FILHO",
+        "link": "https:www.youtu.be/tA6n2cXK4MQ",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":12,
-        "nome":"IRMÃ",
-        "link":"https:www.youtu.be\/Upqwrg_T_DE",
-        "categoria":"MINHA FAMILIA"
+        "numero": 12,
+        "imagem": "https://drive.google.com/file/d/11I4XlpRhloM6ofDIPkn8mg32EP7kIPSM/view?usp=drive_link",
+        "nome": "IRMÃ",
+        "link": "https:www.youtu.be/Upqwrg_T_DE",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":13,
-        "nome":"IRMÃO",
-        "link":"https:www.youtu.be\/2fuh0xwFvo8",
-        "categoria":"MINHA FAMILIA"
+        "numero": 13,
+        "imagem": "https://drive.google.com/file/d/1eVffcVDXn-66Bt7-jxTjbo_O1YhBnJo8/view?usp=drive_link",
+        "nome": "IRMÃO",
+        "link": "https:www.youtu.be/2fuh0xwFvo8",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":14,
-        "nome":"MADRASTA",
-        "link":"https:www.youtu.be\/7J2f28rtaMI",
-        "categoria":"MINHA FAMILIA"
+        "numero": 14,
+        "imagem": "https://drive.google.com/file/d/14WrrBb2QBP7CFEykSM4fMJEwZzx92AHS/view?usp=drive_link",
+        "nome": "MADRASTA",
+        "link": "https:www.youtu.be/7J2f28rtaMI",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":15,
-        "nome":"MÃE",
-        "link":"https:www.youtu.be\/pz7Jn7wvlcQ",
-        "categoria":"MINHA FAMILIA"
+        "numero": 15,
+        "imagem": "https://drive.google.com/file/d/1hMOcVHeuxSTR0ocq3A3Ok2NeiWwtMY10/view?usp=drive_link",
+        "nome": "MÃE",
+        "link": "https:www.youtu.be/pz7Jn7wvlcQ",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":16,
-        "nome":"MARIDO",
-        "link":"https:www.youtu.be\/eeXzfc8rFSw",
-        "categoria":"MINHA FAMILIA"
+        "numero": 16,
+        "imagem": "https://drive.google.com/file/d/1-E2YG-h-4_4uZAzM5i34e2_ytSEM24Bv/view?usp=drive_link",
+        "nome": "MARIDO",
+        "link": "https:www.youtu.be/eeXzfc8rFSw",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":17,
-        "nome":"NETA",
-        "link":"https:www.youtu.be\/wl5FdII4NVk",
-        "categoria":"MINHA FAMILIA"
+        "numero": 17,
+        "imagem": "https://drive.google.com/file/d/1kp6-JuS8ZA07IhAPS7MsI9ojm8fc1PtC/view?usp=drive_link",
+        "nome": "NETA",
+        "link": "https:www.youtu.be/wl5FdII4NVk",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":18,
-        "nome":"NETO",
-        "link":"https:www.youtu.be\/sBDsGmw1vyo",
-        "categoria":"MINHA FAMILIA"
+        "numero": 18,
+        "imagem": "https://drive.google.com/file/d/12j92PQv3sJAb8-aClpJqDtbclXvDvcgf/view?usp=drive_link",
+        "nome": "NETO",
+        "link": "https:www.youtu.be/sBDsGmw1vyo",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":19,
-        "nome":"PADRASTO",
-        "link":"https:www.youtu.be\/xV9inlgufj0",
-        "categoria":"MINHA FAMILIA"
+        "numero": 19,
+        "imagem": "https://drive.google.com/file/d/1gRvcvdLCzVAF5R3JD9UhsCYRKsS7krgd/view?usp=drive_link",
+        "nome": "PADRASTO",
+        "link": "https:www.youtu.be/xV9inlgufj0",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":20,
-        "nome":"PAI",
-        "link":"https:www.youtu.be\/8Zlg4CRqBAQ",
-        "categoria":"MINHA FAMILIA"
+        "numero": 20,
+        "imagem": "https://drive.google.com/file/d/1t4MS2JxIKfOLAxTZhSfz4T79v3j_RlHk/view?usp=drive_link",
+        "nome": "PAI",
+        "link": "https:www.youtu.be/8Zlg4CRqBAQ",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":21,
-        "nome":"PRIMA",
-        "link":"https:www.youtu.be\/xRjm9234l0E",
-        "categoria":"MINHA FAMILIA"
+        "numero": 21,
+        "imagem": "https://drive.google.com/file/d/1uReiw2_HPOt1sypDKBEfrCrQwdVm88ao/view?usp=drive_link",
+        "nome": "PRIMA",
+        "link": "https:www.youtu.be/xRjm9234l0E",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":22,
-        "nome":"PRIMO",
-        "link":"https:www.youtu.be\/cAjHk0EKrew",
-        "categoria":"MINHA FAMILIA"
+        "numero": 22,
+        "imagem": "https://drive.google.com/file/d/1_v2kWtmgiVTUEdnwNqQxGu-4sv-arOPG/view?usp=drive_link",
+        "nome": "PRIMO",
+        "link": "https:www.youtu.be/cAjHk0EKrew",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":23,
-        "nome":"SOBRINHA",
-        "link":"https:www.youtu.be\/HEBgjnkfa5E",
-        "categoria":"MINHA FAMILIA"
+        "numero": 23,
+        "imagem": "https://drive.google.com/file/d/1RtSMvLt2KrsRacfGEQak4x_6Vx3Ca3eI/view?usp=drive_link",
+        "nome": "SOBRINHA",
+        "link": "https:www.youtu.be/HEBgjnkfa5E",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":24,
-        "nome":"SOBRINHO",
-        "link":"https:www.youtu.be\/eCmE1fm2anw",
-        "categoria":"MINHA FAMILIA"
+        "numero": 24,
+        "imagem": "https://drive.google.com/file/d/1Hs-FWv5WbNEvDVihwtk1L00BbmNhASNe/view?usp=drive_link",
+        "nome": "SOBRINHO",
+        "link": "https:www.youtu.be/eCmE1fm2anw",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":25,
-        "nome":"TIA",
-        "link":"https:www.youtu.be\/9hpsDCD52og",
-        "categoria":"MINHA FAMILIA"
+        "numero": 25,
+        "imagem": "https://drive.google.com/file/d/1ozRsQNNYw8PrIM3KiKetblsXLqogHP_J/view?usp=drive_link",
+        "nome": "TIA",
+        "link": "https:www.youtu.be/9hpsDCD52og",
+        "categoria": "MINHA FAMILIA"
     },
     {
-        "numero":26,
-        "nome":"TIO",
-        "link":"https:www.youtu.be\/1k_5OWyMOPk",
-        "categoria":"MINHA FAMILIA"
-    },
+        "numero": 26,
+        "imagem": "https://drive.google.com/file/d/1jJsr4i2jIstUYfzr4jLP6vWAVTMPptoW/view?usp=drive_link",
+        "nome": "TIO",
+        "link": "https:www.youtu.be/1k_5OWyMOPk",
+        "categoria": "MINHA FAMILIA"
+    }
     ];
 
     function criarVideos() {
@@ -211,6 +233,14 @@
         const h2 = document.createElement("h2");
         h2.textContent = `${video.nome}`;
 
+        videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
+
+        console.log(videoImagemLink);
+
+
+        const img = document.createElement("img");
+
+
         // criar iframe
         const iframe = document.createElement("iframe");
         iframe.width = "560";
@@ -224,11 +254,14 @@
         iframe.allowFullscreen = true;
 
         // montar estrutura
+        // montar estrutura
         div.appendChild(h2);
+        div.appendChild(img);
         div.appendChild(iframe);
-        
-        container.appendChild(div);
 
+        img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+        container.appendChild(div)
       });
     }
 

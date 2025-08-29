@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -36,149 +32,307 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-       {
-        "numero":1,
-        "nome":"ANGOLA",
-        "link":"https:www.youtu.be\/6ZogX1k0t3g",
-        "categoria":"VERBETES – NACIONALIDADES"
+      
+    {
+        "numero": 1,
+        "nome": "ANGOLA",
+        "imagem":"https://drive.google.com/file/d/1obc2yWAe_UEy1qm_zqvTkTWDi9ZI55Dh/view?usp=drive_link",
+        "link": "https:www.youtu.be\/6ZogX1k0t3g",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":2,
-        "nome":"ÁFRICA DO SUL",
-        "link":"https:www.youtu.be\/QOOygE8_rM8",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 2,
+        "nome": "ÁFRICA DO SUL",
+        "imagem":"https://drive.google.com/file/d/1_f8rhC5BjjiS8rVilH39C9AwULp4Po07/view?usp=drive_link",
+        "link": "https:www.youtu.be\/QOOygE8_rM8",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":3,
-        "nome":"ALEMANHA",
-        "link":"https:www.youtu.be\/oigFEXUa_-0",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 3,
+        "nome": "ALEMANHA",
+        "imagem":"https://drive.google.com/file/d/1k3r92ryQH6N-gIrtpk-d9DRTFtkN6Y3A/view?usp=drive_link",
+        "link": "https:www.youtu.be\/oigFEXUa_-0",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":4,
-        "nome":"ARGENTINA",
-        "link":"https:www.youtu.be\/Ha-eKCEie_g",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 4,
+        "nome": "ARGENTINA",
+        "imagem":"https://drive.google.com/file/d/1X5yTeHPNtX1WCFI0lBRD5o87ytYuOqlD/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Ha-eKCEie_g",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":5,
-        "nome":"AUSTRALIA",
-        "link":"https:www.youtu.be\/r2IR9dh2a4Y",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 5,
+        "nome": "AUSTRALIA",
+        "imagem":"https://drive.google.com/file/d/1bKvOVvPXIzlyLnk0JN69NMdhsma7blpG/view?usp=drive_link",
+        "link": "https:www.youtu.be\/r2IR9dh2a4Y",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":6,
-        "nome":"BRASIL",
-        "link":"https:www.youtu.be\/2XihhP4W4hM",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 6,
+        "nome": "BRASIL",
+        "imagem":"https://drive.google.com/file/d/1BW-yxJmriD6vSQQp7sQqjPHKLZvEzYZ8/view?usp=drive_link",
+        "link": "https:www.youtu.be\/2XihhP4W4hM",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":7,
-        "nome":"CANADÁ",
-        "link":"https:www.youtu.be\/h12vwNoRpyo",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 7,
+        "nome": "CANADÁ",
+        "imagem":"https://drive.google.com/file/d/1bkipAsdCgD1hHfWijCXsw7e-01tPB5ZM/view?usp=drive_link",
+        "link": "https:www.youtu.be\/h12vwNoRpyo",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":8,
-        "nome":"CHINA",
-        "link":"https:www.youtu.be\/x6htY-3PQC8",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 8,
+        "nome": "CHINA",
+        "imagem":"https://drive.google.com/file/d/1mS3MD7kMygn4mglqzcabuzuu8q10rtl2/view?usp=drive_link",
+        "link": "https:www.youtu.be\/x6htY-3PQC8",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":9,
-        "nome":"EGITO",
-        "link":"https:www.youtu.be\/Q3K4NPBqRW0",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 9,
+        "nome": "EGITO",
+        "imagem":"https://drive.google.com/file/d/10wpbmswxOZDg_EkvAB8aqV9llt7BA-Vn/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Q3K4NPBqRW0",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":10,
-        "nome":"ESPANHA",
-        "link":"https:www.youtu.be\/jNmAcDJ2QO4",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 10,
+        "nome": "ESPANHA",
+        "imagem":"https://drive.google.com/file/d/10cMF2OAj_JRg4y9XfscepDO7fdpFtS6j/view?usp=drive_link",
+        "link": "https:www.youtu.be\/jNmAcDJ2QO4",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":11,
-        "nome":"ESTADOS UNIDOS",
-        "link":"https:www.youtu.be\/sJfJBkhmak8",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 11,
+        "nome": "ESTADOS UNIDOS",
+        "imagem":"https://drive.google.com/file/d/1P5jCEsuokccdJStebmZC0PwnJxiFD2Ni/view?usp=drive_link",
+        "link": "https:www.youtu.be\/sJfJBkhmak8",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":12,
-        "nome":"FRANÇA",
-        "link":"https:www.youtu.be\/M9ctZPchovM",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 12,
+        "nome": "FRANÇA",
+        "imagem":"https://drive.google.com/file/d/1obak8TonJePjJFn6LUhRPkoINlrU6U5A/view?usp=drive_link",
+        "link": "https:www.youtu.be\/M9ctZPchovM",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":13,
-        "nome":"ÍNDIA",
-        "link":"https:www.youtu.be\/ny0pPke4-R0",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 13,
+        "nome": "ÍNDIA",
+        "imagem":"https://drive.google.com/file/d/14aQeSgi8x_jUQ256YqkFkZdcBBAm95pr/view?usp=drive_link",
+        "link": "https:www.youtu.be\/ny0pPke4-R0",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":14,
-        "nome":"INGLATERRA",
-        "link":"https:www.youtu.be\/_Sx1ie0HqKs",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 14,
+        "nome": "INGLATERRA",
+        "imagem":"https://drive.google.com/file/d/1O847j52fo74kpQqk9YMg9Cef6W4dLy_h/view?usp=drive_link",
+        "link": "https:www.youtu.be\/_Sx1ie0HqKs",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":15,
-        "nome":"ITALIA",
-        "link":"https:www.youtu.be\/JvJ6OvUXoM4",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 15,
+        "nome": "ITALIA",
+        "imagem":"https://drive.google.com/file/d/1rzdojc-6RUuIoiYMkYpe3zGJmJlHCfwR/view?usp=drive_link",
+        "link": "https:www.youtu.be\/JvJ6OvUXoM4",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":16,
-        "nome":"JAPÃO",
-        "link":"https:www.youtu.be\/54fEB_ulJMI",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 16,
+        "nome": "JAPÃO",
+        "imagem":"https://drive.google.com/file/d/1W67ONinsOVTiC8beYtbA-9J4fQQOa2E5/view?usp=drive_link",
+        "link": "https:www.youtu.be\/54fEB_ulJMI",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":17,
-        "nome":"MÉXICO",
-        "link":"https:www.youtu.be\/9mmcl7Qjy0M",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 17,
+        "nome": "MÉXICO",
+        "imagem":"https://drive.google.com/file/d/1fyttIVZ9TGLrk5J6S6TCr3nKjekrotFY/view?usp=drive_link",
+        "link": "https:www.youtu.be\/9mmcl7Qjy0M",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":18,
-        "nome":"NOVA ZELANDIA",
-        "link":"https:www.youtu.be\/78-vtEdaZ0I",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 18,
+        "nome": "NOVA ZELANDIA",
+        "imagem":"https://drive.google.com/file/d/1i25FPQzMpLSyBvOqtaIOv9Dnm881gxSF/view?usp=drive_link",
+        "link": "https:www.youtu.be\/78-vtEdaZ0I",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":19,
-        "nome":"PERU",
-        "link":"https:www.youtu.be\/GHhu6ZxRSP4",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 19,
+        "nome": "PERU",
+        "imagem":"https://drive.google.com/file/d/1jdARgoI3F4SpjHv5Y9qcbv4hUMt6ENTY/view?usp=drive_link",
+        "link": "https:www.youtu.be\/GHhu6ZxRSP4",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":20,
-        "nome":"PORTO RICO",
-        "link":"https:www.youtu.be\/t1FbMzctXtM",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 20,
+        "nome": "PORTO RICO",
+        "imagem":"https://drive.google.com/file/d/1Ri9bx89EjThdISF6gEsEAFy6hlU6HQqN/view?usp=drive_link",
+        "link": "https:www.youtu.be\/t1FbMzctXtM",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":21,
-        "nome":"PORTUGAL",
-        "link":"https:www.youtu.be\/F7pmD6RXsYc",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 21,
+        "nome": "PORTUGAL",
+        "imagem":"https://drive.google.com/file/d/12K3LTowbAuefJrekkNJHuyUquLI7tPYT/view?usp=drive_link",
+        "link": "https:www.youtu.be\/F7pmD6RXsYc",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":22,
-        "nome":"RÚSSIA",
-        "link":"https:www.youtu.be\/YcpMEWkhPR0",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 22,
+        "nome": "RÚSSIA",
+        "imagem":"https://drive.google.com/file/d/1TeuFtKRks_Xmmife6oIjryNr7FbaQXgG/view?usp=drive_link",
+        "link": "https:www.youtu.be\/YcpMEWkhPR0",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":23,
-        "nome":"SUÉCIA",
-        "link":"https:www.youtu.be\/U6Lle6bMQV4",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 23,
+        "nome": "SUÉCIA",
+        "imagem":"https://drive.google.com/file/d/1ubRYfxt14MQYvnY8Tcf6hGE6dETLGHSz/view?usp=drive_link",
+        "link": "https:www.youtu.be\/U6Lle6bMQV4",
+        "categoria": "VERBETES – NACIONALIDADES"
     },
     {
-        "numero":24,
-        "nome":"SUÍÇA",
-        "link":"https:www.youtu.be\/syiYSD3rtpk",
-        "categoria":"VERBETES – NACIONALIDADES"
+        "numero": 24,
+        "nome": "SUÍÇA",
+        "imagem":"https://drive.google.com/file/d/1csurgkwxuYNaWO0yZ4PV2vEUfpP6B2fL/view?usp=drive_link",
+        "link": "https:www.youtu.be\/syiYSD3rtpk",
+        "categoria": "VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero": 1,
+        "nome": "ANIVERSÁRIO",
+        "imagem": "https://drive.google.com/file/d/1WrGcwLxR7pHe3szQ2b_mjYM-DLAHngAs/view?usp=drive_link",
+        "link": "https:www.youtu.be\/30-YBI1a3TQ",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 2,
+        "nome": "CARNAVAL",
+        "imagem": "https://drive.google.com/file/d/1mFATay0FKeBrnG5lQ40eGnvpRhLWcOTm/view?usp=drive_link",
+        "link": "https:www.youtu.be\/JGWxzIBGIf0",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 3,
+        "nome": "CASAMENTO",
+        "imagem": "https://drive.google.com/file/d/1IVhm3UXi4DsDUW8UPJhd-IUV9oMa59zT/view?usp=drive_link",
+        "link": "https:www.youtu.be\/UYLvEnTqCug",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 4,
+        "nome": "DI DO TRABALHO",
+        "imagem": "https://drive.google.com/file/d/1xrqyE_WJk7B2t1_vwOwpEUM2jbgt3wsD/view?usp=drive_link",
+        "link": "https:www.youtu.be\/w940eq5wzwc",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 5,
+        "nome": "DIA DA BANDEIRA",
+        "imagem": "https://drive.google.com/file/d/1LiFqe7yyUPxzuzxsdLsTN1cwoj0opiSP/view?usp=drive_link",
+        "link": "https:www.youtu.be\/F96PSdPt4vY",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 6,
+        "nome": "DIA DA INDEPENDENCIA",
+        "imagem": "https://drive.google.com/file/d/1HBjWLPCnkW6Huw1JwhvzkCRlbvT70PuP/view?usp=drive_link",
+        "link": "https:www.youtu.be\/wN3-HMpI3OU",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 7,
+        "nome": "DIA DAS CRIANÇAS",
+        "imagem": "https://drive.google.com/file/d/1XN6VuWmJ-gFg3_lDeJsTGF-__8OG0_k1/view?usp=drive_link",
+        "link": "https:www.youtu.be\/FPI_5807lxQ",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 8,
+        "nome": "DIA DAS MÃES",
+        "imagem": "https://drive.google.com/file/d/1nEvN958HXF6Ni288Ua3URAyHty_J68tu/view?usp=drive_link",
+        "link": "https:www.youtu.be\/HKWH73DMPm0",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 9,
+        "nome": "DIA DO INDÍGENA",
+        "imagem": "https://drive.google.com/file/d/1hyynvTqWCrpa7SgjSbgIcrqtyqJIiUw3/view?usp=drive_link",
+        "link": "https:www.youtu.be\/GEiKyHhdPg0",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 10,
+        "nome": "DIA DOS NAMORADOS",
+        "imagem": "https://drive.google.com/file/d/1ao-a6XskruefK42dd7jd_YKcScdiTJlI/view?usp=drive_link",
+        "link": "https:www.youtu.be\/ag1JPvNjz-E",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 11,
+        "nome": "FORMATURA",
+        "imagem": "https://drive.google.com/file/d/1iTm27Y1Yzn1_KwYIThgonfYE1G0w-Q11/view?usp=drive_link",
+        "link": "https:www.youtu.be\/J3pC5K2tynI",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 12,
+        "nome": "FUNERAL",
+        "imagem": "https://drive.google.com/file/d/1TxBOC-y4kmsT8MstMAPpmgD17kSCuiON/view?usp=drive_link",
+        "link": "https:www.youtu.be\/ePIl-krRwXY",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 13,
+        "nome": "NATAL",
+        "imagem": "https://drive.google.com/file/d/1pgcA7VPdDxGtCr_C9SaU-mZG76juRmns/view?usp=drive_link",
+        "link": "https:www.youtu.be\/L6d3en8r4oo",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 14,
+        "nome": "PÁSCOA",
+        "imagem": "https://drive.google.com/file/d/19YkIm9-xUGKxpIgzEQNX04n97wpeXjvL/view?usp=drive_link",
+        "link": "https:www.youtu.be\/bxA-agQhZ90",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 15,
+        "nome": "PRIMEIRO DIA DE AULA",
+        "imagem": "https://drive.google.com/file/d/1O-F8CUlTjmHc6UyjUsuTPdZTXgLSRUL6/view?usp=drive_link",
+        "link": "https:www.youtu.be\/g2l7m2-idTs",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 16,
+        "nome": "PROCLAMAÇÃO DA REPÚBLICA",
+        "imagem": "https://drive.google.com/file/d/1Kqd8D28_0-w4yEuZNkqx9l9OG7lQWsbg/view?usp=drive_link",
+        "link": "https:www.youtu.be\/dve9QUt2EtU",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 17,
+        "nome": "REUNIÃO DE FAMÍLIA",
+        "imagem": "https://drive.google.com/file/d/1UHxN_CE40cPcmEJtvGTaDiU_veArvuIU/view?usp=drive_link",
+        "link": "https:www.youtu.be\/IqFwiIWl22E",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 18,
+        "nome": "RÉVEILLON",
+        "imagem": "https://drive.google.com/file/d/1MJzoZuESA945vqmpdfi0ckEbMuJB64j9/view?usp=drive_link",
+        "link": "https:www.youtu.be\/J5jc9h5jW2U",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
+    },
+    {
+        "numero": 19,
+        "nome": "FESTA JUNINA",
+        "imagem": "https://drive.google.com/file/d/1VP7z2M5d1v9WgJ_naCxDepHTCK2c7KJd/view?usp=drive_link",
+        "link": "https:www.youtu.be\/vsRpLXAs7yA",
+        "categoria": "VERBETES – DATAS IMPOrTANTES"
     },
     ];
 
@@ -199,6 +353,13 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
+        videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
+
+        console.log(videoImagemLink);
+
+
+        const img = document.createElement("img");
+
         // criar iframe
         const iframe = document.createElement("iframe");
         iframe.width = "560";
@@ -212,11 +373,14 @@
         iframe.allowFullscreen = true;
 
         // montar estrutura
+        // montar estrutura
         div.appendChild(h2);
+        div.appendChild(img);
         div.appendChild(iframe);
-        
-        container.appendChild(div);
 
+        img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+        container.appendChild(div)
       });
     }
 

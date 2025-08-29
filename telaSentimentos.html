@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Categoria</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
   <header>
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -30,133 +27,157 @@
   </main>
 
   <script src="script.js"></script>
-    <script>
+  <script>
     const videos = [
       {
-        "numero":1,
-        "nome":"ADMIRAÇÃO",
-        "link":"https:www.youtu.be\/0fm0v5tChD4",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":2,
-        "nome":"ANSIEDADE",
-        "link":"https:www.youtu.be\/z8xq732Ray8",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":3,
-        "nome":"CALMA",
-        "link":"https:www.youtu.be\/wjjVPMkq3WQ",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":4,
-        "nome":"EMPATIA",
-        "link":"https:www.youtu.be\/0U5ldiPu_1w",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":5,
-        "nome":"ESPERANÇA",
-        "link":"https:www.youtu.be\/Z30--PBNQTk",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":6,
-        "nome":"FELIZ",
-        "link":"https:www.youtu.be\/Hjl2uQenyPM",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":7,
-        "nome":"GRATIDÃO",
-        "link":"https:www.youtu.be\/NhDKZZwVwpQ",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":8,
-        "nome":"INVEJA",
-        "link":"https:www.youtu.be\/VdObt0xFCng",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":9,
-        "nome":"MEDO",
-        "link":"https:www.youtu.be\/s8z-3ITdOo8",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":10,
-        "nome":"NOJO",
-        "link":"https:www.youtu.be\/Q7KKUqcg-3M",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":11,
-        "nome":"RAIVA",
-        "link":"https:www.youtu.be\/Bo_qigCnbpI",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":12,
-        "nome":"SUSTO",
-        "link":"https:www.youtu.be\/8Ac_CHh7MUw",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":13,
-        "nome":"TÉDIO",
-        "link":"https:www.youtu.be\/CBAKHi7Wf0c",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
-    {
-        "numero":14,
-        "nome":"TRISTEZA",
-        "link":"https:www.youtu.be\/NWXaA0JOb2I",
-        "categoria":"VERBETES – MEUS SENTIMENTOS"
-    },
+        "numero": 1,
+        "imagem": "https://drive.google.com/file/d/1Y8V7dFiznrv2pcAnNyhU7uzfIJ1i-qTI/view?usp=drive_link",
+        "nome": "ADMIRAÇÃO",
+        "link": "https:www.youtu.be/0fm0v5tChD4",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 2,
+        "imagem": "https://drive.google.com/file/d/1lOiMvaXIQjE1WmNRk6DJOVwDy9yWT5OR/view?usp=drive_link",
+        "nome": "ANSIEDADE",
+        "link": "https:www.youtu.be/z8xq732Ray8",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 3,
+        "imagem": "https://drive.google.com/file/d/1EbCIA96moXoyglSDmrmPRQ7SDFj_pnfG/view?usp=drive_link",
+        "nome": "CALMA",
+        "link": "https:www.youtu.be/wjjVPMkq3WQ",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 4,
+        "imagem": "https://drive.google.com/file/d/13SoFEa7VBqPZjWf_gLoNKh9CjnUJXFeV/view?usp=drive_link",
+        "nome": "EMPATIA",
+        "link": "https:www.youtu.be/0U5ldiPu_1w",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 5,
+        "imagem": "https://drive.google.com/file/d/1lON7gkhM3vgf5zqmbNuzwojm3I1SMewK/view?usp=drive_link",
+        "nome": "ESPERANÇA",
+        "link": "https:www.youtu.be/Z30--PBNQTk",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 6,
+        "imagem": "https://drive.google.com/file/d/1If-a4HSreFJxUIH__3jPbwlNHB98VNzr/view?usp=drive_link",
+        "nome": "FELIZ",
+        "link": "https:www.youtu.be/Hjl2uQenyPM",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 7,
+        "imagem": "https://drive.google.com/file/d/130awnyPWl8_lrjonAbPbQoeF320CobAk/view?usp=drive_link",
+        "nome": "GRATIDÃO",
+        "link": "https:www.youtu.be/NhDKZZwVwpQ",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 8,
+        "imagem": "https://drive.google.com/file/d/1NoLKeShR8AOrf_aZG3rb9bNK220n56Nf/view?usp=drive_link",
+        "nome": "INVEJA",
+        "link": "https:www.youtu.be/VdObt0xFCng",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 9,
+        "imagem": "https://drive.google.com/file/d/13wsFs4gnE8oAUkHWny-TbyK2SPq1cfeX/view?usp=drive_link",
+        "nome": "MEDO",
+        "link": "https:www.youtu.be/s8z-3ITdOo8",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 10,
+        "imagem": "https://drive.google.com/file/d/1g0-XeC6D3qHn1Gh4Usw4Rp1F54OVppgb/view?usp=drive_link",
+        "nome": "NOJO",
+        "link": "https:www.youtu.be/Q7KKUqcg-3M",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 11,
+        "imagem": "https://drive.google.com/file/d/1EoUzj_wO0fxLFa4MtvDwILvqwfR04tHI/view?usp=drive_link",
+        "nome": "RAIVA",
+        "link": "https:www.youtu.be/Bo_qigCnbpI",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 12,
+        "imagem": "https://drive.google.com/file/d/1q880zW6OQebrZuDGIct3BACu75VGASC5/view?usp=drive_link",
+        "nome": "SUSTO",
+        "link": "https:www.youtu.be/8Ac_CHh7MUw",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 13,
+        "imagem": "https://drive.google.com/file/d/16Ms7RQA9t4zdsqURy9jgC-SBqh7xJbVj/view?usp=drive_link",
+        "nome": "TÉDIO",
+        "link": "https:www.youtu.be/CBAKHi7Wf0c",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      },
+      {
+        "numero": 14,
+        "imagem": "https://drive.google.com/file/d/1lTHGXLynaR5LvlFa2eu9dqQR8JVC41gs/view?usp=drive_link",
+        "nome": "TRISTEZA",
+        "link": "https:www.youtu.be/NWXaA0JOb2I",
+        "categoria": "VERBETES – MEUS SENTIMENTOS"
+      }
     ];
 
     function criarVideos() {
       const container = document.querySelector(".grid-videos");
       console.log(container);
-      
+
       videos.forEach(video => {
         // extrair ID do vídeo (último pedaço do link)
         const videoId = video.link.split("\/").pop();
         console.log(videoId);
-        
+
         // criar div principal
         const div = document.createElement("div");
         div.className = "grid-videos-item";
 
         // criar título
         const h2 = document.createElement("h2");
-        h2.textContent = `Sentimentos: ${video.nome}`;
+        h2.textContent = ` ${video.nome}`;
+videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+                console.log(videoImagemLink);
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
 
-      });
-    }
+                const img = document.createElement("img");
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
+
 </body>

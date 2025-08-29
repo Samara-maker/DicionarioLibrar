@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -40,167 +36,194 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-       {
-        "numero":1,
-        "nome":"RESTAURANTE",
-        "link":"https:www.youtu.be\/rPmcCIEac7w",
-        "categoria":"RESTAURANTE"
+      {
+        "numero": 1,
+        "imagem": "https://drive.google.com/file/d/1atbhdglAq1y1Og2OSg_68PlLt_LxCb3F/view?usp=drive_link",
+        "nome": "RESTAURANTE",
+        "link": "https://www.youtu.be/rPmcCIEac7w",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":2,
-        "nome":"ÁGUA",
-        "link":"https:www.youtu.be\/kHqWTNco1-o",
-        "categoria":"RESTAURANTE"
+        "numero": 2,
+        "imagem": "https://drive.google.com/file/d/1MKuJt14R2BgF4P34CFtxaP0eZNsIkPiY/view?usp=drive_link",
+        "nome": "ÁGUA",
+        "link": "https://www.youtu.be/kHqWTNco1-o",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":3,
-        "nome":"BANDEJA",
-        "link":"https:www.youtu.be\/cWUet3TKQuQ",
-        "categoria":"RESTAURANTE"
+        "numero": 3,
+        "imagem": "https://drive.google.com/file/d/1PRFMRqBgas5m6dw7Lyx-_ouqBw5xmje9/view?usp=drive_link",
+        "nome": "BANDEJA",
+        "link": "https://www.youtu.be/cWUet3TKQuQ",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":4,
-        "nome":"BIFE",
-        "link":"https:www.youtu.be\/mmVs6WSqUo0",
-        "categoria":"RESTAURANTE"
+        "numero": 4,
+        "imagem": "https://drive.google.com/file/d/1qCQ_OsiQF9inNwiYapELc9M2ptcPaPLn/view?usp=drive_link",
+        "nome": "BIFE",
+        "link": "https://www.youtu.be/mmVs6WSqUo0",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":5,
-        "nome":"CACHORRO-QUENTE",
-        "link":"https:www.youtu.be\/4JeXxp0WCAw",
-        "categoria":"RESTAURANTE"
+        "numero": 5,
+        "imagem": "https://drive.google.com/file/d/1eTA_NBkicfnWcuvEi_Xg06hcqN9rz5Up/view?usp=drive_link",
+        "nome": "CACHORRO-QUENTE",
+        "link": "https://www.youtu.be/4JeXxp0WCAw",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":6,
-        "nome":"CAFÉ",
-        "link":"https:www.youtu.be\/Sl2eHA8x38s",
-        "categoria":"RESTAURANTE"
+        "numero": 6,
+        "imagem": "https://drive.google.com/file/d/1kEUPqLGJq77gdTRXQWELEtA3BaHIEb70/view?usp=drive_link",
+        "nome": "CAFÉ",
+        "link": "https://www.youtu.be/Sl2eHA8x38s",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":7,
-        "nome":"CARDÁPIO",
-        "link":"https:www.youtu.be\/OZ1XpUKdFdg",
-        "categoria":"RESTAURANTE"
+        "numero": 7,
+        "imagem": "https://drive.google.com/file/d/1QYWAGTUWLommYnfzNEiTCgofCbsNOmjh/view?usp=drive_link",
+        "nome": "CARDÁPIO",
+        "link": "https://www.youtu.be/OZ1XpUKdFdg",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":8,
-        "nome":"CHÁ",
-        "link":"https:www.youtu.be\/ZLg_eXGGaZk",
-        "categoria":"RESTAURANTE"
+        "numero": 8,
+        "imagem": "https://drive.google.com/file/d/1vYWLFj_Xy18ePW78pYcPMWRWD9Og2_l4/view?usp=drive_link",
+        "nome": "CHÁ",
+        "link": "https://www.youtu.be/ZLg_eXGGaZk",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":9,
-        "nome":"CHURRASCO",
-        "link":"https:www.youtu.be\/1eDlYpaHIcQ",
-        "categoria":"RESTAURANTE"
+        "numero": 9,
+        "imagem": "https://drive.google.com/file/d/1roVKoZErHthUhrw5IOpAwo9ERxiZRp5_/view?usp=drive_link",
+        "nome": "CHURRASCO",
+        "link": "https://www.youtu.be/1eDlYpaHIcQ",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":10,
-        "nome":"CONTA",
-        "link":"https:www.youtu.be\/3zQXWWcrCVo",
-        "categoria":"RESTAURANTE"
+        "numero": 10,
+        "imagem": "https://drive.google.com/file/d/1qDyxxCliC_YvzJZk-1j7kV3f8RHc0BQE/view?usp=drive_link",
+        "nome": "CONTA",
+        "link": "https://www.youtu.be/3zQXWWcrCVo",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":11,
-        "nome":"COZINHEIRO",
-        "link":"https:www.youtu.be\/Yir1UIYLjug",
-        "categoria":"RESTAURANTE"
+        "numero": 11,
+        "imagem": "https://drive.google.com/file/d/1pDShvvhhMye7wJa6GYFuhFLju5MfWX4h/view?usp=drive_link",
+        "nome": "COZINHEIRO",
+        "link": "https://www.youtu.be/Yir1UIYLjug",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":12,
-        "nome":"GARÇOM",
-        "link":"https:www.youtu.be\/ByxcPY1VeRk",
-        "categoria":"RESTAURANTE"
+        "numero": 12,
+        "imagem": "https://drive.google.com/file/d/1JvWrSFGW8Qd3XpFDY_eYXB7OTnSEQ6R1/view?usp=drive_link",
+        "nome": "GARÇOM",
+        "link": "https://www.youtu.be/ByxcPY1VeRk",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":13,
-        "nome":"GARÇONETE",
-        "link":"https:www.youtu.be\/iRmxrR3gb1w",
-        "categoria":"RESTAURANTE"
+        "numero": 13,
+        "imagem": "https://drive.google.com/file/d/1Ze1AGMwgSiNcCY0KJRzVAWUrPKhcCY5W/view?usp=drive_link",
+        "nome": "GARÇONETE",
+        "link": "https://www.youtu.be/iRmxrR3gb1w",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":14,
-        "nome":"GELATINA",
-        "link":"https:www.youtu.be\/JFzd3WYg5gc",
-        "categoria":"RESTAURANTE"
+        "numero": 14,
+        "imagem": "https://drive.google.com/file/d/1otBCKX5vSUTG3tEQBLZ5IBwe75OqeZSl/view?usp=drive_link",
+        "nome": "GELATINA",
+        "link": "https://www.youtu.be/JFzd3WYg5gc",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":15,
-        "nome":"HAMBURGUER",
-        "link":"https:www.youtu.be\/1kFd1EzzE7E",
-        "categoria":"RESTAURANTE"
+        "numero": 15,
+        "imagem": "https://drive.google.com/file/d/1oxa2bqMq5kL-qfq5zzyHJ-Xr8gC5i86L/view?usp=drive_link",
+        "nome": "HAMBURGUER",
+        "link": "https://www.youtu.be/1kFd1EzzE7E",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":16,
-        "nome":"LINGUIÇA",
-        "link":"https:www.youtu.be\/6gMnNXvoKg0",
-        "categoria":"RESTAURANTE"
+        "numero": 16,
+        "imagem": "https://drive.google.com/file/d/1d5fluw5mAO9pi7C1f7LaZlhTgqLVdO9m/view?usp=drive_link",
+        "nome": "LINGUIÇA",
+        "link": "https://www.youtu.be/6gMnNXvoKg0",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":17,
-        "nome":"OMELETE",
-        "link":"https:www.youtu.be\/40H8NOoZQ4w",
-        "categoria":"RESTAURANTE"
+        "numero": 17,
+        "imagem": "https://drive.google.com/file/d/1-ON_PSD_ZSKH9JORgeII-XTCu6I_zbjr/view?usp=drive_link",
+        "nome": "OMELETE",
+        "link": "https://www.youtu.be/40H8NOoZQ4w",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":18,
-        "nome":"PIZZA",
-        "link":"https:www.youtu.be\/0Fq0jDZtlnE",
-        "categoria":"RESTAURANTE"
+        "numero": 18,
+        "imagem": "https://drive.google.com/file/d/1bkUkNPLLa4lu9PM9NCsaSQIloEu9P_K4/view?usp=drive_link",
+        "nome": "PIZZA",
+        "link": "https://www.youtu.be/0Fq0jDZtlnE",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":19,
-        "nome":"PUDIM",
-        "link":"https:www.youtu.be\/oy4GE-SEo2A",
-        "categoria":"RESTAURANTE"
+        "numero": 19,
+        "imagem": "https://drive.google.com/file/d/1usxmtEqcwxFzkXIYq_cP7Bw-pRUfgfnn/view?usp=drive_link",
+        "nome": "PUDIM",
+        "link": "https://www.youtu.be/oy4GE-SEo2A",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":20,
-        "nome":"SALADA",
-        "link":"https:www.youtu.be\/UMwgmw-7_YU",
-        "categoria":"RESTAURANTE"
+        "numero": 20,
+        "imagem": "https://drive.google.com/file/d/1wxkD2wEsunFyC5T4isKCJnueBB760oRX/view?usp=drive_link",
+        "nome": "SALADA",
+        "link": "https://www.youtu.be/UMwgmw-7_YU",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":21,
-        "nome":"SOPA",
-        "link":"https:www.youtu.be\/RKf6Ph4_sdc",
-        "categoria":"RESTAURANTE"
+        "numero": 21,
+        "imagem": "https://drive.google.com/file/d/1rCUpK3LMDKKibw4na9YLER424X9aPhcw/view?usp=drive_link",
+        "nome": "SOPA",
+        "link": "https://www.youtu.be/RKf6Ph4_sdc",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":22,
-        "nome":"TORRADA",
-        "link":"https:www.youtu.be\/4ydNSM7eBnUb",
-        "categoria":"RESTAURANTE"
+        "numero": 22,
+        "imagem": "https://drive.google.com/file/d/1SCOc4WRQIAGK9CyIYw8Q6jSSpvTS6tBU/view?usp=drive_link",
+        "nome": "TORRADA",
+        "link": "https://www.youtu.be/4ydNSM7eBnUb",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":23,
-        "nome":"FOME",
-        "link":"https:www.youtu.be\/m_tLe4yX7_k",
-        "categoria":"RESTAURANTE"
+        "numero": 23,
+        "imagem": "https://drive.google.com/file/d/1GNXAxn_OwoM6Mk-vGIIcz2bBZs8mftkQ/view?usp=drive_link",
+        "nome": "FOME",
+        "link": "https://www.youtu.be/m_tLe4yX7_k",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":24,
-        "nome":"SEDE",
-        "link":"https:www.youtu.be\/8RROS_F9axE",
-        "categoria":"RESTAURANTE"
+        "numero": 24,
+        "imagem": "https://drive.google.com/file/d/1anxOPrnBDrn-Nuq5Jn8qNvvRYUD7ll2V/view?usp=drive_link",
+        "nome": "SEDE",
+        "link": "https://www.youtu.be/8RROS_F9axE",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":25,
-        "nome":"NOJENTO",
-        "link":"https:www.youtu.be\/YB6o2uqStog",
-        "categoria":"RESTAURANTE"
+        "numero": 25,
+        "imagem": "https://drive.google.com/file/d/1B-RlxB61saHiWISndKOTvZ9GBy56vReg/view?usp=drive_link",
+        "nome": "NOJENTO",
+        "link": "https://www.youtu.be/YB6o2uqStog",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":26,
-        "nome":"LANCHONETE",
-        "link":"https:www.youtu.be\/DDOMrE43wVg",
-        "categoria":"RESTAURANTE"
+        "numero": 26,
+        "imagem": "https://drive.google.com/file/d/196fdiUncLn4TZg2G_ltn8vW7Y1-vWIUI/view?usp=drive_link",
+        "nome": "LANCHONETE",
+        "link": "https://www.youtu.be/DDOMrE43wVg",
+        "categoria": "RESTAURANTE"
     },
     {
-        "numero":27,
-        "nome":"GOSTOSO",
-        "link":"https:www.youtu.be\/aedqRyET65w",
-        "categoria":"RESTAURANTE"
+        "numero": 27,
+        "imagem": "https://drive.google.com/file/d/1ZgPyVC-Rjn9kk_iwEWIfX3clVdCMBS8w/view?usp=drive_link",
+        "nome": "GOSTOSO",
+        "link": "https://www.youtu.be/aedqRyET65w",
+        "categoria": "RESTAURANTE"
     },
     ];
 
@@ -221,29 +244,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = `${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+       videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

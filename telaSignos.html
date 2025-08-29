@@ -18,69 +18,159 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
     <h2 id="titulo-categoria"></h2>
     <div id="resultados"></div>
-
-    <section class="grid-videos">
-      <div class="grid-videos-item">
-        <h2>Signos: Aries</h2>
-
-        <iframe  src="https://www.youtube.com/embed/lwlzFM9dPO0?si=ka9MfR7iPlAdvtbe&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Touro</h2>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/duZqXPcun38?si=0xwxhE1TikXjOPHj&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Gêmeos</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/duZqXPcun38?si=ytckAU8A2XeJBtob&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Leão</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tc2KnsU5-Ac?si=aEps5zVlvye2e3cy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Câncer</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L0DuG_E_O_g?si=iR70V9qjubFIyVUe&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Escorpião</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/RbByKQLWmqk?si=_vrExE5p8IedPFs3&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Libra</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zyhC5EP_SAQ?si=iiBbXNwxkgbTENhH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         
-      </div>
-
-      <div class="grid-videos-item">
-        <h2>Signos: Sagitário</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zyhC5EP_SAQ?si=16wO7hO4jeB5kJVH&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Capricórnio</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jsIvTbo5AdQ?si=yn_wMLnx2sNHJ63R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Aquário</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pG9HKyXg8Dg?si=K7nqq5jdKI2mW3YX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
-      </div>
-      <div class="grid-videos-item">
-        <h2>Signos: Peixes</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8Yl5ILtUDGM?si=GNLSPrURvx9iRW1N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </section>
+    <section class="grid-videos"></section>
   </main>
 
   <script src="script.js"></script>
+  <script>
+    const videos = [
+      {
+        "numero": 1,
+        "nome": "AQUARIO",
+        "imagem":"https://drive.google.com/file/d/1cdqn21jebd1FKU9m8m2n7p6id_U3gHV5/view?usp=drive_link",
+        "link": "https:www.youtu.be\/pG9HKyXg8Dg",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 2,
+        "nome": "ARIES",
+        "imagem":"https://drive.google.com/file/d/15MJfZyQ63HY7w0FAl8FG0f6SfPk4VUEo/view?usp=drive_link",
+        "link": "https:www.youtu.be\/lwlzFM9dPO0",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 3,
+        "nome": "CÂNCER",
+        "imagem":"https://drive.google.com/file/d/1aN5GxTfjdzNkmtsDCAm6etY3qr9sxbm-/view?usp=drive_link",
+        "link": "https:www.youtu.be\/L0DuG_E_O_g",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 4,
+        "nome": "CAPRRICORNIO",
+        "imagem":"https://drive.google.com/file/d/1rBLsbhmeWFJJS_nkjwaQVNOPSwxsnxRI/view?usp=drive_link",
+        "link": "https:www.youtu.be\/jsIvTbo5AdQ",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 5,
+        "nome": "ESCORPIÃO",
+        "imagem":"https://drive.google.com/file/d/1XY66Ava0uMpP-AHvBiQ6i8EuGGenZxO8/view?usp=drive_link",
+        "link": "https:www.youtu.be\/RbByKQLWmqk",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 6,
+        "nome": "GÊMIOS",
+        "imagem":"https://drive.google.com/file/d/1jtFMbl4Oj8gzLdMDWAf86izxVxA731qV/view?usp=drive_link",
+        "link": "https:www.youtu.be\/od5B3GH2BoQ",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 7,
+        "nome": "LEÃO",
+        "imagem":"https://drive.google.com/file/d/133t0d2NlavhuStfPNDHfC_7vTGgTEeZS/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Tc2KnsU5-Ac",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 8,
+        "nome": "LIBRA",
+        "imagem":"https://drive.google.com/file/d/1gyc_4LpYbqmRawKJH-bXVbu1O3uzNtEd/view?usp=drive_link",
+        "link": "https:www.youtu.be\/fS7Eyd1q_EU",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 9,
+        "nome": "PEIXES",
+        "imagem":"https://drive.google.com/file/d/1WW9CLOclvOYeU4AicedxYLtvIs73tjyi/view?usp=drive_link",
+        "link": "https:www.youtu.be\/8Yl5ILtUDGM",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 10,
+        "nome": "SAGITÁRIO",
+        "imagem":"https://drive.google.com/file/d/1BT57HLHf-9HzdigsbpNqg2f9pIXlRUf7/view?usp=drive_link",
+        "link": "https:www.youtu.be\/zyhC5EP_SAQ",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 11,
+        "nome": "TOURO",
+        "imagem":"https://drive.google.com/file/d/1cVgwSLch9nIYgNCId47leu74nbUCjrVR/view?usp=drive_link",
+        "link": "https:www.youtu.be\/duZqXPcun38",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 12,
+        "nome": "VIRGEM",
+        "imagem":"https://drive.google.com/file/d/1rOP0QAb7vQJpli-azdMVuruAk8fyfQos/view?usp=drive_link",
+        "link": "https:www.youtu.be\/jhLLpGqer-8",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    {
+        "numero": 13,
+        "nome": "SIGNOS",
+        "imagem":"https://drive.google.com/file/d/10AY644bcJgYTnb3zZpMVUmE9U1GfQ1Re/view?usp=drive_link",
+        "link": "https:www.youtu.be\/VnXtt910SgE",
+        "categoria": "VERBETES – SIGNOS DOS ZODÍACOS"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
+
+                console.log(videoImagemLink);
+
+
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
+
 </body>

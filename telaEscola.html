@@ -2,268 +2,304 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categoria</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-  <header>
-    <a href="dici.html" class="voltar">
-      <i class="fa fa-arrow-left"></i> Voltar
-    </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
-  </header>
+    <header>
+        <a href="dici.html" class="voltar">
+            <i class="fa fa-arrow-left"></i> Voltar
+        </a>
+    </header>
 
-  <main>
-    <h2 id="titulo-categoria"></h2>
-    <div id="resultados"></div>
+    <main>
+        <h2 id="titulo-categoria"></h2>
+        <div id="resultados"></div>
 
-    <section class="grid-videos">
-    </section>
+        <section class="grid-videos">
+        </section>
 
-  </main>
-  <script src="script.js"></script>
-  <script>
-    const videos = [
-      {
-        
-        "numero":1,
-        "nome":"ALUNA",
-        "link":"https:www.youtu.be\/SwLbJAT0tho",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":2,
-        "nome":"ALUNO",
-        "link":"https:www.youtu.be\/KMvKZ5omRvk",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":3,
-        "nome":"APAGADOR",
-        "link":"https:www.youtu.be\/lC8N1PBAEnw",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":4,
-        "nome":"APONTADOR",
-        "link":"https:www.youtu.be\/rsIEnt3XT0A",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":5,
-        "nome":"BORRACHA",
-        "link":"https:www.youtu.be\/NLKBCuqxx6E",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":6,
-        "nome":"CADERNO",
-        "link":"https:www.youtu.be\/m6HrzgjsCZY",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":8,
-        "nome":"CALCULADORA",
-        "link":"https:www.youtu.be\/Upqrn7M4sQg",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":7,
-        "nome":"CANETA",
-        "link":"https:www.youtu.be\/Qnora92xp5Q",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":9,
-        "nome":"CANETA DE QUADRO",
-        "link":"https:www.youtu.be\/6wwAQp3Dzq0",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":10,
-        "nome":"CARTEIRA ESCOLAR",
-        "link":"https:www.youtu.be\/pG5m_PA_11E",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":11,
-        "nome":"CLIPS",
-        "link":"https:www.youtu.be\/S2MsFNEhrAk",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":12,
-        "nome":"COLA",
-        "link":"https:www.youtu.be\/bZF2IMRnT7I",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":13,
-        "nome":"COMPASSO",
-        "link":"https:www.youtu.be\/_63ZakLeZIE",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":14,
-        "nome":"COMPUTADOR",
-        "link":"https:www.youtu.be\/UsFYfBFve4Q",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":15,
-        "nome":"ESTOJO",
-        "link":"https:www.youtu.be\/UUMEQDae1t4",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":16,
-        "nome":"GIZ",
-        "link":"https:www.youtu.be\/l6ymrax3x3I",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":17,
-        "nome":"GLOBO",
-        "link":"https:www.youtu.be\/5RMqexKLysk",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":18,
-        "nome":"GRAMPEADOR",
-        "link":"https:www.youtu.be\/0gOH649WYR0",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":19,
-        "nome":"HIDROCOR",
-        "link":"https:www.youtu.be\/hc8Yx1XExfk",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":20,
-        "nome":"LÁPIS",
-        "link":"https:www.youtu.be\/_2HltzPf_1I",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":21,
-        "nome":"LÁPIS DE COR",
-        "link":"https:www.youtu.be\/yZ4kzg0O6ys",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":22,
-        "nome":"LIVROS",
-        "link":"https:www.youtu.be\/eYFJYSFOHNQ",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":23,
-        "nome":"LIXEIRA",
-        "link":"https:www.youtu.be\/j2lf2xhCwao",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":24,
-        "nome":"MOCHILA",
-        "link":"https:www.youtu.be\/DXhSf1RvZKk",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":25,
-        "nome":"PAPEL",
-        "link":"https:www.youtu.be\/IlknaXVfkis",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":26,
-        "nome":"PINCEL",
-        "link":"https:www.youtu.be\/AvorSTYHr0w",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":27,
-        "nome":"PROFESSOR",
-        "link":"https:www.youtu.be\/wXzybB_iye8",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":28,
-        "nome":"PROFESSORA",
-        "link":"https:www.youtu.be\/6oq0vKunwvc",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":29,
-        "nome":"QUADRO",
-        "link":"https:www.youtu.be\/BF9sg7NGGKA",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":30,
-        "nome":"RÉGUA",
-        "link":"https:www.youtu.be\/uK9EAy-gBNU",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    {
-        "numero":31,
-        "nome":"TESOURA",
-        "link":"https:www.youtu.be\/Nr3lQUP-5Uw",
-        "categoria":"VERBETES – A ESCOLA"
-    },
-    ];
+    </main>
+    <script src="script.js"></script>
+    <script>
+        const videos = [
+            {
+                "numero": 1,
+                "imagem": "https://drive.google.com/file/d/1oRW4CgB6EeLzkljvWwH1vXOsJZLp0RFX/view?usp=drive_link",
+                "nome": "ALUNA",
+                "link": "https:www.youtu.be/SwLbJAT0tho",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 2,
+                "imagem": "https://drive.google.com/file/d/1hBjeuQJ7117HFFe16zrWMVs_sVzOdI49/view?usp=drive_link",
+                "nome": "ALUNO",
+                "link": "https:www.youtu.be/KMvKZ5omRvk",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 3,
+                "imagem": "https://drive.google.com/file/d/1t_kJ60Zi0K1s6MD4uKAtQ3xvBPiKRtrG/view?usp=drive_link",
+                "nome": "APAGADOR",
+                "link": "https:www.youtu.be/lC8N1PBAEnw",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 4,
+                "imagem": "https://drive.google.com/file/d/162OzSRMIwi6-Qcqwh1z3i_ClnxQ1fDtg/view?usp=drive_link",
+                "nome": "APONTADOR",
+                "link": "https:www.youtu.be/rsIEnt3XT0A",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 5,
+                "imagem": "https://drive.google.com/file/d/1aO9juxYbDaIEXAByu-AmsdxGwvDI4V1N/view?usp=drive_link",
+                "nome": "BORRACHA",
+                "link": "https:www.youtu.be/NLKBCuqxx6E",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 6,
+                "imagem": "https://drive.google.com/file/d/1Jr0M2riS4A4LBjwvA6kUPriGqXlB1wuF/view?usp=drive_link",
+                "nome": "CADERNO",
+                "link": "https:www.youtu.be/m6HrzgjsCZY",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 8,
+                "imagem": "https://drive.google.com/file/d/1RWlwcMvBP-mQBFfoWenhGCQKOg0sMh0Y/view?usp=drive_link",
+                "nome": "CALCULADORA",
+                "link": "https:www.youtu.be/Upqrn7M4sQg",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 7,
+                "imagem": "https://drive.google.com/file/d/1dOv8IJoJvdvFR37CQv9mFhECoW5FU7gV/view?usp=drive_link",
+                "nome": "CANETA",
+                "link": "https:www.youtu.be/Qnora92xp5Q",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 9,
+                "imagem": "https://drive.google.com/file/d/1ABVXSKxqtI54EStQ5RmJcMIVkh1wvYdH/view?usp=drive_link",
+                "nome": "CANETA DE QUADRO",
+                "link": "https:www.youtu.be/6wwAQp3Dzq0",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 10,
+                "imagem": "https://drive.google.com/file/d/1--ouvIXSwoS9dQEGMNYEICKcn-XG2Szs/view?usp=drive_link",
+                "nome": "CARTEIRA ESCOLAR",
+                "link": "https:www.youtu.be/pG5m_PA_11E",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 11,
+                "imagem": "https://drive.google.com/file/d/1ghwYaD9mLSvFeUmmtDifAqT3iLiY_xQC/view?usp=drive_link",
+                "nome": "CLIPS",
+                "link": "https:www.youtu.be/S2MsFNEhrAk",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 12,
+                "imagem": "https://drive.google.com/file/d/1n6TjzmmxdXTYY3UJrALq_bewdgZJ3hG6/view?usp=drive_link",
+                "nome": "COLA",
+                "link": "https:www.youtu.be/bZF2IMRnT7I",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 13,
+                "imagem": "https://drive.google.com/file/d/1pQhCCKsnNZa9ryGnxXnNJls7nsDD_ahc/view?usp=drive_link",
+                "nome": "COMPASSO",
+                "link": "https:www.youtu.be/_63ZakLeZIE",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 14,
+                "imagem": "https://drive.google.com/file/d/1wkVgj_QXg8BkYxvuvPAYadT6h_e09f4c/view?usp=drive_link",
+                "nome": "COMPUTADOR",
+                "link": "https:www.youtu.be/UsFYfBFve4Q",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 15,
+                "imagem": "https://drive.google.com/file/d/1OgPoXq7i2ymX7tvpe1D9pHiQDTY90V5F/view?usp=drive_link",
+                "nome": "ESTOJO",
+                "link": "https:www.youtu.be/UUMEQDae1t4",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 16,
+                "imagem": "https://drive.google.com/file/d/1L-WLHBhrqbqmEZTISbczx-jExkPPS3is/view?usp=drive_link",
+                "nome": "GIZ",
+                "link": "https:www.youtu.be/l6ymrax3x3I",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 17,
+                "imagem": "https://drive.google.com/file/d/1Iu_sckp55C6gCrHMg-tG9TLJoVyPuP11/view?usp=drive_link",
+                "nome": "GLOBO",
+                "link": "https:www.youtu.be/5RMqexKLysk",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 18,
+                "imagem": "https://drive.google.com/file/d/1MNbSy7bCcoHTkhpYGOJSOHUd7eLvWjIW/view?usp=drive_link",
+                "nome": "GRAMPEADOR",
+                "link": "https:www.youtu.be/0gOH649WYR0",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 19,
+                "imagem": "https://drive.google.com/file/d/14OcE1goOlufQ1I2tAdwZhueaqeZS6F9R/view?usp=drive_link",
+                "nome": "HIDROCOR",
+                "link": "https:www.youtu.be/hc8Yx1XExfk",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 20,
+                "imagem": "https://drive.google.com/file/d/1t8gVxPqc2s6x6i2DbJadW9jjWhCuwnaf/view?usp=drive_link",
+                "nome": "LÁPIS",
+                "link": "https:www.youtu.be/_2HltzPf_1I",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 21,
+                "imagem": "https://drive.google.com/file/d/1mD_WGX4pfJ6KFcKrFjiPGcZHhsTTYp9Q/view?usp=drive_link",
+                "nome": "LÁPIS DE COR",
+                "link": "https:www.youtu.be/yZ4kzg0O6ys",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 22,
+                "imagem": "https://drive.google.com/file/d/1RFCv-ScF-TWkAUSsN_eSjP5fyaHaVe6Y/view?usp=drive_link",
+                "nome": "LIVROS",
+                "link": "https:www.youtu.be/eYFJYSFOHNQ",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 23,
+                "imagem": "https://drive.google.com/file/d/1yu7-Cz2K8E89Jef_jtutnwtMAyXlyM79/view?usp=drive_link",
+                "nome": "LIXEIRA",
+                "link": "https:www.youtu.be/j2lf2xhCwao",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 24,
+                "imagem": "https://drive.google.com/file/d/1PqDGK39exekx6PIFhvtcUmlHbwJsesmJ/view?usp=drive_link",
+                "nome": "MOCHILA",
+                "link": "https:www.youtu.be/DXhSf1RvZKk",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 25,
+                "imagem": "https://drive.google.com/file/d/1oQVOcGKraKWUH2J90R2LhsD8HlSif8X1/view?usp=drive_link",
+                "nome": "PAPEL",
+                "link": "https:www.youtu.be/IlknaXVfkis",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 26,
+                "imagem": "https://drive.google.com/file/d/1TpmW7Z51HrlULf1dkG-_A9Oh2SiQVpfO/view?usp=drive_link",
+                "nome": "PINCEL",
+                "link": "https:www.youtu.be/AvorSTYHr0w",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 27,
+                "imagem": "https://drive.google.com/file/d/1IVbv-DB5JIN0dy5F-3RvK8xhw9oDLKTW/view?usp=drive_link",
+                "nome": "PROFESSOR",
+                "link": "https:www.youtu.be/wXzybB_iye8",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 28,
+                "imagem": "https://drive.google.com/file/d/1t_3sN8PyE6A7QEmL9VAVUML43QdBvqsU/view?usp=drive_link",
+                "nome": "PROFESSORA",
+                "link": "https:www.youtu.be/6oq0vKunwvc",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 29,
+                "imagem": "https://drive.google.com/file/d/14WVjy1GkkjSvz9SBURaltawN8HrseXWM/view?usp=drive_link",
+                "nome": "QUADRO",
+                "link": "https:www.youtu.be/BF9sg7NGGKA",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 30,
+                "imagem": "https://drive.google.com/file/d/1g5hfwQhQfBLXUfAjfje6fr-99v95_DyY/view?usp=drive_link",
+                "nome": "RÉGUA",
+                "link": "https:www.youtu.be/uK9EAy-gBNU",
+                "categoria": "VERBETES – A ESCOLA"
+            },
+            {
+                "numero": 31,
+                "imagem": "https://drive.google.com/file/d/18j-NDzaq9czeOqr-MbFK5dxK8jBwZMng/view?usp=drive_link",
+                "nome": "TESOURA",
+                "link": "https:www.youtu.be/Nr3lQUP-5Uw",
+                "categoria": "VERBETES – A ESCOLA"
+            }
+        ];
 
-    function criarVideos() {
-      const container = document.querySelector(".grid-videos");
-      console.log(container);
-      
-      videos.forEach(video => {
-        // extrair ID do vídeo (último pedaço do link)
-        const videoId = video.link.split("\/").pop();
-        console.log(videoId);
-        
-        // criar div principal
-        const div = document.createElement("div");
-        div.className = "grid-videos-item";
+        function criarVideos() {
+            const container = document.querySelector(".grid-videos");
+            console.log(container);
 
-        // criar título
-        const h2 = document.createElement("h2");
-        h2.textContent = `${video.nome}`;
+            videos.forEach(video => {
+                // extrair ID do vídeo (último pedaço do link)
+                const videoId = video.link.split("\/").pop();
+                console.log(videoId);
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+                // criar div principal
+                const div = document.createElement("div");
+                div.className = "grid-videos-item";
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                // criar título
+                const h2 = document.createElement("h2");
+                h2.textContent = `${video.nome}`;
 
-      });
-    }
+               videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                console.log(videoImagemLink);
+
+
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

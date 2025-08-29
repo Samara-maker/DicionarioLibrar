@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -40,59 +36,68 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-     {
-        "numero":1,
-        "nome":"AMANHÃ",
-        "link":"https:www.youtu.be\/U5c9D575agI",
-        "categoria":"VERBETES – O TEMPO"
+    {
+        "numero": 1,
+        "nome": "AMANHÃ",
+        "imagem":"https://drive.google.com/file/d/1xxBUW3oFyNkQu_X1vc_KRE03qx_dCvFX/view?usp=drive_link",
+        "link": "https:www.youtu.be\/U5c9D575agI",
+        "categoria": "VERBETES – O TEMPO"
     },
     {
-        "numero":2,
-        "nome":"AMANHECER",
-        "link":"https:www.youtu.be\/JkHFZ-8Kh3I",
-        "categoria":"VERBETES – O TEMPO"
+        "numero": 2,
+        "nome": "AMANHECER",
+        "imagem":"https://drive.google.com/file/d/1EtnJi9pL93DfpKEMITp8dRO8j1wi68tb/view?usp=drive_link",
+        "link": "https:www.youtu.be\/JkHFZ-8Kh3I",
+        "categoria": "VERBETES – O TEMPO"
     },
     {
-        "numero":3,
-        "nome":"ENTARDECER",
-        "link":"https:www.youtu.be\/Jc8Naf9rH_k",
-        "categoria":"VERBETES – O TEMPO"
+        "numero": 3,
+        "nome": "ENTARDECER",
+        "imagem":"https://drive.google.com/file/d/1g9Vs0kR6-NAhICp0SFFwcNxUYeeqAyYs/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Jc8Naf9rH_k",
+        "categoria": "VERBETES – O TEMPO"
     },
     {
-        "numero":4,
-        "nome":"HOJE",
-        "link":"https:www.youtu.be\/hsOqDGqe0Zw",
-        "categoria":"VERBETES – O TEMPO"
+        "numero": 4,
+        "nome": "HOJE",
+        "imagem":"https://drive.google.com/file/d/1DiYCzniL-G3HlW87ND8wqGJssPbJxHMu/view?usp=drive_link",
+        "link": "https:www.youtu.be\/hsOqDGqe0Zw",
+        "categoria": "VERBETES – O TEMPO"
     },
     {
-        "numero":5,
-        "nome":"MADRUGADA",
-        "link":"https:www.youtu.be\/LY-Mv-bwDJE",
-        "categoria":"VERBETES – O TEMPO"
+        "numero": 5,
+        "nome": "MADRUGADA",
+        "imagem":"https://drive.google.com/file/d/1GpcEiVbKR8FWBLAqQRonhoZMY9nqzI9-/view?usp=drive_link",
+        "link": "https:www.youtu.be\/LY-Mv-bwDJE",
+        "categoria": "VERBETES – O TEMPO"
     },
     {
-        "numero":6,
-        "nome":"MANHÃ",
-        "link":"https:www.youtu.be\/Ho9hwf5giQo",
-        "categoria":"VERBETES – O TEMPO"
+        "numero": 6,
+        "nome": "MANHÃ",
+        "imagem":"https://drive.google.com/file/d/1DiYCzniL-G3HlW87ND8wqGJssPbJxHMu/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Ho9hwf5giQo",
+        "categoria": "VERBETES – O TEMPO"
     },
     {
-        "numero":7,
-        "nome":"NOITE",
-        "link":"https:www.youtu.be\/9KqzZ_rLKFI",
-        "categoria":"VERBETES – O TEMPO"
+        "numero": 7,
+        "nome": "NOITE",
+        "imagem":"https://drive.google.com/file/d/1g_1KkS9VSvzK0_qFtFznMibZlrIkxZgg/view?usp=drive_link",
+        "link": "https:www.youtu.be\/9KqzZ_rLKFI",
+        "categoria": "VERBETES – O TEMPO"
     },
     {
-        "numero":8,
-        "nome":"ONTEM",
-        "link":"https:www.youtu.be\/_kmmDrxpGYA",
-        "categoria":"VERBETES – O TEMPO"
+        "numero": 8,
+        "nome": "ONTEM",
+        "imagem":"https://drive.google.com/file/d/1P6rO_mn1gzLU7VpgfG8FRpURxsTqe5aK/view?usp=drive_link",
+        "link": "https:www.youtu.be\/_kmmDrxpGYA",
+        "categoria": "VERBETES – O TEMPO"
     },
     {
-        "numero":9,
-        "nome":"TARDE",
-        "link":"https:www.youtu.be\/c2LdOkLudUA",
-        "categoria":"VERBETES – O TEMPO"
+        "numero": 9,
+        "nome": "TARDE",
+        "imagem":"https://drive.google.com/file/d/1xxBUW3oFyNkQu_X1vc_KRE03qx_dCvFX/view?usp=drive_link",
+        "link": "https:www.youtu.be\/c2LdOkLudUA",
+        "categoria": "VERBETES – O TEMPO"
     },
     ];
 
@@ -113,29 +118,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+        videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -40,181 +36,210 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-      {
+     {
         
         "numero":1,
+        "imagem":"https://drive.google.com/file/d/1CdqIvJlZF-2HsehM9T3TJwezcTDlcDhm/view?usp=drive_link",
         "nome":"BARRIGA",
         "link":"https:www.youtu.be\/rDOV0Llq6uk",
         "categoria":"MEU CORPO"
     },
     {
         "numero":2,
+	"imagem":"https://drive.google.com/file/d/1dPxDdJ-8QnBtNdXczgMXu_PZBc7Btb_k/view?usp=drive_link",
         "nome":"BOCA",
         "link":"https:www.youtu.be\/TPvx31beqGI",
         "categoria":"MEU CORPO"
     },
     {
         "numero":3,
+	"imagem":"https://drive.google.com/file/d/1dqDC82cluIASCTd5-lQ-ceYdt7jF9ALr/view?usp=drive_link",
         "nome":"BOCHECHA",
         "link":"https:www.youtu.be\/kGS4VnnhJyE",
         "categoria":"MEU CORPO"
     },
     {
         "numero":4,
+	"imagem":"https://drive.google.com/file/d/1YE_MdcE79BtvCaQjAOjbaljIxefHyUjV/view?usp=drive_link",
         "nome":"BRAÇO",
         "link":"https:www.youtu.be\/H-9r3dEq6us",
         "categoria":"MEU CORPO"
     },
     {
         "numero":5,
+	"imagem":"https://drive.google.com/file/d/1Sox2F62uEGPLSbB-66G7Hg_15F8EXSdv/view?usp=drive_link",
         "nome":"CABEÇA",
         "link":"https:www.youtu.be\/ffI_PiPkTyA",
         "categoria":"MEU CORPO"
     },
     {
-        "numero":6,
-        "nome":"CABELO",
-        "link":"https:www.youtu.be\/D6Jse4AP8lc",
-        "categoria":"MEU CORPO"
+        "numero": 6,
+        "imagem":"https://drive.google.com/file/d/1AMdRQw5Oq95DD-p-UE44S17uprsKfJ9c/view?usp=drive_link",
+        "nome": "CABELO",
+        "link": "https://www.youtu.be/D6Jse4AP8lc",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":7,
-        "nome":"COSTAS",
-        "link":"https:www.youtu.be\/a8XUYOnCE5s",
-        "categoria":"MEU CORPO"
+        "numero": 7,
+        "imagem":"https://drive.google.com/file/d/12t0JAgCNW6klhvIBS-gsprLnnMfBlsVv/view?usp=drive_link",
+        "nome": "COSTAS",
+        "link": "https://www.youtu.be/a8XUYOnCE5s",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":8,
-        "nome":"COTOVELO",
-        "link":"https:www.youtu.be\/xD6DX4eR9TQ",
-        "categoria":"MEU CORPO"
+        "numero": 8,
+        "imagem": "https://drive.google.com/file/d/1jOdvjBNoGEwgrA7evdaVyE5nsefjZ-zZ/view?usp=drive_link",
+        "nome": "COTOVELO",
+        "link": "https://www.youtu.be/xD6DX4eR9TQ",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":9,
-        "nome":"DEDO",
-        "link":"https:www.youtu.be\/IoKb-q1xEUU",
-        "categoria":"MEU CORPO"
+        "numero": 9,
+        "imagem":"https://drive.google.com/file/d/1h2yvOHEkd6hzkyeGDSNzjqLVLsJBWgZD/view?usp=drive_link",
+        "nome": "DEDO",
+        "link": "https://www.youtu.be/IoKb-q1xEUU",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":10,
-        "nome":"DEDO DO PÉ",
-        "link":"https:www.youtu.be\/6fSqrNl1dRU",
-        "categoria":"MEU CORPO"
+        "numero": 10,
+        "imagem":"https://drive.google.com/file/d/1N9JjdVwamtbZbCpU-gZsJtCPZ2hGSxEy/view?usp=drive_link",
+        "nome": "DEDO DO PÉ",
+        "link": "https://www.youtu.be/6fSqrNl1dRU",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":11,
-        "nome":"DENTES",
-        "link":"https:www.youtu.be\/mAsWaI0ZCBU",
-        "categoria":"MEU CORPO"
+        "numero": 11,
+        "imagem":"https://drive.google.com/file/d/1UosmomQmFr-X-Oqy8q3W4zW3v0-pM6vl/view?usp=drive_link",
+        "nome": "DENTES",
+        "link": "https://www.youtu.be/mAsWaI0ZCBU",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":12,
-        "nome":"JOELHO",
-        "link":"https:www.youtu.be\/rmdHsUCkTHs",
-        "categoria":"MEU CORPO"
+        "numero": 12,
+        "imagem":"https://drive.google.com/file/d/1tsqpfcgi-sXvJeXdV68RsCnkbbmortkA/view?usp=drive_link",
+        "nome": "JOELHO",
+        "link": "https://www.youtu.be/rmdHsUCkTHs",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":13,
-        "nome":"LÁBIOS",
-        "link":"https:www.youtu.be\/l86Gpna03Ng",
-        "categoria":"MEU CORPO"
+        "numero": 13,
+        "imagem":"https://drive.google.com/file/d/1w55-dVL-NkgXhd8_q430-5gJ3_2rC_cW/view?usp=drive_link",
+        "nome": "LÁBIOS",
+        "link": "https://www.youtu.be/l86Gpna03Ng",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":14,
-        "nome":"LÍNGUA",
-        "link":"https:www.youtu.be\/2U0zgGbdrxQ",
-        "categoria":"MEU CORPO"
+        "numero": 14,
+        "imagem":"https://drive.google.com/file/d/1v5k2Yqp38gqgoEnMLGh6OGW9o6-r5yS5/view?usp=drive_link",
+        "nome": "LÍNGUA",
+        "link": "https://www.youtu.be/2U0zgGbdrxQ",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":15,
-        "nome":"MÃO",
-        "link":"https:www.youtu.be\/dtaE8SRKQOk",
-        "categoria":"MEU CORPO"
+        "numero": 15,
+        "imagem":"https://drive.google.com/file/d/1M0ow0egVn3H7feVioqUCozSZA6VOL2vf/view?usp=drive_link",
+        "nome": "MÃO",
+        "link": "https://www.youtu.be/dtaE8SRKQOk",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":16,
-        "nome":"MENINA",
-        "link":"https:www.youtu.be\/K1GwL47U3OY",
-        "categoria":"MEU CORPO"
+        "numero": 16,
+        "imagem":"https://drive.google.com/file/d/1eowqrq_wWxkeIgtvWb9RiS0hpaVOPq5G/view?usp=drive_link",
+        "nome": "MENINA",
+        "link": "https://www.youtu.be/K1GwL47U3OY",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":17,
-        "nome":"MENINO",
-        "link":"https:www.youtu.be\/I4X-HMkX_7E",
-        "categoria":"MEU CORPO"
+        "numero": 17,
+        "imagem":"https://drive.google.com/file/d/1jholKWzrNHGXVKeN2MCaP-PYwCzGrt3Z/view?usp=drive_link",
+        "nome": "MENINO",
+        "link": "https://www.youtu.be/I4X-HMkX_7E",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":18,
-        "nome":"NARIZ",
-        "link":"https:www.youtu.be\/R7PvwHvYHyI",
-        "categoria":"MEU CORPO"
+        "numero": 18,
+        "imagem":"https://drive.google.com/file/d/1zWRmK8CELtEb00PYuqU7mrdROO12_ITp/view?usp=drive_link",
+        "nome": "NARIZ",
+        "link": "https://www.youtu.be/R7PvwHvYHyI",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":19,
-        "nome":"OLHO",
-        "link":"https:www.youtu.be\/ZgyVP_0LxN0",
-        "categoria":"MEU CORPO"
+        "numero": 19,
+        "imagem":"https://drive.google.com/file/d/1ju9URxNJU6_vtjik7R0bgLKOO9mwRPkg/view?usp=drive_link",
+        "nome": "OLHO",
+        "link": "https://www.youtu.be/ZgyVP_0LxN0",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":20,
-        "nome":"OMBRO",
-        "link":"https:www.youtu.be\/zaK9PjBQoJk",
-        "categoria":"MEU CORPO"
+        "numero": 20,
+        "imagem":"https://drive.google.com/file/d/1kTGAUruPAlSzUHYPlFEqmctDggSr1HNf/view?usp=drive_link",
+        "nome": "OMBRO",
+        "link": "https://www.youtu.be/zaK9PjBQoJk",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":21,
-        "nome":"ORELHA",
-        "link":"https:www.youtu.be\/1Zx7wvgHlCM",
-        "categoria":"MEU CORPO"
+        "numero": 21,
+        "imagem":"https://drive.google.com/file/d/1lRTVypJtZqVpU0BcoWBG3hVHSusHuOCT/view?usp=drive_link",
+        "nome": "ORELHA",
+        "link": "https://www.youtu.be/1Zx7wvgHlCM",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":22,
-        "nome":"PÉ",
-        "link":"https:www.youtu.be\/2eB75R1ol8Q",
-        "categoria":"MEU CORPO"
+        "numero": 22,
+        "imagem":"https://drive.google.com/file/d/1MzvHY1jog0MaMdhFxFlyVl3AJ4y2ocG9/view?usp=drive_link",
+        "nome": "PÉ",
+        "link": "https://www.youtu.be/2eB75R1ol8Q",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":23,
-        "nome":"PERNAS",
-        "link":"https:www.youtu.be\/MYZrB6ETnlY",
-        "categoria":"MEU CORPO"
+        "numero": 23,
+        "imagem":"https://drive.google.com/file/d/1ZYCa_WjVfux6Uqeo6oZ2gErnO0vrjQOF/view?usp=drive_link",
+        "nome": "PERNAS",
+        "link": "https://www.youtu.be/MYZrB6ETnlY",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":24,
-        "nome":"PESCOÇO",
-        "link":"https:www.youtu.be\/Pw2LTs_nLpc",
-        "categoria":"MEU CORPO"
+        "numero": 24,
+        "imagem":"https://drive.google.com/file/d/1hgTSIjB7b4Qb3Tq1FDaURGXjBkPqwHpq/view?usp=drive_link",
+        "nome": "PESCOÇO",
+        "link": "https://www.youtu.be/Pw2LTs_nLpc",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":25,
-        "nome":"PULSO",
-        "link":"https:www.youtu.be\/n17Batc3158",
-        "categoria":"MEU CORPO"
+        "numero": 25,
+        "imagem":"https://drive.google.com/file/d/1os6djqIxJirayYafWTSShiGT_hepPXRb/view?usp=drive_link",
+        "nome": "PULSO",
+        "link": "https://www.youtu.be/n17Batc3158",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":26,
-        "nome":"QUEIXO",
-        "link":"https:www.youtu.be\/eJmZbCbD7zM",
-        "categoria":"MEU CORPO"
+        "numero": 26,
+        "imagem":"https://drive.google.com/file/d/1gJd9RR4AyNaxGotRp6rJkvak1PeiI3LL/view?usp=drive_link",
+        "nome": "QUEIXO",
+        "link": "https://www.youtu.be/eJmZbCbD7zM",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":27,
-        "nome":"SOBRACELHA",
-        "link":"https:www.youtu.be\/_i8Q5TTOB70",
-        "categoria":"MEU CORPO"
+        "numero": 27,
+        "imagem":"https://drive.google.com/file/d/1V84Ng2gy0g_glSl4MuX4OuGSvXAEHWjw/view?usp=drive_link",
+        "nome": "SOBRANCELHA",
+        "link": "https://www.youtu.be/_i8Q5TTOB70",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":28,
-        "nome":"TESTA",
-        "link":"https:www.youtu.be\/Huvcnm_tRG4",
-        "categoria":"MEU CORPO"
+        "numero": 28,
+        "imagem":"https://drive.google.com/file/d/1rE3gQ1vK7LuXnVfGRbkzfn35oi6j6OhK/view?usp=drive_link",
+        "nome": "TESTA",
+        "link": "https://www.youtu.be/Huvcnm_tRG4",
+        "categoria": "MEU CORPO"
     },
     {
-        "numero":29,
-        "nome":"TORAX",
-        "link":"https:www.youtu.be\/xgeQkediC6o",
-        "categoria":"MEU CORPO"
-    },
+        "numero": 29,
+        "imagem":"https://drive.google.com/file/d/1nbo5Tx5PLz9YxVEiatF3dxhZdduz6Wdj/view?usp=drive_link",
+        "nome": "TORAX",
+        "link": "https://www.youtu.be/xgeQkediC6o",
+        "categoria": "MEU CORPO"
+    }
     ];
 
     function criarVideos() {
@@ -234,6 +259,13 @@
         const h2 = document.createElement("h2");
         h2.textContent = `${video.nome}`;
 
+          videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
+
+          console.log(videoImagemLink);
+
+          const img = document.createElement("img");
+
+
         // criar iframe
         const iframe = document.createElement("iframe");
         iframe.width = "560";
@@ -247,10 +279,14 @@
         iframe.allowFullscreen = true;
 
         // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+        // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
 
       });
     }

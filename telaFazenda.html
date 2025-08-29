@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -29,9 +25,9 @@
     <div id="resultados"></div>
 
     <section class="grid-videos">
-      
 
-      
+
+
     </section>
   </main>
 
@@ -41,100 +37,114 @@
   <script>
     const videos = [
       {
-        "numero":1,
-        "nome":"CARRINHO DE MÃO",
-        "link":"https:www.youtu.be\/DM5f6qGfGMY",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":2,
-        "nome":"CELEIRO",
-        "link":"https:www.youtu.be\/q8IsQzYcd3U",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":3,
-        "nome":"CHIQUEIRO",
-        "link":"https:www.youtu.be\/l6fly01kh2Q",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":4,
-        "nome":"COLINA",
-        "link":"https:www.youtu.be\/k-4td1zL1DU",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":5,
-        "nome":"ESCADA DE MÃO",
-        "link":"https:www.youtu.be\/JrvQ7bT9Ibw",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":6,
-        "nome":"ESPANTALHO",
-        "link":"https:www.youtu.be\/G2srhtD2jXw",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":7,
-        "nome":"ESTÁBULO",
-        "link":"https:www.youtu.be\/7GozpwXAwm8",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":8,
-        "nome":"FAZENDEIRO",
-        "link":"https:www.youtu.be\/1auXcHt4mt4",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":9,
-        "nome":"FENO",
-        "link":"https:www.youtu.be\/mSsk1u3w1G8",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":10,
-        "nome":"GALINHEIRO",
-        "link":"https:www.youtu.be\/XUOEmpjC_zg",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":11,
-        "nome":"PASTO",
-        "link":"https:www.youtu.be\/CL3D62dwtNw",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":12,
-        "nome":"PLANTAÇÃO",
-        "link":"https:www.youtu.be\/zAj1XBvD8PI",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":13,
-        "nome":"POÇO D`ÁGUA",
-        "link":"https:www.youtu.be\/saIdaNzPam4",
-        "categoria":"VERBETES – A FAZENDA"
-    },
-    {
-        "numero":14,
-        "nome":"TRATOR",
-        "link":"https:www.youtu.be\/h6kav4ARZN0",
-        "categoria":"VERBETES – A FAZENDA"
-    },
+        "numero": 1,
+        "imagem": "https://drive.google.com/file/d/168GmkLcc805nAUgYqiPfNdpterXsBfvy/view?usp=drive_link",
+        "nome": "CARRINHO DE MÃO",
+        "link": "https:www.youtu.be\/DM5f6qGfGMY",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 2,
+        "imagem": "https://drive.google.com/file/d/1P9ryxEuxgZfU7sV_9RVT6nm9VfAmcOyH/view?usp=drive_link",
+        "nome": "CELEIRO",
+        "link": "https:www.youtu.be\/q8IsQzYcd3U",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 3,
+        "imagem": "https://drive.google.com/file/d/1qMqHZ9s0tUW-VcgxmSMc872_DMH3lvBC/view?usp=drive_link",
+        "nome": "CHIQUEIRO",
+        "link": "https:www.youtu.be\/l6fly01kh2Q",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 4,
+        "imagem": "https://drive.google.com/file/d/1A35Ac7ooac-aE5ZN5zJqkXmms4AWrHU7/view?usp=drive_link",
+        "nome": "COLINA",
+        "link": "https:www.youtu.be\/k-4td1zL1DU",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 5,
+        "imagem": "https://drive.google.com/file/d/1jY_6NTR0uGY7e2EoGqkr1CA3Cgf15Wop/view?usp=drive_link",
+        "nome": "ESCADA DE MÃO",
+        "link": "https:www.youtu.be\/JrvQ7bT9Ibw",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 6,
+        "imagem": "https://drive.google.com/file/d/170RSTL2p2rVxDI_Oo2asGYXel1qqVF9t/view?usp=drive_link",
+        "nome": "ESPANTALHO",
+        "link": "https:www.youtu.be\/G2srhtD2jXw",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 7,
+        "imagem": "https://drive.google.com/file/d/1xBsL5vgmb3zfJCihrSi1yF7zbmCXd3nG/view?usp=drive_link",
+        "nome": "ESTÁBULO",
+        "link": "https:www.youtu.be\/7GozpwXAwm8",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 8,
+        "imagem": "https://drive.google.com/file/d/19rohhTG0dCNCdZ8VZ-RCScPtWtBgc8Go/view?usp=drive_link",
+        "nome": "FAZENDEIRO",
+        "link": "https:www.youtu.be\/1auXcHt4mt4",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 9,
+        "imagem": "https://drive.google.com/file/d/1J7quceKKcxOuIcgSy8oDfvfsXbdoohtH/view?usp=drive_link",
+        "nome": "FENO",
+        "link": "https:www.youtu.be\/mSsk1u3w1G8",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 10,
+        "imagem": "https://drive.google.com/file/d/15tdqh0ND45GDbXiAcv7xH2KrTsNLdI5O/view?usp=drive_link",
+        "nome": "GALINHEIRO",
+        "link": "https:www.youtu.be\/XUOEmpjC_zg",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 11,
+        "imagem": "https://drive.google.com/file/d/1AenDklb49OyiC-StRUxt0L9fSepBxg8I/view?usp=drive_link",
+        "nome": "PASTO",
+        "link": "https:www.youtu.be\/CL3D62dwtNw",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 12,
+        "imagem": "https://drive.google.com/file/d/1HMDOuREA-hHOagM9uoOiIPSim8XbuRLA/view?usp=drive_link",
+        "nome": "PLANTAÇÃO",
+        "link": "https:www.youtu.be\/zAj1XBvD8PI",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 13,
+        "imagem": "https://drive.google.com/file/d/1K01mYqbSblsTCDAItZoZ-eBri6h-9N0i/view?usp=drive_link",
+        "nome": "POÇO D`ÁGUA",
+        "link": "https:www.youtu.be\/saIdaNzPam4",
+        "categoria": "VERBETES – A FAZENDA"
+      },
+      {
+        "numero": 14,
+        "imagem": "https://drive.google.com/file/d/1L9Ela9BoWl6uCxQlJfAguEkBkWNdj15M/view?usp=drive_link",
+        "nome": "TRATOR",
+        "link": "https:www.youtu.be\/h6kav4ARZN0",
+        "categoria": "VERBETES – A FAZENDA"
+      }
     ];
 
     function criarVideos() {
       const container = document.querySelector(".grid-videos");
       console.log(container);
-      
+
       videos.forEach(video => {
         // extrair ID do vídeo (último pedaço do link)
         const videoId = video.link.split("\/").pop();
         console.log(videoId);
-        
+
         // criar div principal
         const div = document.createElement("div");
         div.className = "grid-videos-item";
@@ -143,29 +153,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = `${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+       videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -40,89 +36,103 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-      {
-        "numero":1,
-        "nome":"AMARELO",
-        "link":"https:www.youtu.be\/zAZsrk_1azU",
-        "categoria":"CORES"
+       {
+        "numero": 1,
+        "nome": "AMARELO",
+        "imagem":"https://drive.google.com/file/d/1hEZBUW3zDWrWg8v2yXka8fNqrFcH7MF5/view?usp=drive_link",
+        "link": "https:www.youtu.be\/zAZsrk_1azU",
+        "categoria": "CORES"
     },
     {
-        "numero":2,
-        "nome":"AZUL",
-        "link":"https:www.youtu.be\/oSW6BdIYcTw",
-        "categoria":"CORES"
+        "numero": 2,
+        "nome": "AZUL",
+        "imagem":"https://drive.google.com/file/d/1wjxIQVHLNvmsUKJk8pxEW6wI3re3qclD/view?usp=drive_link",
+        "link": "https:www.youtu.be\/oSW6BdIYcTw",
+        "categoria": "CORES"
     },
     {
-        "numero":3,
-        "nome":"BRANCO",
-        "link":"https:www.youtu.be\/6fYpRUvNSc8",
-        "categoria":"CORES"
+        "numero": 3,
+        "nome": "BRANCO",
+        "imagem":"https://drive.google.com/file/d/1LIi3g7WC_gpmqMRF8XL6EsJTzZd7l8V7/view?usp=drive_link",
+        "link": "https:www.youtu.be\/6fYpRUvNSc8",
+        "categoria": "CORES"
     },
     {
-        "numero":4,
-        "nome":"CAVALETE",
-        "link":"https:www.youtu.be\/CnI_L2eJCWg",
-        "categoria":"CORES"
+        "numero": 4,
+        "nome": "CAVALETE",
+        "imagem":"https://drive.google.com/file/d/1HQ92qJ-uellHZ6ZSeNhU-nGciyuMnuGx/view?usp=drive_link",
+        "link": "https:www.youtu.be\/CnI_L2eJCWg",
+        "categoria": "CORES"
     },
     {
-        "numero":5,
-        "nome":"CINZA",
-        "link":"https:www.youtu.be\/hbxwnxO_klE",
-        "categoria":"CORES"
+        "numero": 5,
+        "nome": "CINZA",
+        "imagem":"https://drive.google.com/file/d/1InU5UL8yCuZ7XrVPWCMObgQuBDk7TR4b/view?usp=drive_link",
+        "link": "https:www.youtu.be\/hbxwnxO_klE",
+        "categoria": "CORES"
     },
     {
-        "numero":6,
-        "nome":"LARANJA",
-        "link":"https:www.youtu.be\/KIL3iN-KO6M",
-        "categoria":"CORES"
+        "numero": 6,
+        "nome": "LARANJA",
+        "imagem":"https://drive.google.com/file/d/11KTurxH8P8eEtoVnQJ8X_b3zCXChTPk1/view?usp=drive_link",
+        "link": "https:www.youtu.be\/KIL3iN-KO6M",
+        "categoria": "CORES"
     },
     {
-        "numero":7,
-        "nome":"MARROM",
-        "link":"https:www.youtu.be\/DlKu1Cs8SJI",
-        "categoria":"CORES"
+        "numero": 7,
+        "nome": "MARROM",
+        "imagem":"https://drive.google.com/file/d/1hkPbB7Iwrv3XY3_0h-2mBeA1V7YO1a2f/view?usp=drive_link",
+        "link": "https:www.youtu.be\/DlKu1Cs8SJI",
+        "categoria": "CORES"
     },
     {
-        "numero":8,
-        "nome":"PINCEL",
-        "link":"https:www.youtu.be\/AvorSTYHr0w",
-        "categoria":"CORES"
+        "numero": 8,
+        "nome": "PINCEL",
+        "imagem":"https://drive.google.com/file/d/1q-8owGg2IbCwSdUIzUX5LdoI79j4UwEX/view?usp=drive_link",
+        "link": "https:www.youtu.be\/AvorSTYHr0w",
+        "categoria": "CORES"
     },
     {
-        "numero":9,
-        "nome":"PRETO",
-        "link":"https:www.youtu.be\/lkaPo_Zkc1w",
-        "categoria":"CORES"
+        "numero": 9,
+        "nome": "PRETO",
+        "imagem":"https://drive.google.com/file/d/1InU5UL8yCuZ7XrVPWCMObgQuBDk7TR4b/view?usp=drive_link",
+        "link": "https:www.youtu.be\/lkaPo_Zkc1w",
+        "categoria": "CORES"
     },
     {
-        "numero":10,
-        "nome":"ROSA",
-        "link":"https:www.youtu.be\/WQhX7LXot-Q",
-        "categoria":"CORES"
+        "numero": 10,
+        "nome": "ROSA",
+        "imagem":"https://drive.google.com/file/d/1UFevWA4ksnEXgSGH72UlZ2R1AojK3GXR/view?usp=drive_link",
+        "link": "https:www.youtu.be\/WQhX7LXot-Q",
+        "categoria": "CORES"
     },
     {
-        "numero":11,
-        "nome":"ROXO",
-        "link":"https:www.youtu.be\/JUE5ChmC3tA",
-        "categoria":"CORES"
+        "numero": 11,
+        "nome": "ROXO",
+        "imagem":"https://drive.google.com/file/d/1efPHRypJgFdrMqTYKnSNF2NAzR5-KBiY/view?usp=drive_link",
+        "link": "https:www.youtu.be\/JUE5ChmC3tA",
+        "categoria": "CORES"
     },
     {
-        "numero":12,
-        "nome":"TINTA",
-        "link":"https:www.youtu.be\/xOpUVZZ64gs",
-        "categoria":"CORES"
+        "numero": 12,
+        "nome": "TINTA",
+        "imagem":"https://drive.google.com/file/d/1jkJSyybyXwgtAYgVSIg788dAfj9GNu6l/view?usp=drive_link",
+        "link": "https:www.youtu.be\/xOpUVZZ64gs",
+        "categoria": "CORES"
     },
     {
-        "numero":13,
-        "nome":"VERDE",
-        "link":"https:www.youtu.be\/v-1D50yIjtY",
-        "categoria":"CORES"
+        "numero": 13,
+        "nome": "VERDE",
+        "imagem":"https://drive.google.com/file/d/10srrOEeytd6pvi6osqOzP0kSrSNESrTk/view?usp=drive_link",
+        "link": "https:www.youtu.be\/v-1D50yIjtY",
+        "categoria": "CORES"
     },
     {
-        "numero":14,
-        "nome":"VERMELHO",
-        "link":"https:www.youtu.be\/qylyK_WPFw8",
-        "categoria":"CORES"
+        "numero": 14,
+        "nome": "VERMELHO",
+        "imagem":"https://drive.google.com/file/d/1iWZPP-owg_wsLoH25yo9vKp5YtHprmx9/view?usp=drive_link",
+        "link": "https:www.youtu.be\/qylyK_WPFw8",
+        "categoria": "CORES"
     },
     ];
 
@@ -142,30 +152,39 @@
         // criar título
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
+ videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+                console.log(videoImagemLink);
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
 
-      });
-    }
+                const img = document.createElement("img");
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -41,57 +37,67 @@
   <script>
     const videos = [
       {
-        "numero":1,
-        "nome":"ALPINISMO",
-        "link":"https://youtu.be/MPQ5o_keN2g",
-        "categoria":"ESPORTES"
-    },{
-        "numero":2,
-        "nome":"ATLETISMO",
-        "link":"https:www.youtu.be\/MPQ5o_keN2g",
-        "categoria":"ESPORTES"
+        "numero": 1,
+        "nome": "ALPINISMO",
+        "imagem":"https://drive.google.com/file/d/1hi9v8K3c9Ntr2edFRYZjLSkykMXYRPPp/view?usp=drive_link",
+        "link": "https://youtu.be/MPQ5o_keN2g",
+        "categoria": "ESPORTES"
     },
     {
-        "numero":3,
-        "nome":"BASQUETE",
-        "link":"https:www.youtu.be\/XaSMwp8zroU",
-        "categoria":"ESPORTES"
+        "numero": 2,
+        "nome": "ATLETISMO",
+        "imagem":"https://drive.google.com/file/d/1s8mZdvJIvgKlK1Yd7LUYh47K_YdmZl2k/view?usp=drive_link",
+        "link": "https:www.youtu.be\/MPQ5o_keN2g",
+        "categoria": "ESPORTES"
     },
     {
-        "numero":4,
-        "nome":"CICLISMO",
-        "link":"https:www.youtu.be\/EZbVj_9dIFc",
-        "categoria":"ESPORTES"
+        "numero": 3,
+        "nome": "BASQUETE",
+        "imagem":"https://drive.google.com/file/d/1c7LzpNbZzP_nges8PSd3tXHg0sIoB7sy/view?usp=drive_link",
+        "link": "https:www.youtu.be\/XaSMwp8zroU",
+        "categoria": "ESPORTES"
     },
     {
-        "numero":5,
-        "nome":"CORRIDA",
-        "link":"https:www.youtu.be\/pKyBpUdtd7A",
-        "categoria":"ESPORTES"
+        "numero": 4,
+        "nome": "CICLISMO",
+        "imagem":"https://drive.google.com/file/d/136cJa-wGTq9uhs3FwCNsHu7I1fqOCgKT/view?usp=drive_link",
+        "link": "https:www.youtu.be\/EZbVj_9dIFc",
+        "categoria": "ESPORTES"
     },
     {
-        "numero":6,
-        "nome":"CORRIDA DE CARROS",
-        "link":"https:www.youtu.be\/RpHrEXZhTk8",
-        "categoria":"ESPORTES"
+        "numero": 5,
+        "nome": "CORRIDA",
+        "imagem":"https://drive.google.com/file/d/1GiX8UGxNzzJIMyxP0xX9o7wRmHANNdOZ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/pKyBpUdtd7A",
+        "categoria": "ESPORTES"
     },
     {
-        "numero":7,
-        "nome":"ESQUIAR",
-        "link":"https:www.youtu.be\/-2REaMP6i1A",
-        "categoria":"ESPORTES"
+        "numero": 6,
+        "nome": "CORRIDA DE CARROS",
+        "imagem":"https://drive.google.com/file/d/1_RDwl_xoDqPU-NsqsL-MxATPk7RIIRxl/view?usp=drive_link",
+        "link": "https:www.youtu.be\/RpHrEXZhTk8",
+        "categoria": "ESPORTES"
     },
     {
-        "numero":8,
-        "nome":"ESQUI",
-        "link":"https:www.youtu.be\/-2REaMP6i1A",
-        "categoria":"ESPORTES"
+        "numero": 7,
+        "nome": "ESQUIAR",
+        "imagem":"https://drive.google.com/file/d/1jVvBi6KLSugdLcLm9FY7vtg_3fnbq05c/view?usp=drive_link",
+        "link": "https:www.youtu.be\/-2REaMP6i1A",
+        "categoria": "ESPORTES"
     },
     {
-        "numero":9,
-        "nome":"ESQUI AQUATICO",
-        "link":"https:www.youtu.be\/mewPQ13sBAk",
-        "categoria":"ESPORTES"
+        "numero": 8,
+        "nome": "ESQUI",
+        "imagem":"https://drive.google.com/file/d/1jVvBi6KLSugdLcLm9FY7vtg_3fnbq05c/view?usp=drive_link",
+        "link": "https:www.youtu.be\/-2REaMP6i1A",
+        "categoria": "ESPORTES"
+    },
+    {
+        "numero": 9,
+        "nome": "ESQUI AQUATICO",
+        "imagem":"https://drive.google.com/file/d/1o5WaScfr_0NN386cEw3tROnKBl_xRXXt/view?usp=drive_link",
+        "link": "https:www.youtu.be\/mewPQ13sBAk",
+        "categoria": "ESPORTES"
     },
     ];
 
@@ -112,29 +118,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+        videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -40,293 +36,339 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-     {
-        "numero":1,
-        "nome":"ABÓBORA",
-        "link":"https:www.youtu.be\/5vVPdbIpWL4",
-        "categoria":"VERBETES – O SUPERMERCADO"
+    {
+        "numero": 1,
+        "nome": "ABÓBORA",
+        "imagem":"https://drive.google.com/file/d/1Apay0Cx8-F_qkzFkWhnnNpTziLuorfrB/view?usp=drive_link",
+        "link": "https:www.youtu.be\/5vVPdbIpWL4",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":2,
-        "nome":"ABOBRINHA",
-        "link":"https:www.youtu.be\/dsmw9VSuQsk",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 2,
+        "nome": "ABOBRINHA",
+        "imagem":"https://drive.google.com/file/d/1UhG9FmXxrbnosTFTlzxVjYHbxGUX7bJs/view?usp=drive_link",
+        "link": "https:www.youtu.be\/dsmw9VSuQsk",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":3,
-        "nome":"AÇUCAR",
-        "link":"https:www.youtu.be\/X2K83kLjajQ",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 3,
+        "nome": "AÇUCAR",
+        "imagem":"https://drive.google.com/file/d/1KzoiSaXk2pajL05zmNsCCHZn6PqI2p3j/view?usp=drive_link",
+        "link": "https:www.youtu.be\/X2K83kLjajQ",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":4,
-        "nome":"ADOÇANTE",
-        "link":"https:www.youtu.be\/wWlMqZlzNUA",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 4,
+        "nome": "ADOÇANTE",
+        "imagem":"https://drive.google.com/file/d/1VlTiXLfk7pEzyCJeX7p2xzi7ABHt5gBZ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/wWlMqZlzNUA",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":5,
-        "nome":"AIMPIM",
-        "link":"https:www.youtu.be\/y3MqZWv3yus",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 5,
+        "nome": "AIMPIM",
+        "imagem":"https://drive.google.com/file/d/1ODrSjW5EJw5nDca9siRsoMwE2KxrHPJf/view?usp=drive_link",
+        "link": "https:www.youtu.be\/y3MqZWv3yus",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":6,
-        "nome":"ALHO",
-        "link":"https:www.youtu.be\/uI_gLKD_yuU",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 6,
+        "nome": "ALHO",
+        "imagem":"https://drive.google.com/file/d/1GarkFTu2iGV_YH6H6rgDdOomjmVw3n61/view?usp=drive_link",
+        "link": "https:www.youtu.be\/uI_gLKD_yuU",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":7,
-        "nome":"AMENDOIM",
-        "link":"https:www.youtu.be\/CW6C4wX19aA",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 7,
+        "nome": "AMENDOIM",
+        "imagem":"https://drive.google.com/file/d/1nYR_KbsvFH_gvhzAMPOxJLVFCZFudF1Q/view?usp=drive_link",
+        "link": "https:www.youtu.be\/CW6C4wX19aA",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":8,
-        "nome":"ARROZ",
-        "link":"https:www.youtu.be\/8Gb_cXqsg9U",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 8,
+        "nome": "ARROZ",
+        "imagem":"https://drive.google.com/file/d/1Gbv1FKVCop35PcxjSrINgS3snEneUlzb/view?usp=drive_link",
+        "link": "https:www.youtu.be\/8Gb_cXqsg9U",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":9,
-        "nome":"BATATA",
-        "link":"https:www.youtu.be\/T6vbbuw3n3E",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 9,
+        "nome": "BATATA",
+        "imagem":"https://drive.google.com/file/d/1GC45UJK0GxqeMJZndbedeAKx_FyUw0jf/view?usp=drive_link",
+        "link": "https:www.youtu.be\/T6vbbuw3n3E",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":10,
-        "nome":"BATERRABA",
-        "link":"https:www.youtu.be\/voMNix0Shqs",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 10,
+        "nome": "BETERRABA",
+        "imagem":"https://drive.google.com/file/d/1Q4XnCRLH29kxriGMpQ2kd2GjdN8pznxU/view?usp=drive_link",
+        "link": "https:www.youtu.be\/voMNix0Shqs",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":11,
-        "nome":"BERINJELA",
-        "link":"https:www.youtu.be\/OrvlXv4hQa4",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 11,
+        "nome": "BERINJELA",
+        "imagem":"https://drive.google.com/file/d/1ycrqZb1BuxFllvPYZDfDlU5FQKMJuGIk/view?usp=drive_link",
+        "link": "https:www.youtu.be\/OrvlXv4hQa4",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":12,
-        "nome":"BISCOITO",
-        "link":"https:www.youtu.be\/D-RArxn5O2s",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 12,
+        "nome": "BISCOITO",
+        "imagem":"https://drive.google.com/file/d/15iAvuRbtW0TF0F5NPo_06-hNXjHHIcFq/view?usp=drive_link",
+        "link": "https:www.youtu.be\/D-RArxn5O2s",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":13,
-        "nome":"BRÓCOLIS",
-        "link":"https:www.youtu.be\/tOFjMMXzl_Q",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 13,
+        "nome": "BRÓCOLIS",
+        "imagem":"https://drive.google.com/file/d/1C018RLO6iS3ISdmuAOlXqyCsh2MtrhEy/view?usp=drive_link",
+        "link": "https:www.youtu.be\/tOFjMMXzl_Q",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":14,
-        "nome":"CAIXA REGISTRADORA",
-        "link":"https:www.youtu.be\/FHsGOrd3NgM",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 14,
+        "nome": "CAIXA REGISTRADORA",
+        "imagem":"https://drive.google.com/file/d/1G4CQOVS7hodDojGedTBVefe4JIfIew-I/view?usp=drive_link",
+        "link": "https:www.youtu.be\/FHsGOrd3NgM",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":15,
-        "nome":"CAMARÃO",
-        "link":"https:www.youtu.be\/F7vlg9gSk2E",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 15,
+        "nome": "CAMARÃO",
+        "imagem":"https://drive.google.com/file/d/1oNnTCBUrAFNWq5Y2FdvcXMaiFVydvEMm/view?usp=drive_link",
+        "link": "https:www.youtu.be\/F7vlg9gSk2E",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":16,
-        "nome":"CARNE",
-        "link":"https:www.youtu.be\/k2HhPtXegYA",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 16,
+        "nome": "CARNE",
+        "imagem":"https://drive.google.com/file/d/1Y6-mcyPUtekuYeHQlt4T4Pel6KIMeCN7/view?usp=drive_link",
+        "link": "https:www.youtu.be\/k2HhPtXegYA",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":17,
-        "nome":"CARRINHO DE COMPRAS",
-        "link":"https:www.youtu.be\/A4OaB_PxWOk",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 17,
+        "nome": "CARRINHO DE COMPRAS",
+        "imagem":"https://drive.google.com/file/d/1OQYQilue4uTmPp3ZF3kiD_FWwlJ6oSdN/view?usp=drive_link",
+        "link": "https:www.youtu.be\/A4OaB_PxWOk",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":18,
-        "nome":"CEBOLA",
-        "link":"https:www.youtu.be\/D_OfCS1Omek",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 18,
+        "nome": "CEBOLA",
+        "imagem":"https://drive.google.com/file/d/1VBOOK4ymjdUAc2nw2-PiXYn1Rg23g-ZA/view?usp=drive_link",
+        "link": "https:www.youtu.be\/D_OfCS1Omek",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":19,
-        "nome":"CENOURA",
-        "link":"https:www.youtu.be\/YdvWDsQRSPk",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 19,
+        "nome": "CENOURA",
+        "imagem":"https://drive.google.com/file/d/1fy1PrDbpxZfUWbnks_0O9avbUj0P1wVd/view?usp=drive_link",
+        "link": "https:www.youtu.be\/YdvWDsQRSPk",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":20,
-        "nome":"CHUCHU",
-        "link":"https:www.youtu.be\/XlWs7M6Ji-s",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 20,
+        "nome": "CHUCHU",
+        "imagem":"https://drive.google.com/file/d/1tEO3g8e7uadtakSRIgocE4vZXytb-x4R/view?usp=drive_link",
+        "link": "https:www.youtu.be\/XlWs7M6Ji-s",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":21,
-        "nome":"COUVE FLOR",
-        "link":"https:www.youtu.be\/9wV6Rn7SjXg",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 21,
+        "nome": "COUVE FLOR",
+        "imagem":"https://drive.google.com/file/d/15vYvIuwu4KXL8NGjzZ4K1bkTLFT2kD7e/view?usp=drive_link",
+        "link": "https:www.youtu.be\/9wV6Rn7SjXg",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":22,
-        "nome":"ERVILHA",
-        "link":"https:www.youtu.be\/-feEjZ20Iqc",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 22,
+        "nome": "ERVILHA",
+        "imagem":"https://drive.google.com/file/d/1AU5qHEOOcllObNYaGGWFDZYIaXRN_epr/view?usp=drive_link",
+        "link": "https:www.youtu.be\/-feEjZ20Iqc",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":23,
-        "nome":"FARINHA",
-        "link":"https:www.youtu.be\/ZTIP2Mj5GeM",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 23,
+        "nome": "FARINHA",
+        "imagem":"https://drive.google.com/file/d/1ikgccDHjlKUzZm4we1QH5n7hwXsNM369/view?usp=drive_link",
+        "link": "https:www.youtu.be\/ZTIP2Mj5GeM",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":24,
-        "nome":"FEIJÃO",
-        "link":"https:www.youtu.be\/U8Ud9TkKx_M",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 24,
+        "nome": "FEIJÃO",
+        "imagem":"https://drive.google.com/file/d/1sxnEM_hd6FJpXT_HHYWFkFLd075kFoCp/view?usp=drive_link",
+        "link": "https:www.youtu.be\/U8Ud9TkKx_M",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":25,
-        "nome":"FRANGO",
-        "link":"https:www.youtu.be\/8nRND3OEDVY",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 25,
+        "nome": "FRANGO",
+        "imagem":"https://drive.google.com/file/d/15maedDRP0pXAisk-TlEejh9KD6JU1ZqG/view?usp=drive_link",
+        "link": "https:www.youtu.be\/8nRND3OEDVY",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":26,
-        "nome":"INHAME",
-        "link":"https:www.youtu.be\/9R7HgTWor28",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 26,
+        "nome": "INHAME",
+        "imagem":"https://drive.google.com/file/d/1k5MKTNI7GvHx15VSqJKBVv8dR98NhR3I/view?usp=drive_link",
+        "link": "https:www.youtu.be\/9R7HgTWor28",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":27,
-        "nome":"IOGURTE",
-        "link":"https:www.youtu.be\/RNW-3eUU3K8",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 27,
+        "nome": "IOGURTE",
+        "imagem":"https://drive.google.com/file/d/1clnh8F1ypK6Rz3vFxhl79dyIgi39dWiA/view?usp=drive_link",
+        "link": "https:www.youtu.be\/RNW-3eUU3K8",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":28,
-        "nome":"LEITE",
-        "link":"https:www.youtu.be\/pv_0Tr218P0",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 28,
+        "nome": "LEITE",
+        "imagem":"https://drive.google.com/file/d/1c-o-gszKUrSi-dI4OsITWdYjfxDDdd6v/view?usp=drive_link",
+        "link": "https:www.youtu.be\/pv_0Tr218P0",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":29,
-        "nome":"MACARRÃO",
-        "link":"https:www.youtu.be\/m4Kv_2yqzIs",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 29,
+        "nome": "MACARRÃO",
+        "imagem":"https://drive.google.com/file/d/11u2M4P14IrIpNHTsVT9SvJPHb-nG24t9/view?usp=drive_link",
+        "link": "https:www.youtu.be\/m4Kv_2yqzIs",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":30,
-        "nome":"MANTEIGA",
-        "link":"https:www.youtu.be\/hvx4_cEiaKw",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 30,
+        "nome": "MANTEIGA",
+        "imagem":"https://drive.google.com/file/d/1p0Akjvsnm7l8kiSbh8_Qs3VYAvmG-ED1/view?usp=drive_link",
+        "link": "https:www.youtu.be\/hvx4_cEiaKw",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":31,
-        "nome":"MEL",
-        "link":"https:www.youtu.be\/AIQiTqr-NJ0",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 31,
+        "nome": "MEL",
+        "imagem":"https://drive.google.com/file/d/1l8qTi0qyxe4wBi-_HAssBpxp4KumF1o5/view?usp=drive_link",
+        "link": "https:www.youtu.be\/AIQiTqr-NJ0",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":32,
-        "nome":"MILHO",
-        "link":"https:www.youtu.be\/aLr7OdepOfE",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 32,
+        "nome": "MILHO",
+        "imagem":"https://drive.google.com/file/d/1sRpWYegnD_W-jO2-enTC4PmhzvgxPb6e/view?usp=drive_link",
+        "link": "https:www.youtu.be\/aLr7OdepOfE",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":33,
-        "nome":"ÓLEO",
-        "link":"https:www.youtu.be\/U_B85a2U8-I",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 33,
+        "nome": "ÓLEO",
+        "imagem":"https://drive.google.com/file/d/1O-TJnwJkyWDTKd1Y3Jcw8GB2FcfkQs3e/view?usp=drive_link",
+        "link": "https:www.youtu.be\/U_B85a2U8-I",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":34,
-        "nome":"OVO",
-        "link":"https:www.youtu.be\/RWxX0r8VUg4",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 34,
+        "nome": "OVO",
+        "imagem":"https://drive.google.com/file/d/1KoV-gooAiubzF3EUOz-lGSGlqJ5GMjyc/view?usp=drive_link",
+        "link": "https:www.youtu.be\/RWxX0r8VUg4",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":35,
-        "nome":"PÃO",
-        "link":"https:www.youtu.be\/PM8tznonr3w",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 35,
+        "nome": "PÃO",
+        "imagem":"https://drive.google.com/file/d/1eBM7pI8hyQVwfIoO5QMl3UW96LScnUAX/view?usp=drive_link",
+        "link": "https:www.youtu.be\/PM8tznonr3w",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":36,
-        "nome":"PEIXE",
-        "link":"https:www.youtu.be\/ZzOdgTpb8v8",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 36,
+        "nome": "PEIXE",
+        "imagem":"https://drive.google.com/file/d/1SqjfAi0qbWI1vYfRe7G6ZfuVfgnZ9eiq/view?usp=drive_link",
+        "link": "https:www.youtu.be\/ZzOdgTpb8v8",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":37,
-        "nome":"PEPINO",
-        "link":"https:www.youtu.be\/tV21F7zd3Jc",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 37,
+        "nome": "PEPINO",
+        "imagem":"https://drive.google.com/file/d/1TjSeTBVCkuaq6YqJsfJPGIWstewpZ2QY/view?usp=drive_link",
+        "link": "https:www.youtu.be\/tV21F7zd3Jc",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":38,
-        "nome":"PIMENTA",
-        "link":"https:www.youtu.be\/gB7-7DETkc8",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 38,
+        "nome": "PIMENTA",
+        "imagem":"https://drive.google.com/file/d/15xTdj0lbxWO7u7qsmiibEKnfLMxYxKtx/view?usp=drive_link",
+        "link": "https:www.youtu.be\/gB7-7DETkc8",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":39,
-        "nome":"PIMENTÃO",
-        "link":"https:www.youtu.be\/RJUTkhSN9VY",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 39,
+        "nome": "PIMENTÃO",
+        "imagem":"https://drive.google.com/file/d/1t47DtaQJLvMU-iQuNBo4TD07i0C9MROR/view?usp=drive_link",
+        "link": "https:www.youtu.be\/RJUTkhSN9VY",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":40,
-        "nome":"PRESUNTO",
-        "link":"https:www.youtu.be\/zqFhGSi06Xo",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 40,
+        "nome": "PRESUNTO",
+        "imagem":"https://drive.google.com/file/d/1KdPGCh6tAu7UFKiAoGRW06OdIgLUtlV-/view?usp=drive_link",
+        "link": "https:www.youtu.be\/zqFhGSi06Xo",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":41,
-        "nome":"QUEIJO",
-        "link":"https:www.youtu.be\/Zm7i_ePgTH4",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 41,
+        "nome": "QUEIJO",
+        "imagem":"https://drive.google.com/file/d/12OJ2ug2BNEgDz1fiGr90HVFBOA1ngGCf/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Zm7i_ePgTH4",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":42,
-        "nome":"RABANETE",
-        "link":"https:www.youtu.be\/aoXphg4Zcrg",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 42,
+        "nome": "RABANETE",
+        "imagem":"https://drive.google.com/file/d/1jp7QQ-2YYclsIGHPIUzizCv_jkaVAgIZ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/aoXphg4Zcrg",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":43,
-        "nome":"REPOLHO",
-        "link":"https:www.youtu.be\/zBT49_bHVXk",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 43,
+        "nome": "REPOLHO",
+        "imagem":"https://drive.google.com/file/d/1LgMeTEKVa494B0946pk1JXdx1LgRRjoJ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/zBT49_bHVXk",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":44,
-        "nome":"SACOLA",
-        "link":"https:www.youtu.be\/hoYevoGjicA",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 44,
+        "nome": "SACOLA",
+        "imagem":"https://drive.google.com/file/d/1Ke8SnSaAQr5bAvsYAHAh3X49BJgvm9TC/view?usp=drive_link",
+        "link": "https:www.youtu.be\/hoYevoGjicA",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":45,
-        "nome":"SAL",
-        "link":"https:www.youtu.be\/Hhjlvihe7oU",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 45,
+        "nome": "SAL",
+        "imagem":"https://drive.google.com/file/d/1uOXdjPR5Q4wUwpKqP6Ck1uUWSa75vZ8R/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Hhjlvihe7oU",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":46,
-        "nome":"TOMATE",
-        "link":"https:www.youtu.be\/GCxYZnM3noE",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 46,
+        "nome": "TOMATE",
+        "imagem":"https://drive.google.com/file/d/1D7h_hvwOmXcESYwY3lX3gv1zBV9AaKg1/view?usp=drive_link",
+        "link": "https:www.youtu.be\/GCxYZnM3noE",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":47,
-        "nome":"VAZIO",
-        "link":"https:www.youtu.be\/_D5X9Qcvmeg",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 47,
+        "nome": "VAZIO",
+        "link": "https:www.youtu.be\/_D5X9Qcvmeg",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     {
-        "numero":48,
-        "nome":"CHEIO",
-        "link":"https:www.youtu.be\/aQsg7wNuTFg",
-        "categoria":"VERBETES – O SUPERMERCADO"
+        "numero": 48,
+        "nome": "CHEIO",
+        "link": "https:www.youtu.be\/aQsg7wNuTFg",
+        "categoria": "VERBETES – O SUPERMERCADO"
     },
     ];
 
@@ -347,29 +389,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+       videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

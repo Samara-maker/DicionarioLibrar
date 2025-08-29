@@ -18,10 +18,6 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
 
   <main>
@@ -29,9 +25,9 @@
     <div id="resultados"></div>
 
     <section class="grid-videos">
-      
 
-      
+
+
     </section>
   </main>
 
@@ -40,65 +36,73 @@
   <script src="script.js"></script>
   <script>
     const videos = [
-       {
-        "numero":1,
-        "nome":"ALICATE",
-        "link":"https:www.youtu.be\/Ul2ZhzkGL3E",
-        "categoria":"FERRAMENTAS"
-    },
-    {
-        "numero":2,
-        "nome":"CHAVE DE FENDA",
-        "link":"https://youtu.be\/uAngd9gAeng",
-        "categoria":"FERRAMENTAS"
-    },
-    {
-        "numero":3,
-        "nome":"CORDA",
-        "link":"https:www.youtu.be\/kTgmatcqr6I",
-        "categoria":"FERRAMENTAS"
-    },
-    {
-        "numero":4,
-        "nome":"FURADEIRA",
-        "link":"https:www.youtu.be\/wnhp6RJDMKI",
-        "categoria":"FERRAMENTAS"
-    },
-    {
-        "numero":5,
-        "nome":"MARTELO",
-        "link":"https:www.youtu.be\/TnbAMFNds0s",
-        "categoria":"FERRAMENTAS"
-    },
-    {
-        "numero":6,
-        "nome":"PREGO",
-        "link":"https:www.youtu.be\/13iJo28nJ1M",
-        "categoria":"FERRAMENTAS"
-    },
-    {
-        "numero":7,
-        "nome":"SERROTE",
-        "link":"https:www.youtu.be\/_8PmNV1GNrc",
-        "categoria":"FERRAMENTAS"
-    },
-    {
-        "numero":8,
-        "nome":"TRENA",
-        "link":"https:www.youtu.be\/0Ssgo-rFbuc",
-        "categoria":"FERRAMENTAS"
-    },
+      {
+        "numero": 1,
+        "imagem": "https://drive.google.com/file/d/1H1IUX9qd7Q-KaMO-l0JXiNaCMYtOyN6X/view?usp=drive_link",
+        "nome": "ALICATE",
+        "link": "https:www.youtu.be\/Ul2ZhzkGL3E",
+        "categoria": "FERRAMENTAS"
+      },
+      {
+        "numero": 2,
+        "imagem": "https://drive.google.com/file/d/1U-J_dfCulQtOrg0uEyF_ZianEWcsVq-I/view?usp=drive_link",
+        "nome": "CHAVE DE FENDA",
+        "link": "https://youtu.be\/uAngd9gAeng",
+        "categoria": "FERRAMENTAS"
+      },
+      {
+        "numero": 3,
+        "imagem": "https://drive.google.com/file/d/1iqAX7t9le53X5EeE2v4b9RmSvIfNCKuL/view?usp=drive_link",
+        "nome": "CORDA",
+        "link": "https:www.youtu.be\/kTgmatcqr6I",
+        "categoria": "FERRAMENTAS"
+      },
+      {
+        "numero": 4,
+        "imagem": "https://drive.google.com/file/d/1SHCghOY-Q7i5zZfTnT0eDYxuWJNwD8Ue/view?usp=drive_link",
+        "nome": "FURADEIRA",
+        "link": "https:www.youtu.be\/wnhp6RJDMKI",
+        "categoria": "FERRAMENTAS"
+      },
+      {
+        "numero": 5,
+        "imagem": "https://drive.google.com/file/d/1A1u_CXXACg3T5wZy1pI6pv_AdbVIqQ9k/view?usp=drive_link",
+        "nome": "MARTELO",
+        "link": "https:www.youtu.be\/TnbAMFNds0s",
+        "categoria": "FERRAMENTAS"
+      },
+      {
+        "numero": 6,
+        "imagem": "https://drive.google.com/file/d/1zRjxAuaLMxY-HDudtLY04TCrEfaZNFZg/view?usp=drive_link",
+        "nome": "PREGO",
+        "link": "https:www.youtu.be\/13iJo28nJ1M",
+        "categoria": "FERRAMENTAS"
+      },
+      {
+        "numero": 7,
+        "imagem": "https://drive.google.com/file/d/1o9E0C5A0n3GqKOd2oz5YOZBk7bWkRyJc/view?usp=drive_link",
+        "nome": "SERROTE",
+        "link": "https:www.youtu.be\/_8PmNV1GNrc",
+        "categoria": "FERRAMENTAS"
+      },
+      {
+        "numero": 8,
+        "imagem": "https://drive.google.com/file/d/1YExIjHg86kpjQjd3gc36tUVIIC72Q_un/view?usp=drive_link",
+        "nome": "TRENA",
+        "link": "https:www.youtu.be\/0Ssgo-rFbuc",
+        "categoria": "FERRAMENTAS"
+      },
     ];
 
     function criarVideos() {
       const container = document.querySelector(".grid-videos");
       console.log(container);
-      
+
       videos.forEach(video => {
         // extrair ID do vídeo (último pedaço do link)
         const videoId = video.link.split("\/").pop();
         console.log(videoId);
-        
+
         // criar div principal
         const div = document.createElement("div");
         div.className = "grid-videos-item";
@@ -107,29 +111,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = `${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+       videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

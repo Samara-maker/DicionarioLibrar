@@ -34,4 +34,38 @@ header .search-container a {
   text-decoration: none;
   font-weight: bold;
   display: block;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Header fixo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #E17506;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Botão voltar */
+header button {
+  background: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Garante que o conteúdo não fique escondido atrás do header */
+main {
+  margin-top: 70px; /* ajuste conforme a altura do header */
+  padding: 15px;
 }
