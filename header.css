@@ -1,83 +1,77 @@
  header {
-      padding: 10px;
-      margin: 0;
-      background-color: hsl(30, 95%, 45%);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      box-sizing: border-box;
-      z-index: 1000;
-    }
+   padding: 10px;
+   margin: 0;
+   background-color: hsl(30, 95%, 45%);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   z-index: 1000;
+ }
 
-    header h2 {
-      margin: 0;
-      color: #fff;
-    }
+ main {
+   margin-top: 15px;
+   /* garante que o conteúdo não fique atrás do header */
+   padding: 15px;
+ }
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
+ .search-container {
+   display: flex;
+   gap: 10px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
 
-    main {
-      margin-top: 70px; /* garante que o conteúdo não fique atrás do header */
-      padding: 15px;
-    }
+ .search-container li {
+   background-color: hsl(30, 95%, 60%);
+   padding: 10px 20px;
+   border-radius: 8px;
+   transition:0.3s ease;
+ }
 
-    .search-container {
-      display: flex;
-      gap: 10px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+ .search-container li:hover {
+   background-color: hsl(30, 95%, 70%);
+ }
 
-    .search-container li {
-      background-color: hsl(30, 95%, 60%);
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
+ .search-container a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   display: block;
+ }
 
-    .search-container li:hover {
-      background-color: hsl(30, 95%, 70%);
-    }
+ .extra-buttons {
+   display: flex;
+   justify-content: center;
+   margin: 20px 0;
+ }
 
-    .search-container a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-    }
+ /* Exemplo de estilo para os ícones de "Mais Acessados" */
+ .mais-acessados {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+   margin-top: 20px;
+ }
 
-    .extra-buttons {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-    }
+ .mais-acessados .icone {
+   background-color: orange;
+   border-radius: 50%;
+   width: 80px;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 12px;
+   color: #fff;
+   text-align: center;
+ }
 
-    /* Exemplo de estilo para os ícones de "Mais Acessados" */
-    .mais-acessados {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .mais-acessados .icone {
-      background-color: orange;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      color: #fff;
-      text-align: center;
-    }
+ .textContent{
+  background-color: aqua;
+ }
