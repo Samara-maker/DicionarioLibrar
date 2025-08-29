@@ -37,28 +37,32 @@
   <script>
     const videos = [
      {
-        "numero":1,
-        "nome":"LESTE",
-        "link":"https:www.youtu.be\/9aBjbEdJYvo",
-        "categoria":"VERBETES – DIREÇÕES"
+        "numero": 1,
+        "nome": "LESTE",
+        "imagem":"https://drive.google.com/file/d/1CAoY74O6RZ-METrGQz-DGKiZ1ktjk6f5/view?usp=drive_link",
+        "link": "https:www.youtu.be\/9aBjbEdJYvo",
+        "categoria": "VERBETES – DIREÇÕES"
     },
     {
-        "numero":2,
-        "nome":"NORTE",
-        "link":"https:www.youtu.be\/lpoRZ93W-zg",
-        "categoria":"VERBETES – DIREÇÕES"
+        "numero": 2,
+        "nome": "NORTE",
+        "imagem":"https://drive.google.com/file/d/1-gNJHknW27R3JXZwyXWfx2FlGzSpDhxn/view?usp=drive_link",
+        "link": "https:www.youtu.be\/lpoRZ93W-zg",
+        "categoria": "VERBETES – DIREÇÕES"
     },
     {
-        "numero":3,
-        "nome":"OESTE",
-        "link":"https:www.youtu.be\/yq8RftAhh3s",
-        "categoria":"VERBETES – DIREÇÕES"
+        "numero": 3,
+        "nome": "OESTE",
+        "imagem":"https://drive.google.com/file/d/1DAmqIJRvyVa_tVHrjmoeXQA8PbsGg_LT/view?usp=drive_link",
+        "link": "https:www.youtu.be\/yq8RftAhh3s",
+        "categoria": "VERBETES – DIREÇÕES"
     },
     {
-        "numero":4,
-        "nome":"SUL",
-        "link":"https:www.youtu.be\/fPqCDrIRFEc",
-        "categoria":"VERBETES – DIREÇÕES"
+        "numero": 4,
+        "nome": "SUL",
+        "imagem":"https://drive.google.com/file/d/1g5YHyzZj3L7Yf52aQpqeVInuOUgPejFv/view?usp=drive_link",
+        "link": "https:www.youtu.be\/fPqCDrIRFEc",
+        "categoria": "VERBETES – DIREÇÕES"
     },
     ];
 
@@ -79,29 +83,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+         videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

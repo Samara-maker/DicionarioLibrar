@@ -4153,24 +4153,28 @@
     {
         "numero": 1,
         "nome": "LESTE",
+        "imagem":"https://drive.google.com/file/d/1CAoY74O6RZ-METrGQz-DGKiZ1ktjk6f5/view?usp=drive_link",
         "link": "https:www.youtu.be\/9aBjbEdJYvo",
         "categoria": "VERBETES – DIREÇÕES"
     },
     {
         "numero": 2,
         "nome": "NORTE",
+        "imagem":"https://drive.google.com/file/d/1-gNJHknW27R3JXZwyXWfx2FlGzSpDhxn/view?usp=drive_link",
         "link": "https:www.youtu.be\/lpoRZ93W-zg",
         "categoria": "VERBETES – DIREÇÕES"
     },
     {
         "numero": 3,
         "nome": "OESTE",
+        "imagem":"https://drive.google.com/file/d/1DAmqIJRvyVa_tVHrjmoeXQA8PbsGg_LT/view?usp=drive_link",
         "link": "https:www.youtu.be\/yq8RftAhh3s",
         "categoria": "VERBETES – DIREÇÕES"
     },
     {
         "numero": 4,
         "nome": "SUL",
+        "imagem":"https://drive.google.com/file/d/1g5YHyzZj3L7Yf52aQpqeVInuOUgPejFv/view?usp=drive_link",
         "link": "https:www.youtu.be\/fPqCDrIRFEc",
         "categoria": "VERBETES – DIREÇÕES"
     },
