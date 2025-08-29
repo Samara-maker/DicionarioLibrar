@@ -35,52 +35,60 @@
   <script>
     const videos = [
       {
-        "numero":1,
-        "nome":"AGRIÃO",
-        "link":"https:www.youtu.be\/cZj7SbTnYxY",
-        "categoria":"VERDURAS"
+        "numero": 1,
+        "nome": "AGRIÃO",
+        "imagem": "https://drive.google.com/file/d/1EI2PYvmSnuIW_WpaFYhBHwC3RHONusqE/view?usp=drive_link",
+        "link": "https:www.youtu.be\/cZj7SbTnYxY",
+        "categoria": "VERDURAS"
     },
     {
-        "numero":2,
-        "nome":"ALCACHOFRA",
-        "link":"https:www.youtu.be\/DtoiJJHvtXs",
-        "categoria":"VERDURAS"
+        "numero": 2,
+        "nome": "ALCACHOFRA",
+        "imagem": "https://drive.google.com/file/d/1W9xDVEKh1ArrN647sK_xEUQSM8932Efy/view?usp=drive_link",
+        "link": "https:www.youtu.be\/DtoiJJHvtXs",
+        "categoria": "VERDURAS"
     },
     {
-        "numero":3,
-        "nome":"ALFACE",
-        "link":"https:www.youtu.be\/J1W0BNnpwdU",
-        "categoria":"VERDURAS"
+        "numero": 3,
+        "nome": "ALFACE",
+        "imagem": "https://drive.google.com/file/d/1oOzMeF6zlghxI9YBnbmMDVTzcskFboib/view?usp=drive_link",
+        "link": "https:www.youtu.be\/J1W0BNnpwdU",
+        "categoria": "VERDURAS"
     },
     {
-        "numero":4,
-        "nome":"BRÓCOLIS",
-        "link":"https:www.youtu.be\/nRT1TgMuo8U",
-        "categoria":"VERDURAS"
+        "numero": 4,
+        "nome": "BRÓCOLIS",
+        "imagem": "https://drive.google.com/file/d/17ijooY_S0l2H4ln9s9z4wtHTVpJ2aBU_/view?usp=drive_link",
+        "link": "https:www.youtu.be\/nRT1TgMuo8U",
+        "categoria": "VERDURAS"
     },
     {
-        "numero":5,
-        "nome":"COUVE",
-        "link":"https:www.youtu.be\/pDYbUBRrnQA",
-        "categoria":"VERDURAS"
+        "numero": 5,
+        "nome": "COUVE",
+        "imagem": "https://drive.google.com/file/d/11hyVV_LcFVQ9zF0Nf822V-GzUWT9x2Y6/view?usp=drive_link",
+        "link": "https:www.youtu.be\/pDYbUBRrnQA",
+        "categoria": "VERDURAS"
     },
     {
-        "numero":6,
-        "nome":"COUVE FLOR",
-        "link":"https:www.youtu.be\/bRMPy08yduI",
-        "categoria":"VERDURAS"
+        "numero": 6,
+        "nome": "COUVE FLOR",
+        "imagem": "https://drive.google.com/file/d/12uxHrfT7DWZGToVAyCs6JFFfYNltEXC1/view?usp=drive_link",
+        "link": "https:www.youtu.be\/bRMPy08yduI",
+        "categoria": "VERDURAS"
     },
     {
-        "numero":7,
-        "nome":"ESPINAFRE",
-        "link":"https:www.youtu.be\/PtJrbhtrHcc",
-        "categoria":"VERDURAS"
+        "numero": 7,
+        "nome": "ESPINAFRE",
+        "imagem":"https://drive.google.com/file/d/1znJBLI1JFmajDug06KTb1EH7DVLuOZy0/view?usp=drive_link",
+        "link": "https:www.youtu.be\/PtJrbhtrHcc",
+        "categoria": "VERDURAS"
     },
     {
-        "numero":8,
-        "nome":"REPOLHO",
-        "link":"https:www.youtu.be\/je1Bpb16-BE",
-        "categoria":"VERDURAS"
+        "numero": 8,
+        "nome": "REPOLHO",
+        "imagem": "https://drive.google.com/file/d/1L2_5IxY1AW8zDbxxj_qzTeZ97LiQ7jZL/view?usp=drive_link",
+        "link": "https:www.youtu.be\/je1Bpb16-BE",
+        "categoria": "VERDURAS"
     },
     ];
 
@@ -99,30 +107,42 @@
 
         // criar título
         const h2 = document.createElement("h2");
-        h2.textContent = `Verdeura: ${video.nome}`;
+        h2.textContent = `${video.nome}`;
 
         // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+        videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
+
 </body>
