@@ -37,95 +37,114 @@
   <script>
     const videos = [
       {
-        "numero":1,
-        "nome":"TOSSE",
-        "link":"https:www.youtu.be\/9KqY-HWL_Zo",
-        "categoria":"DOENÇAS"
+        "numero": 1,
+        "nome": "TOSSE",
+        "imagem": "https://drive.google.com/file/d/1PtwruSor-AkX7qmQtaGHhD0qyQA6YDHZ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/9KqY-HWL_Zo",
+        "categoria": "DOENÇAS"
     },
     {
-        "numero":2,
-        "nome":"TONTURA",
-        "link":"https:www.youtu.be\/4KmYqeWnGyk",
-        "categoria":"DOENÇAS"
+        "numero": 2,
+        "nome": "TONTURA",
+        "imagem": "https://drive.google.com/file/d/1UH-NAwNAM8GDUR5uDfXpY5aWpVIj9Lp2/view?usp=drive_link",
+        "link": "https:www.youtu.be\/4KmYqeWnGyk",
+        "categoria": "DOENÇAS"
     },
     {
-        "numero":3,
-        "nome":"MOLEZA",
-        "link":"https:www.youtu.be\/xoc6wxUSQC8",
-        "categoria":"DOENÇAS"
+        "numero": 3,
+        "nome": "MOLEZA",
+        "link": "https:www.youtu.be\/xoc6wxUSQC8",
+        "imagem": "https://drive.google.com/file/d/1nKwl_sjgRWlwvEODwzZVo1aJZRSbyYJJ/view?usp=drive_link",
+        "categoria": "DOENÇAS"
     },
     {
-        "numero":4,
-        "nome":"GRIPE",
-        "link":"https:www.youtu.be\/mqzW98LykfQ",
-        "categoria":"DOENÇAS"
+        "numero": 4,
+        "nome": "GRIPE",
+        "link": "https:www.youtu.be\/mqzW98LykfQ",
+        "imagem": "https://drive.google.com/file/d/1so7UklFfY-T_dmGlsiIBaT6uTHAl8O-x/view?usp=drive_link",
+        "categoria": "DOENÇAS"
     },
     {
-        "numero":5,
-        "nome":"FEBRE",
-        "link":"https:www.youtu.be\/UTnRjMNxQdY",
-        "categoria":"DOENÇAS"
+        "numero": 5,
+        "nome": "FEBRE",
+        "link": "https:www.youtu.be\/UTnRjMNxQdY",
+        "imagem": "https://drive.google.com/file/d/1iNEkbO861V-YluKKp66D25oKx1LhWm5q/view?usp=drive_link",
+        "categoria": "DOENÇAS"
     },
     {
-        "numero":6,
-        "nome":"DOR DE BARRIGA",
-        "link":"https:www.youtu.be\/kxFE7Ym43P0",
-        "categoria":"DOENÇAS"
+        "numero": 6,
+        "nome": "DOR DE BARRIGA",
+        "link": "https:www.youtu.be\/kxFE7Ym43P0",
+        "imagem": "https://drive.google.com/file/d/1IoijQ_xZnZYnyjQf2DfYzGiYTytQOAs9/view?usp=drive_link",
+        "categoria": "DOENÇAS"
     },
     {
-        "numero":7,
-        "nome":"CATAPORA",
-        "link":"https:www.youtu.be\/lpelV2bCpHg",
-        "categoria":"DOENÇAS"
+        "numero": 7,
+        "nome": "CATAPORA",
+        "link": "https:www.youtu.be\/lpelV2bCpHg",
+        "imagem": "https://drive.google.com/file/d/1cvwRO88XBRa6oLYS0JhD8p9_w29oiEeZ/view?usp=drive_link",
+        "categoria": "DOENÇAS"
     },
     {
-        "numero":8,
-        "nome":"VOMITAR",
-        "link":"https:www.youtu.be\/_z43IANzJkQ",
-        "categoria":"DOENÇAS"
+        "numero": 8,
+        "nome": "VOMITAR",
+        "link": "https:www.youtu.be\/_z43IANzJkQ",
+        "imagem": "https://drive.google.com/file/d/1jSSZiOtT5LwyyOHvu8lQH3gcqfxzkAHS/view?usp=drive_link",
+        "categoria": "DOENÇAS"
     }
     ];
 
     function criarVideos() {
-      const container = document.querySelector(".grid-videos");
-      console.log(container);
-      
-      videos.forEach(video => {
-        // extrair ID do vídeo (último pedaço do link)
-        const videoId = video.link.split("\/").pop();
-        console.log(videoId);
-        
-        // criar div principal
-        const div = document.createElement("div");
-        div.className = "grid-videos-item";
+            const container = document.querySelector(".grid-videos");
 
-        // criar título
-        const h2 = document.createElement("h2");
-        h2.textContent = ` ${video.nome}`;
+            videos.forEach(video => {
+                // extrair ID do vídeo (último pedaço do link)
+                const videoId = video.link.split("\/").pop();
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+                //  https://drive.google.com/thumbnail?id=1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL
+                // "https://drive.google.com/file/d/1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL/view?usp=drive_link",
+                //<img width="200px" height="200px" src="https://drive.google.com/thumbnail?id=1Q3wGGerKVU-_iqMmrtZyUeNQVlTJr-FL" alt="">
+                // criar div principal
+                const div = document.createElement("div");
+                div.className = "grid-videos-item";
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                // criar título
+                const h2 = document.createElement("h2");
+                h2.textContent = `Letra ${video.nome}`;
 
-      });
-    }
+                videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-    // chamar função ao carregar
-    criarVideos();
+                console.log(videoImagemLink);
+
+
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
   </script>
 
 </body>
