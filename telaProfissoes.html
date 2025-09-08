@@ -18,12 +18,7 @@
     <a href="dici.html" class="voltar">
       <i class="fa fa-arrow-left"></i> Voltar
     </a>
-    <div class="search-container">
-      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-      <i class="fa fa-search"></i>
-    </div>
   </header>
-
   <main>
     <h2 id="titulo-categoria"></h2>
     <div id="resultados"></div>
@@ -41,262 +36,298 @@
   <script>
     const videos = [
         {
-        "numero":1,
-        "nome":"ADVOGADO",
-        "link":"https:www.youtu.be\/rrVVOi2cLqA",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 1,
+        "nome": "ADVOGADO",
+        "imagem":"https://drive.google.com/file/d/1zDJjl6Y5de5pHbikNwQy2iwmo3m7bU0E/view?usp=drive_link",
+        "link": "https:www.youtu.be\/rrVVOi2cLqA",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":2,
-        "nome":"ALFAIATE",
-        "link":"https:www.youtu.be\/rrVVOi2cLqA",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 2,
+        "nome": "ALFAIATE",
+        "imagem":"https://drive.google.com/file/d/1eN2hnhK5YdP-mQc5P5-r_4i17MvGLPAE/view?usp=drive_link",
+        "link": "https:www.youtu.be\/rrVVOi2cLqA",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":3,
-        "nome":"ARQUITETO",
-        "link":"https:www.youtu.be\/v_JCAmQu12I",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 3,
+        "nome": "ARQUITETO",
+        "imagem":"https://drive.google.com/file/d/1Nt-lJ8s3ZYKJpuqc2HS87QzBt70oOrvx/view?usp=drive_link",
+        "link": "https:www.youtu.be\/v_JCAmQu12I",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":4,
-        "nome":"ASTRONAUTA",
-        "link":"https:www.youtu.be\/J07gL_eJVrQ",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 4,
+        "nome": "ASTRONAUTA",
+        "imagem":"https://drive.google.com/file/d/1UdvfWfrsApvB5YIESDeJKMD1ILCF4aNT/view?usp=drive_link",
+        "link": "https:www.youtu.be\/J07gL_eJVrQ",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":5,
-        "nome":"BAILARINA",
-        "link":"https:www.youtu.be\/MDGLiYuVuGQ",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 5,
+        "nome": "BAILARINA",
+        "imagem":"https://drive.google.com/file/d/1RGPG5l9FWs1Spgn2B-2JS2TMYWY3_I2z/view?usp=drive_link",
+        "link": "https:www.youtu.be\/MDGLiYuVuGQ",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":6,
-        "nome":"BOMBEIRO",
-        "link":"https:www.youtu.be\/QuOUTx2Pz6g",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 6,
+        "nome": "BOMBEIRO",
+        "imagem":"https://drive.google.com/file/d/1gVkfSjE3dqYcNWLtnjVvBTw3klIjCig2/view?usp=drive_link",
+        "link": "https:www.youtu.be\/QuOUTx2Pz6g",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":7,
-        "nome":"CABELEREIRA",
-        "link":"https:www.youtu.be\/yRAfGHvNk-s",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 7,
+        "nome": "CABELEREIRA",
+        "imagem":"https://drive.google.com/file/d/1UA6iWpYR3gg_7AbsgD-R9IuQpxQuSNnb/view?usp=drive_link",
+        "link": "https:www.youtu.be\/yRAfGHvNk-s",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":8,
-        "nome":"CARTEIRO",
-        "link":"https:www.youtu.be\/QM3UVP6Cw18",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 8,
+        "nome": "CARTEIRO",
+        "imagem":"https://drive.google.com/file/d/1_7Q26f8ReJBQFILs_kf_ZI8bKNW8J-zL/view?usp=drive_link",
+        "link": "https:www.youtu.be\/QM3UVP6Cw18",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":9,
-        "nome":"COLETOR DE LIXO",
-        "link":"https:www.youtu.be\/aE-e73Mi4e8",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 9,
+        "nome": "COLETOR DE LIXO",
+        "imagem":"https://drive.google.com/file/d/1jdncM-YM2sNup3Kl4JI9MeYpevn35h0p/view?usp=drive_link",
+        "link": "https:www.youtu.be\/aE-e73Mi4e8",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":10,
-        "nome":"COSTUREIRA",
-        "link":"https:www.youtu.be\/qj5RAjgyO2o",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 10,
+        "nome": "COSTUREIRA",
+        "imagem":"https://drive.google.com/file/d/1StPCVLmm1dSMfTc0YCpCxs3H5D25nKs0/view?usp=drive_link",
+        "link": "https:www.youtu.be\/qj5RAjgyO2o",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":11,
-        "nome":"COZINHEIRO",
-        "link":"https:www.youtu.be\/Q0_uprnBuos",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 11,
+        "nome": "COZINHEIRO",
+        "imagem":"https://drive.google.com/file/d/1cfKzm4dNBTGs1EWhq9EvFd0Ifa9mv3HO/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Q0_uprnBuos",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":12,
-        "nome":"DENTISTA",
-        "link":"https:www.youtu.be\/E0BfhEsp1AY",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 12,
+        "nome": "DENTISTA",
+        "imagem":"https://drive.google.com/file/d/16zwLrHXkYngSeSJr0FA3GTjgZ2B99E_H/view?usp=drive_link",
+        "link": "https:www.youtu.be\/E0BfhEsp1AY",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":13,
-        "nome":"DIRETOR",
-        "link":"https:www.youtu.be\/m_Fug9ADv5g",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 13,
+        "nome": "DIRETOR",
+        "imagem":"https://drive.google.com/file/d/17ypoiL2rgHXpSwGsDqpB-0XEPT8B1Tjf/view?usp=drive_link",
+        "link": "https:www.youtu.be\/m_Fug9ADv5g",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":14,
-        "nome":"EMPRESÁRIO",
-        "link":"https:www.youtu.be\/Hf-0pS0Llls",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 14,
+        "nome": "EMPRESÁRIO",
+        "imagem":"https://drive.google.com/file/d/1YfP9SgPdgVORB8fwOKQDQOldv3cyufX9/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Hf-0pS0Llls",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":15,
-        "nome":"ENCANADOR",
-        "link":"https:www.youtu.be\/LBJ3Gn7WtGk",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 15,
+        "nome": "ENCANADOR",
+        "imagem":"https://drive.google.com/file/d/13jjtEF12cjm-P1WwfFQSwPgEOdxPMEed/view?usp=drive_link",
+        "link": "https:www.youtu.be\/LBJ3Gn7WtGk",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":16,
-        "nome":"ENFERMEIRA",
-        "link":"https:www.youtu.be\/9WwZWNbXyzw",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 16,
+        "nome": "ENFERMEIRA",
+        "imagem":"https://drive.google.com/file/d/1TazS9hI5jEBnlhDCvmumllHgk7PwYqCe/view?usp=drive_link",
+        "link": "https:www.youtu.be\/9WwZWNbXyzw",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":17,
-        "nome":"ENGENHEIRO",
-        "link":"https:www.youtu.be\/heDG4JhKjNs",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 17,
+        "nome": "ENGENHEIRO",
+        "imagem":"https://drive.google.com/file/d/1v-DAuY7peLoNsfluOpEtqTdBXmEVw9tr/view?usp=drive_link",
+        "link": "https:www.youtu.be\/heDG4JhKjNs",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":18,
-        "nome":"ENTREGADOR",
-        "link":"https:www.youtu.be\/vJAOMgdoQak",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 18,
+        "nome": "ENTREGADOR",
+        "imagem":"https://drive.google.com/file/d/1-JadGQJf8i6X0YGDXA5vkAnIoi7GEYWG/view?usp=drive_link",
+        "link": "https:www.youtu.be\/vJAOMgdoQak",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":19,
-        "nome":"ESCRITOR",
-        "link":"https:www.youtu.be\/kHO-8fwYLAs",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 19,
+        "nome": "ESCRITOR",
+        "imagem":"https://drive.google.com/file/d/1Xvg0mWqABpNeRUramu9jRFb4akPmbSd9/view?usp=drive_link",
+        "link": "https:www.youtu.be\/kHO-8fwYLAs",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":20,
-        "nome":"FAXINEIRA",
-        "link":"https:www.youtu.be\/2TaZ0pVYZ9c",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 20,
+        "nome": "FAXINEIRA",
+        "imagem":"https://drive.google.com/file/d/1fkrh3GCHUfnDGr6bphC1gbwSoj-Z1x1K/view?usp=drive_link",
+        "link": "https:www.youtu.be\/2TaZ0pVYZ9c",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":21,
-        "nome":"FONOAUDIOLOGO",
-        "link":"https:www.youtu.be\/TNH_Q-55hgU",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 21,
+        "nome": "FONOAUDIOLOGO",
+        "imagem":"https://drive.google.com/file/d/1xQg1nBnY8cTCh90Gpsammhh7zwcBkz5S/view?usp=drive_link",
+        "link": "https:www.youtu.be\/TNH_Q-55hgU",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":22,
-        "nome":"FOTÓGRAFO",
-        "link":"https:www.youtu.be\/ygYDzjbM24U",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 22,
+        "nome": "FOTÓGRAFO",
+        "imagem":"https://drive.google.com/file/d/18RuKhkn3kYfa_37GuZnPMIsHIYxp-RFH/view?usp=drive_link",
+        "link": "https:www.youtu.be\/ygYDzjbM24U",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":23,
-        "nome":"INFLUENCER",
-        "link":"https:www.youtu.be\/5g3MgmO-_gc",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 23,
+        "nome": "INFLUENCER",
+        "imagem":"https://drive.google.com/file/d/1xXnZAwBRs7uEZl-D3RQXW3yphxo9j8Zu/view?usp=drive_link",
+        "link": "https:www.youtu.be\/5g3MgmO-_gc",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":24,
-        "nome":"JORNALISTA",
-        "link":"https://youtu.be\/n5PAlq5nZcE",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 24,
+        "nome": "JORNALISTA",
+        "imagem":"https://drive.google.com/file/d/1CZuX0VmFjlHd8SH10aCgSXwY-x9yGHrm/view?usp=drive_link",
+        "link": "https://youtu.be\/n5PAlq5nZcE",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":25,
-        "nome":"MARCENEIRO",
-        "link":"https:www.youtu.be\/yZJIpE3r9jA",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 25,
+        "nome": "MARCENEIRO",
+        "imagem":"https://drive.google.com/file/d/1ldOPGsWgNao7vyKMyWmt6s419WQzCd26/view?usp=drive_link",
+        "link": "https:www.youtu.be\/yZJIpE3r9jA",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":26,
-        "nome":"MARINHEIRO",
-        "link":"https:www.youtu.be\/-ZeynLaJxVs",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 26,
+        "nome": "MARINHEIRO",
+        "imagem":"https://drive.google.com/file/d/1j-wMAUZsTRmcyEb9w7fJeh_2vkXn0yv9/view?usp=drive_link",
+        "link": "https:www.youtu.be\/-ZeynLaJxVs",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":27,
-        "nome":"MECÂNICO",
-        "link":"https:www.youtu.be\/1Y-EoqKlXn0",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 27,
+        "nome": "MECÂNICO",
+        "imagem":"https://drive.google.com/file/d/1kYf_aFeSXTrayILoPZOYeKAML9dW0KQJ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/1Y-EoqKlXn0",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":29,
-        "nome":"MODELO",
-        "link":"https:www.youtu.be\/ikL77tnJOy4",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 29,
+        "nome": "MODELO",
+        "imagem":"https://drive.google.com/file/d/15LSDLN9KjAfHbVW_o7AeMbYmqc_I2csY/view?usp=drive_link",
+        "link": "https:www.youtu.be\/ikL77tnJOy4",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":30,
-        "nome":"MOTORISTA",
-        "link":"https:www.youtu.be\/v_OtyHpdXJo",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 30,
+        "nome": "MOTORISTA",
+        "imagem":"https://drive.google.com/file/d/1BXRbBClOmOEW-V8XSLzerscfvx7TP0bV/view?usp=drive_link",
+        "link": "https:www.youtu.be\/v_OtyHpdXJo",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":31,
-        "nome":"MÚSICO",
-        "link":"https:www.youtu.be\/NLyoazwsXfM",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 31,
+        "nome": "MÚSICO",
+        "imagem":"https://drive.google.com/file/d/1dxZexb-zND9AFtzdUFV_J1JIVtddjJ4G/view?usp=drive_link",
+        "link": "https:www.youtu.be\/NLyoazwsXfM",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":33,
-        "nome":"PEDREIRO",
-        "link":"https:www.youtu.be\/qGzRtcl-cEY",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 33,
+        "nome": "PEDREIRO",
+        "imagem":"https://drive.google.com/file/d/17i1uwu0iZIepGx_hjPtxGvmOSbgPrQiT/view?usp=drive_link",
+        "link": "https:www.youtu.be\/qGzRtcl-cEY",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":34,
-        "nome":"PESCADOR",
-        "link":"https:www.youtu.be\/07EDcgV63J4",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 34,
+        "nome": "PESCADOR",
+        "imagem":"https://drive.google.com/file/d/1W8nLN2xDKIWaOx_RM03vbou7bhs9MMQ2/view?usp=drive_link",
+        "link": "https:www.youtu.be\/07EDcgV63J4",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":35,
-        "nome":"PINTOR",
-        "link":"https:www.youtu.be\/vyMALXp94Ts",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 35,
+        "nome": "PINTOR",
+        "imagem":"https://drive.google.com/file/d/1aaCZosirlesbQVanTD4-M2y70FNT1fz5/view?usp=drive_link",
+        "link": "https:www.youtu.be\/vyMALXp94Ts",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":36,
-        "nome":"POLICIAL",
-        "link":"https:www.youtu.be\/wOyle5obUtI",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 36,
+        "nome": "POLICIAL",
+        "imagem":"https://drive.google.com/file/d/1LIsxfwiiYf4Q6CuCfON8hsQq7tyeHdBR/view?usp=drive_link",
+        "link": "https:www.youtu.be\/wOyle5obUtI",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":37,
-        "nome":"PORTEIRO",
-        "link":"https:www.youtu.be\/AfcrbaLBPxM",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 37,
+        "nome": "PORTEIRO",
+        "imagem":"https://drive.google.com/file/d/1To89SvhSq6ai5C-Y1x7dh0X_vhU6YGjz/view?usp=drive_link",
+        "link": "https:www.youtu.be\/AfcrbaLBPxM",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":38,
-        "nome":"PROFESSOR",
-        "link":"https:www.youtu.be\/wXzybB_iye8",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 38,
+        "nome": "PROFESSOR",
+        "imagem":"https://drive.google.com/file/d/1t13O2Xm6h5sk0QhcwzNvurmiC5zC6bvK/view?usp=drive_link",
+        "link": "https:www.youtu.be\/wXzybB_iye8",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":39,
-        "nome":"PSICÓLOGO",
-        "link":"https:www.youtu.be\/jokRD0SGMoE",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 39,
+        "nome": "PSICÓLOGO",
+        "imagem":"https://drive.google.com/file/d/1VmuRMdBvpHl6gwV-4hjERekAy5kofM26/view?usp=drive_link",
+        "link": "https:www.youtu.be\/jokRD0SGMoE",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":40,
-        "nome":"SECRETÁRIO",
-        "link":"https:www.youtu.be\/57i0uo6-Jr8",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 40,
+        "nome": "SECRETÁRIO",
+        "imagem":"https://drive.google.com/file/d/1MXKXdKoCBnfjT-oDUNd_MYYlAB09aMUN/view?usp=drive_link",
+        "link": "https:www.youtu.be\/57i0uo6-Jr8",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":41,
-        "nome":"SEGURANÇA",
-        "link":"https:www.youtu.be\/BvY8tf3uOPM",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 41,
+        "nome": "SEGURANÇA",
+        "imagem":"https://drive.google.com/file/d/1I0l5BVTBhersd9ZtLodEmwN4ax7AZ7gQ/view?usp=drive_link",
+        "link": "https:www.youtu.be\/BvY8tf3uOPM",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":42,
-        "nome":"VENDEDOR",
-        "link":"https:www.youtu.be\/aEgAO1ymeUQ",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 42,
+        "nome": "VENDEDOR",
+        "imagem":"https://drive.google.com/file/d/1-fCQLJFvhcuuuYHUqre8sEqfDD-XCbZq/view?usp=drive_link",
+        "link": "https:www.youtu.be\/aEgAO1ymeUQ",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":43,
-        "nome":"VETERINÁRIO",
-        "link":"https:www.youtu.be\/Ocy4Vm9QgaA",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 43,
+        "nome": "VETERINÁRIO",
+        "imagem":"https://drive.google.com/file/d/1RKHj0ZIJkSkqROluEtvrfdp3fZ55Zy3E/view?usp=drive_link",
+        "link": "https:www.youtu.be\/Ocy4Vm9QgaA",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     {
-        "numero":44,
-        "nome":"ORTOPEDISTA",
-        "link":"https:www.youtu.be\/07EDcgV63J4",
-        "categoria":"VERBETES – PROFISSÕES"
-    },
-    {
-        "numero":45,
-        "nome":"FONOAUDIÓLOGO",
-        "link":"https:www.youtu.be\/07EDcgV63J4",
-        "categoria":"VERBETES – PROFISSÕES"
+        "numero": 44,
+        "nome": "ORTOPEDISTA",
+        "imagem":"https://drive.google.com/file/d/17be53lFHgSZNPBXznmsIADOQZDc_y-Yf/view?usp=drive_link",
+        "link": "https:www.youtu.be\/07EDcgV63J4",
+        "categoria": "VERBETES – PROFISSÕES"
     },
     ];
 
@@ -317,29 +348,39 @@
         const h2 = document.createElement("h2");
         h2.textContent = ` ${video.nome}`;
 
-        // criar iframe
-        const iframe = document.createElement("iframe");
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+        videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "")}`
 
-        // montar estrutura
-        div.appendChild(h2);
-        div.appendChild(iframe);
-        
-        container.appendChild(div);
+                console.log(videoImagemLink);
 
-      });
-    }
 
-    // chamar função ao carregar
-    criarVideos();
-  </script>
+                const img = document.createElement("img");
+
+                // criar iframe
+                const iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                // montar estrutura
+                div.appendChild(h2);
+                div.appendChild(img);
+                div.appendChild(iframe);
+
+                img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`
+
+                container.appendChild(div);
+
+            });
+        }
+
+        // chamar função ao carregar
+        criarVideos();
+    </script>
 
 </body>

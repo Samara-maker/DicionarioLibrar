@@ -1,5 +1,6 @@
 @import url(header.css);
 @import url(categorias.css);
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -14,15 +15,54 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: #ff9800;
+  background: linear-gradient(135deg, #ff9800, #ff7043, #ff5722);
   color: white;
   text-align: center;
   padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* shapes decorativos circulares */
+#telaInicial::before,
+#telaInicial::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+#telaInicial::before {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle at center, #fff176, transparent);
+  top: -120px;
+  left: -120px;
+}
+
+#telaInicial::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at center, #ffcc80, transparent);
+  bottom: -150px;
+  right: -150px;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 
 .titulo {
   font-size: 3rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  animation: bounce 1.5s infinite ease-in-out;
 }
 
 .subtitulo {
@@ -41,6 +81,8 @@ body {
   margin: 0.5rem;
   font-size: 1rem;
   cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background-color 0.3s;
 }
 
 .botoes img {
@@ -50,6 +92,7 @@ body {
 
 button:hover {
   background-color: #ffcc80;
+  transform: scale(1.05);
 }
 
 .oculto {
@@ -57,7 +100,7 @@ button:hover {
 }
 
 #menu {
-  padding: 1rem;
+  padding: 0;
 }
 
 input[type="text"] {
@@ -69,13 +112,12 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-/* Novo CSS para categorias redondas laranja, 4 por linha */
-
+/* ---------- Categorias redondas (mobile) ---------- */
 .categorias {
   display: grid;
-  grid-template-columns: repeat(4, 85px); /* 4 colunas de 85px (mesmo tamanho do botão) */
-  justify-content: center;                /* centraliza a grade horizontalmente */
-  gap: 10px;                             /* espaço entre botões */
+  grid-template-columns: repeat(4, 85px);
+  justify-content: center;
+  gap: 10px;
   padding: 10px;
 }
 
@@ -89,12 +131,12 @@ input[type="text"] {
   border-radius: 50%;
   width: 85px;
   height: 85px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 0.75rem;
   cursor: pointer;
   padding: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
   text-align: center;
   user-select: none;
   gap: 5px;
@@ -102,6 +144,7 @@ input[type="text"] {
 
 .categorias button:hover {
   background: #fb8c00;
+  transform: scale(1.05);
 }
 
 .categorias img {
@@ -111,9 +154,7 @@ input[type="text"] {
   margin-bottom: 4px;
 }
 
-
-
-/* Media query para telas maiores (computador) */
+/* ---------- Categorias versão desktop ---------- */
 @media screen and (min-width: 768px) {
   .categorias {
     display: flex;
@@ -140,6 +181,7 @@ input[type="text"] {
   }
 }
 
+/* ---------- Resultados ---------- */
 #resultados {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -167,14 +209,15 @@ video {
   font-size: 18px;
   color: #333;
 }
+
 .voltar i {
   margin-right: 8px;
 }
 
 img {
-  display: block;          /* Faz a imagem ser tratada como bloco */
-  margin: 0 auto;          /* Centraliza horizontalmente */
-  width: 100%;             /* Faz a imagem ocupar toda a largura disponível */
-  max-width: 300px;        /* Limite opcional, para não ficar gigante em telas grandes */
-  height: 200;            /* Mantém proporção */
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }

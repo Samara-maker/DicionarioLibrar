@@ -1,42 +1,77 @@
- body {
+ header {
+   padding: 10px;
    margin: 0;
-   padding: 0;
-   font-family: sans-serif;
+   background-color: hsl(30, 95%, 45%);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   z-index: 1000;
  }
 
- header {
-   background-color: #E17506;
-   padding: 10px;
+ main {
+   margin-top: 15px;
+   /* garante que o conteúdo não fique atrás do header */
+   padding: 15px;
  }
 
  .search-container {
-   position: relative;
-   width: 100%;
-   margin: 0 auto;
    display: flex;
    gap: 10px;
-   border-radius: 105px;
-   background-color: #fff;
-   align-items: center;
-   justify-content: center;
-
-
- }
-
- .search-container input[type="text"] {
-  width: 70%; 
-  border: none;
-   background-color: transparent;
+   list-style: none;
+   padding: 0;
    margin: 0;
  }
 
- .search-container input[type="text"]:focus {
-   box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
+ .search-container li {
+   background-color: hsl(30, 95%, 60%);
+   padding: 10px 20px;
+   border-radius: 8px;
+   transition:0.3s ease;
  }
 
- .search-container .search-icon {
-   color: #000000;
+ .search-container li:hover {
+   background-color: hsl(30, 95%, 70%);
+ }
 
+ .search-container a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   display: block;
+ }
+
+ .extra-buttons {
+   display: flex;
+   justify-content: center;
+   margin: 20px 0;
+ }
+
+ /* Exemplo de estilo para os ícones de "Mais Acessados" */
+ .mais-acessados {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+   margin-top: 20px;
+ }
+
+ .mais-acessados .icone {
+   background-color: orange;
+   border-radius: 50%;
+   width: 80px;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 12px;
+   color: #fff;
+   text-align: center;
+ }
+
+ .textContent{
+  background-color: aqua;
  }
