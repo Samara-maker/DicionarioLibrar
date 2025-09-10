@@ -1,4 +1,7 @@
+import { carregarDados, carregarCSV } from "./buscarNaPlanilha.js";
 
+carregarDados();
+carregarCSV();
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -40,7 +43,7 @@ fetch("links.json") // arquivo deve estar na mesma pasta do seu .html
   .then(response => response.json())
   .then(data => {
     links = data;
-    console.log("JSON carregado:", links);
+    // console.log("JSON carregado:", links);
   })
   .catch(error => console.error("Erro ao carregar JSON:", error));
 const barraPesquisa = document.querySelector(".search-container #busca")
