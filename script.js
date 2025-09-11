@@ -1,7 +1,74 @@
-import { carregarDados, carregarCSV } from "./buscarNaPlanilha.js";
-
+import { carregarDados, filtrarPorCategoria } from "./buscarNaPlanilha.js";
 carregarDados();
-carregarCSV();
+
+// Captura o parâmetro "categoria" da URL
+function getCategoriaDaURL() {
+  const params = new URLSearchParams(window.location.search);
+  const categoria = params.get("categoria");
+  return categoria ? decodeURIComponent(categoria) : null;
+}
+
+// Cria os vídeos na página
+function criarVideos(videos) {
+  const container = document.querySelector(".grid-videos");
+  container.innerHTML = "";
+
+  videos.forEach(video => {
+    const videoId = video.link.split("/").pop();
+
+    const div = document.createElement("div");
+    div.className = "grid-videos-item";
+
+    const h2 = document.createElement("h2");
+    h2.textContent = video.nome;
+
+    const videoImagemLink = video.imagem
+      .replace("https://drive.google.com/file/d/", "")
+      .replace("/view?usp=drive_link", "");
+
+    const img = document.createElement("img");
+    img.src = `https://drive.google.com/thumbnail?id=${videoImagemLink}`;
+
+    const iframe = document.createElement("iframe");
+    iframe.width = "560";
+    iframe.height = "315";
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
+    iframe.title = "YouTube video player";
+    iframe.frameBorder = "0";
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+
+    div.appendChild(h2);
+    div.appendChild(img);
+    div.appendChild(iframe);
+    container.appendChild(div);
+  });
+}
+
+// Inicializa tudo
+async function init() {
+  await carregarDados();
+
+  const categoriaAtual = getCategoriaDaURL();
+  if (!categoriaAtual) {
+    console.warn("Categoria não informada na URL");
+    return;
+  }
+
+  const videosFiltrados = filtrarPorCategoria(categoriaAtual);
+  console.log("Vídeos filtrados:", videosFiltrados);
+
+  criarVideos(videosFiltrados);
+}
+
+init();
+
+
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
