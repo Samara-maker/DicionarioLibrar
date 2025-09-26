@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LIBRAR Dicionário</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIBRAR - Categorias</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="categorias.css">
 </head>
 <body>
-  <div id="telaInicial">
-    <h1 class="titulo">LIBRAR DICIONÁRIO</h1>
+  <div id="menu">
+    <header>
+      <a href="index.html" class="voltar">
+        <i class="fa fa-arrow-left"></i> Voltar
+      </a>
+    </header>
 
-    <p class="subtitulo">1000 VERBETES EM LÍNGUAS DE SINAIS</p>
+    <h2>Categorias</h2>
 
-    <div class="botoes">
-      <button onclick="window.location.href='dici.html'">Entrar</button>
-    </div>
+    <!-- agora a div tem classe .categorias e id -->
+    <div class="categorias" id="botoes-container"></div>
   </div>
-  <script src="script.js"></script>
-  
+
+  <script>
+    const categorias = [
+      "MEU CORPO", "VERBETES – CARACTERISTICAS", "VERBETES – MEUS SENTIMENTOS",
+      "MINHA FAMILIA", "MINHA CASA", "67 LAVA LOUÇA", "78 NINHO", "90 PIQUENIQUE",
+      "92 PLANTA", "98 PRATO", "100 QUARTO", "113 RUA", "121 TABULEIRO", "127 TERRA",
+      "136 VIZINHO", "FESTA DE ANIVERSÁRIO", "VERBETES – A CIDADE", "VERBETES – A ESCOLA",
+      "VERBETES – O SUPERMERCADO", "VERDURAS", "RESTAURANTE", "SABORES",
+      "VERBETES – A FAZENDA", "FERRAMENTAS", "VERBETES – A VIAGEM",
+      "VERBETES – ROUPAS E ACESSÓRIOS", "VERBETES – PROFISSÕES", "ESPORTES",
+      "VERBETES – AÇÕES", "VERBETES – OS ANIMAIS", "VERBETES – ESTAÇÕES DO ANO",
+      "VERBETES – O TEMPO", "VERBETES – CONDIÇÕES DO TEMPO", "VERBETES – DIREÇÕES",
+      "VERBETES – FASE DA LUA", "VERBETES – MESES DO ANO E DIAS DA SEMANA",
+      "VERBETES – TEMPO - RELÓGIO", "VERBETES – SIGNOS DOS ZODÍACOS",
+      "VERBETES – CONTINETES", "VERBETES – NACIONALIDADES", "VERBETES – DATAS IMPORTANTES",
+      "CORES", "VERBETES – SIMBOLOS MATEMÁTICOS", "VERBETES – PRONOMES",
+      "ALFABETO", "NUMERAIS", "INSTRUMENTOS", "HISTORIAS", "13 BOA TARDE",
+      "15 DE NADA", "DOENÇAS"
+    ];
+
+    const container = document.getElementById('botoes-container');
+    categorias.forEach(c => {
+      const btn = document.createElement('button');
+      btn.textContent = c;
+      btn.onclick = () => {
+        window.location.href = `telaTesteUnica.html?categoria=${encodeURIComponent(c)}`;
+      };
+      container.appendChild(btn);
+    });
+  </script>
 </body>
 </html>
