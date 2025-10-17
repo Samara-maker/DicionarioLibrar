@@ -1,42 +1,77 @@
- body {
-   margin: 0;
-   padding: 0;
-   font-family: sans-serif;
- }
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
- header {
-   background-color: #E17506;
-   padding: 10px;
- }
+header {
+  padding: 10px;
+  background-color: hsl(30, 95%, 45%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  color: white;
+}
 
- .search-container {
-   position: relative;
-   width: 100%;
-   margin: 0 auto;
-   display: flex;
-   gap: 10px;
-   border-radius: 105px;
-   background-color: #fff;
-   align-items: center;
-   justify-content: center;
+.voltar {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
 
+h2 {
+  margin-top: 70px; /* espaço para o header fixo */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 8px;
+}
 
- }
+/* Layout do container */
+.categorias {
+  display: flex;
+  flex-wrap: wrap; /* padrão: 2 colunas no mobile */
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+}
 
- .search-container input[type="text"] {
-  width: 70%; 
+/* Estilo das bolinhas */
+.categorias button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
   border: none;
-   background-color: transparent;
-   margin: 0;
- }
+  background: #ff9800;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  padding: 6px;
+  cursor: pointer;
+  word-break: break-word;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
 
- .search-container input[type="text"]:focus {
-   box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
- }
+.categorias button:hover {
+  background: #fb8c00;
+  transform: translateY(-4px);
+}
 
- .search-container .search-icon {
-   color: #000000;
+/* tablet: 3 colunas */
+@media (min-width: 600px) and (max-width: 991px) {
+  .categorias {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
- }
+/* desktop: 4 colunas */
+@media (min-width: 992px) {
+  .categorias {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
