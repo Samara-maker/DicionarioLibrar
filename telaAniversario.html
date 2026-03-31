@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+      {
+        "numero":1,
+        "nome":"ASSOPRAR",
+        "link":"https:www.youtu.be\/NtfApHjg9R0",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":2,
+        "nome":"BALA",
+        "link":"https:www.youtu.be\/_RCgycBlavk",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":3,
+        "nome":"BALÃO",
+        "link":"https:www.youtu.be\/90wkJEFOIYU",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":4,
+        "nome":"BATATA FRITA",
+        "link":"https:www.youtu.be\/hUAHgGp4ZOo",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":5,
+        "nome":"BEBER",
+        "link":"https:www.youtu.be\/PANb8Dkd_JM",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":6,
+        "nome":"BOLO",
+        "link":"https:www.youtu.be\/CLMx27VWafc",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":7,
+        "nome":"BRINCAR",
+        "link":"https:www.youtu.be\/xb-srxeLHxE",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":8,
+        "nome":"BRINDAR",
+        "link":"https:www.youtu.be\/c4Blv1ZiRo8",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":9,
+        "nome":"CACHORRO-QUENTE",
+        "link":"https:www.youtu.be\/PtMqGUPyVNI",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":10,
+        "nome":"CÂMERA FOTOGRÁFICA",
+        "link":"https:www.youtu.be\/odRLXUEF0YE",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":11,
+        "nome":"CANTAR",
+        "link":"https:www.youtu.be\/4nGXIrBegKw",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":12,
+        "nome":"CHAPÉU",
+        "link":"https:www.youtu.be\/RaODbPSZMxQ",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":13,
+        "nome":"CHOCOLATE",
+        "link":"https:www.youtu.be\/dyKf5O45TZM",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":14,
+        "nome":"COMER",
+        "link":"https:www.youtu.be\/jQ99y5sx1G0",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":15,
+        "nome":"CONVIDADOS",
+        "link":"https:www.youtu.be\/xaiwNOVUDvw",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":16,
+        "nome":"CORTAR",
+        "link":"https:www.youtu.be\/6jL91OkP6kA",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":17,
+        "nome":"DANÇAR",
+        "link":"https:www.youtu.be\/UaAfDdSkTXM",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":18,
+        "nome":"DECORAÇÃO",
+        "link":"https:www.youtu.be\/5VI4BvEX_JM",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":19,
+        "nome":"DOCINHO",
+        "link":"https:www.youtu.be\/9zZMOcx5ujk",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":20,
+        "nome":"FILMADORA",
+        "link":"https:www.youtu.be\/8U2MyOtrFE0",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":21,
+        "nome":"PIPOCA",
+        "link":"https:www.youtu.be\/cuoULMKkirU",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":22,
+        "nome":"PIRULITO",
+        "link":"https:www.youtu.be\/FuvpccJJHxk",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":23,
+        "nome":"PRESENTE",
+        "link":"https:www.youtu.be\/X-Iuj6sTfrg",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":24,
+        "nome":"REFRIGERANTE",
+        "link":"https:www.youtu.be\/TfogZdr4wfY",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":25,
+        "nome":"SALGADINHO",
+        "link":"https:www.youtu.be\/F5qpQy4srcM",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":26,
+        "nome":"SANDUICHE",
+        "link":"https:www.youtu.be\/j85nnbsrAhw",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":27,
+        "nome":"SORVETE",
+        "link":"https:www.youtu.be\/5e9GlrgpmtE",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":28,
+        "nome":"SUCO",
+        "link":"https:www.youtu.be\/nlk2L84Jf0s",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":29,
+        "nome":"TOALHA DE MESA",
+        "link":"https:www.youtu.be\/LKamQr6D1Nc",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    {
+        "numero":30,
+        "nome":"VELA",
+        "link":"https:www.youtu.be\/kjoGzF9UMis",
+        "categoria":"FESTA DE ANIVERSÁRIO"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = `Aniversário: ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+</body>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+       {
+        "numero":1,
+        "nome":"ANGOLA",
+        "link":"https:www.youtu.be\/6ZogX1k0t3g",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":2,
+        "nome":"ÁFRICA DO SUL",
+        "link":"https:www.youtu.be\/QOOygE8_rM8",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":3,
+        "nome":"ALEMANHA",
+        "link":"https:www.youtu.be\/oigFEXUa_-0",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":4,
+        "nome":"ARGENTINA",
+        "link":"https:www.youtu.be\/Ha-eKCEie_g",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":5,
+        "nome":"AUSTRALIA",
+        "link":"https:www.youtu.be\/r2IR9dh2a4Y",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":6,
+        "nome":"BRASIL",
+        "link":"https:www.youtu.be\/2XihhP4W4hM",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":7,
+        "nome":"CANADÁ",
+        "link":"https:www.youtu.be\/h12vwNoRpyo",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":8,
+        "nome":"CHINA",
+        "link":"https:www.youtu.be\/x6htY-3PQC8",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":9,
+        "nome":"EGITO",
+        "link":"https:www.youtu.be\/Q3K4NPBqRW0",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":10,
+        "nome":"ESPANHA",
+        "link":"https:www.youtu.be\/jNmAcDJ2QO4",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":11,
+        "nome":"ESTADOS UNIDOS",
+        "link":"https:www.youtu.be\/sJfJBkhmak8",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":12,
+        "nome":"FRANÇA",
+        "link":"https:www.youtu.be\/M9ctZPchovM",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":13,
+        "nome":"ÍNDIA",
+        "link":"https:www.youtu.be\/ny0pPke4-R0",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":14,
+        "nome":"INGLATERRA",
+        "link":"https:www.youtu.be\/_Sx1ie0HqKs",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":15,
+        "nome":"ITALIA",
+        "link":"https:www.youtu.be\/JvJ6OvUXoM4",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":16,
+        "nome":"JAPÃO",
+        "link":"https:www.youtu.be\/54fEB_ulJMI",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":17,
+        "nome":"MÉXICO",
+        "link":"https:www.youtu.be\/9mmcl7Qjy0M",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":18,
+        "nome":"NOVA ZELANDIA",
+        "link":"https:www.youtu.be\/78-vtEdaZ0I",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":19,
+        "nome":"PERU",
+        "link":"https:www.youtu.be\/GHhu6ZxRSP4",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":20,
+        "nome":"PORTO RICO",
+        "link":"https:www.youtu.be\/t1FbMzctXtM",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":21,
+        "nome":"PORTUGAL",
+        "link":"https:www.youtu.be\/F7pmD6RXsYc",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":22,
+        "nome":"RÚSSIA",
+        "link":"https:www.youtu.be\/YcpMEWkhPR0",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":23,
+        "nome":"SUÉCIA",
+        "link":"https:www.youtu.be\/U6Lle6bMQV4",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    {
+        "numero":24,
+        "nome":"SUÍÇA",
+        "link":"https:www.youtu.be\/syiYSD3rtpk",
+        "categoria":"VERBETES – NACIONALIDADES"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>

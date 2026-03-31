@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+    <div class="search-container">
+      <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="titulo-categoria"></h2>
+    <div id="resultados"></div>
+
+    <section class="grid-videos">
+      
+
+      
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const videos = [
+     {
+        "numero":1,
+        "nome":"ANEL",
+        "link":"https:www.youtu.be\/8jNWvsc0ah0 taxi",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":2,
+        "nome":"BERMUDA",
+        "link":"https:www.youtu.be\/-3AaPatpL_s",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":3,
+        "nome":"BIQUINI",
+        "link":"https:www.youtu.be\/sppOaVrar-8",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":4,
+        "nome":"BLUSA",
+        "link":"https:www.youtu.be\/lDmDQOJ9Rkk",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":5,
+        "nome":"BOLSA",
+        "link":"https:www.youtu.be\/Q3B0W1IMNzE",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":6,
+        "nome":"BONÉ",
+        "link":"https:www.youtu.be\/4J5us-E0yT4",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":7,
+        "nome":"BOTA",
+        "link":"https:www.youtu.be\/C4OfbCepnZw",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":8,
+        "nome":"BRINCO",
+        "link":"https:www.youtu.be\/nijgoSPkghc",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":9,
+        "nome":"BROCHE",
+        "link":"https:www.youtu.be\/MfD6HNiud2s",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":10,
+        "nome":"CALÇA",
+        "link":"https:www.youtu.be\/8hucgYQfuiI",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":11,
+        "nome":"CALCINHA",
+        "link":"https:www.youtu.be\/jpfnw-ZrDEI",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":12,
+        "nome":"CAMISA SOCIAL",
+        "link":"https:www.youtu.be\/GM_nfFTq0FQ",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":13,
+        "nome":"CARTÃO",
+        "link":"https:www.youtu.be\/7rzZXiKAA_w",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":14,
+        "nome":"CARTEIRA",
+        "link":"https:www.youtu.be\/6_Id73jnWvQ",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":15,
+        "nome":"CASACO",
+        "link":"https:www.youtu.be\/4YiomLD1Hc4",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":16,
+        "nome":"CHAPÉU",
+        "link":"https:www.youtu.be\/U5xc-wwysmM",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":17,
+        "nome":"CINTO",
+        "link":"https:www.youtu.be\/OwkAgWwzumc",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":18,
+        "nome":"COLAR",
+        "link":"https:www.youtu.be\/JCmLCy0uHEk",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":19,
+        "nome":"COLETE",
+        "link":"https:www.youtu.be\/SUznnIyOR4c",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":20,
+        "nome":"CUECA",
+        "link":"https:www.youtu.be\/SIlNEYiIijk",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":21,
+        "nome":"DINHEIRO",
+        "link":"https:www.youtu.be\/yFsF2kjq-ic",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":22,
+        "nome":"GRAVATA",
+        "link":"https:www.youtu.be\/mr8jmmt7V08",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":23,
+        "nome":"JAQUETA",
+        "link":"https:www.youtu.be\/1DRn2cC0n84",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":24,
+        "nome":"LENÇO",
+        "link":"https:www.youtu.be\/RNVinP8jYwQ",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":25,
+        "nome":"LUVA",
+        "link":"https:www.youtu.be\/pih7YpoimZ8",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":26,
+        "nome":"MAIÔ",
+        "link":"https:www.youtu.be\/Ct_4RsTfC3c",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":27,
+        "nome":"MEIA",
+        "link":"https:www.youtu.be\/qIdLfYB5NCI",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":28,
+        "nome":"MINISSAIA",
+        "link":"https:www.youtu.be\/EsSlgh537Fg",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":29,
+        "nome":"MOEDA",
+        "link":"https:www.youtu.be\/P10eDPaaKDE",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":30,
+        "nome":"PASTA",
+        "link":"https:www.youtu.be\/zygCGRujNeo",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":31,
+        "nome":"PIJAMA",
+        "link":"https:www.youtu.be\/55CnbYZzpQ8",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":32,
+        "nome":"PIX",
+        "link":"https:www.youtu.be\/eu0XP7G5QdQ",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":33,
+        "nome":"RELÓGIO",
+        "link":"https:www.youtu.be\/rGmNO4-hYws",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":34,
+        "nome":"ROUPA DE MERGULHO",
+        "link":"https:www.youtu.be\/W1GL8mxLikU",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":35,
+        "nome":"SALTO ALTO",
+        "link":"https:www.youtu.be\/DiUgE344ZlE",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":36,
+        "nome":"SANDÁLIA",
+        "link":"https:www.youtu.be\/cg6XC6y5ik4",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":37,
+        "nome":"SUÉTER",
+        "link":"https:www.youtu.be\/Wb7pC-xMbEI",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":38,
+        "nome":"SUNGA",
+        "link":"https:www.youtu.be\/TA2Tm94nxIQ",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":39,
+        "nome":"SUTIÃ",
+        "link":"https:www.youtu.be\/wpwjJfMYBys",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":40,
+        "nome":"TÊNIS",
+        "link":"https:www.youtu.be\/ZouvSfxFsJM",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":41,
+        "nome":"TERNO",
+        "link":"https:www.youtu.be\/e2DTTq8vcHo",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    {
+        "numero":42,
+        "nome":"VESTIDO",
+        "link":"https:www.youtu.be\/B3QiYRE_usE",
+        "categoria":"VERBETES – ROUPAS E ACESSÓRIOS"
+    },
+    ];
+
+    function criarVideos() {
+      const container = document.querySelector(".grid-videos");
+      console.log(container);
+      
+      videos.forEach(video => {
+        // extrair ID do vídeo (último pedaço do link)
+        const videoId = video.link.split("\/").pop();
+        console.log(videoId);
+        
+        // criar div principal
+        const div = document.createElement("div");
+        div.className = "grid-videos-item";
+
+        // criar título
+        const h2 = document.createElement("h2");
+        h2.textContent = ` ${video.nome}`;
+
+        // criar iframe
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
+
+        // montar estrutura
+        div.appendChild(h2);
+        div.appendChild(iframe);
+        
+        container.appendChild(div);
+
+      });
+    }
+
+    // chamar função ao carregar
+    criarVideos();
+  </script>
+
+</body>
